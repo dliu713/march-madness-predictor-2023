@@ -1,0 +1,480 @@
+{
+    "kenpom": [
+     {
+      "name": "Houston",
+      "rk": "1",
+      "AdjEM": "+28.82",
+      "AdjO": "118.4",
+      "AdjD": "89.6"
+     },
+     {
+      "name": "UCLA",
+      "rk": "2",
+      "AdjEM": "+27.63",
+      "AdjO": "114.9",
+      "AdjD": "87.2"
+     },
+     {
+      "name": "Alabama",
+      "rk": "3",
+      "AdjEM": "+27.54",
+      "AdjO": "116.1",
+      "AdjD": "88.6"
+     },
+     {
+      "name": "Connecticut",
+      "rk": "4",
+      "AdjEM": "+25.37",
+      "AdjO": "119.4",
+      "AdjD": "94.1"
+     },
+     {
+      "name": "Tennessee",
+      "rk": "5",
+      "AdjEM": "+24.71",
+      "AdjO": "112.7",
+      "AdjD": "88.0"
+     },
+     {
+      "name": "Texas",
+      "rk": "6",
+      "AdjEM": "+24.57",
+      "AdjO": "116.6",
+      "AdjD": "92.0"
+     },
+     {
+      "name": "Purdue",
+      "rk": "7",
+      "AdjEM": "+24.55",
+      "AdjO": "119.4",
+      "AdjD": "94.8"
+     },
+     {
+      "name": "Gonzaga",
+      "rk": "8",
+      "AdjEM": "+24.31",
+      "AdjO": "124.0",
+      "AdjD": "99.7"
+     },
+     {
+      "name": "Kansas",
+      "rk": "9",
+      "AdjEM": "+23.14",
+      "AdjO": "114.6",
+      "AdjD": "91.5"
+     },
+     {
+      "name": "Arizona",
+      "rk": "10",
+      "AdjEM": "+22.86",
+      "AdjO": "120.0",
+      "AdjD": "97.1"
+     },
+     {
+      "name": "Saint Mary's",
+      "rk": "11",
+      "AdjEM": "+21.90",
+      "AdjO": "113.5",
+      "AdjD": "91.6"
+     },
+     {
+      "name": "Marquette",
+      "rk": "12",
+      "AdjEM": "+21.83",
+      "AdjO": "119.3",
+      "AdjD": "97.5"
+     },
+     {
+      "name": "Creighton",
+      "rk": "13",
+      "AdjEM": "+20.65",
+      "AdjO": "114.6",
+      "AdjD": "94.0"
+     },
+     {
+      "name": "San Diego St.",
+      "rk": "14",
+      "AdjEM": "+20.25",
+      "AdjO": "111.9",
+      "AdjD": "91.7"
+     },
+     {
+      "name": "Baylor",
+      "rk": "15",
+      "AdjEM": "+19.98",
+      "AdjO": "121.9",
+      "AdjD": "101.9"
+     },
+     {
+      "name": "Xavier",
+      "rk": "16",
+      "AdjEM": "+19.69",
+      "AdjO": "119.3",
+      "AdjD": "99.6"
+     },
+     {
+      "name": "West Virginia",
+      "rk": "17",
+      "AdjEM": "+19.14",
+      "AdjO": "117.1",
+      "AdjD": "98.0"
+     },
+     {
+      "name": "Utah St.",
+      "rk": "18",
+      "AdjEM": "+18.88",
+      "AdjO": "117.8",
+      "AdjD": "98.9"
+     },
+     {
+      "name": "Memphis",
+      "rk": "19",
+      "AdjEM": "+18.69",
+      "AdjO": "114.7",
+      "AdjD": "96.0"
+     },
+     {
+      "name": "Arkansas",
+      "rk": "20",
+      "AdjEM": "+18.63",
+      "AdjO": "112.6",
+      "AdjD": "94.0"
+     },
+     {
+      "name": "Duke",
+      "rk": "21",
+      "AdjEM": "+18.49",
+      "AdjO": "113.2",
+      "AdjD": "94.8"
+     },
+     {
+      "name": "Maryland",
+      "rk": "22",
+      "AdjEM": "+18.37",
+      "AdjO": "114.1",
+      "AdjD": "95.8"
+     },
+     {
+      "name": "Iowa St.",
+      "rk": "23",
+      "AdjEM": "+18.33",
+      "AdjO": "109.9",
+      "AdjD": "91.6"
+     },
+     {
+      "name": "Kansas St.",
+      "rk": "24",
+      "AdjEM": "+18.31",
+      "AdjO": "112.5",
+      "AdjD": "94.2"
+     },
+     {
+      "name": "Texas A&M",
+      "rk": "25",
+      "AdjEM": "+18.28",
+      "AdjO": "114.5",
+      "AdjD": "96.2"
+     },
+     {
+      "name": "Florida Atlantic",
+      "rk": "26",
+      "AdjEM": "+18.23",
+      "AdjO": "114.3",
+      "AdjD": "96.0"
+     },
+     {
+      "name": "TCU",
+      "rk": "27",
+      "AdjEM": "+18.06",
+      "AdjO": "112.4",
+      "AdjD": "94.3"
+     },
+     {
+      "name": "Kentucky",
+      "rk": "28",
+      "AdjEM": "+17.80",
+      "AdjO": "117.4",
+      "AdjD": "99.6"
+     },
+     {
+      "name": "Auburn",
+      "rk": "29",
+      "AdjEM": "+17.45",
+      "AdjO": "112.7",
+      "AdjD": "95.2"
+     },
+     {
+      "name": "Indiana",
+      "rk": "30",
+      "AdjEM": "+17.36",
+      "AdjO": "114.7",
+      "AdjD": "97.3"
+     },
+     {
+      "name": "Boise St.",
+      "rk": "31",
+      "AdjEM": "+17.13",
+      "AdjO": "111.0",
+      "AdjD": "93.8"
+     },
+     {
+      "name": "Michigan St.",
+      "rk": "32",
+      "AdjEM": "+16.71",
+      "AdjO": "113.4",
+      "AdjD": "96.7"
+     },
+     {
+      "name": "Illinois",
+      "rk": "33",
+      "AdjEM": "+16.48",
+      "AdjO": "112.2",
+      "AdjD": "95.7"
+     },
+     {
+      "name": "Virginia",
+      "rk": "34",
+      "AdjEM": "+16.41",
+      "AdjO": "111.2",
+      "AdjD": "94.8"
+     },
+     {
+      "name": "USC",
+      "rk": "36",
+      "AdjEM": "+15.63",
+      "AdjO": "113.1",
+      "AdjD": "97.5"
+     },
+     {
+      "name": "Iowa",
+      "rk": "37",
+      "AdjEM": "+15.60",
+      "AdjO": "120.5",
+      "AdjD": "104.9"
+     },
+     {
+      "name": "Penn St.",
+      "rk": "39",
+      "AdjEM": "+15.04",
+      "AdjO": "116.8",
+      "AdjD": "101.8"
+     },
+     {
+      "name": "Miami FL",
+      "rk": "40",
+      "AdjEM": "+14.91",
+      "AdjO": "118.2",
+      "AdjD": "103.3"
+     },
+     {
+      "name": "Northwestern",
+      "rk": "42",
+      "AdjEM": "+14.83",
+      "AdjO": "108.5",
+      "AdjD": "93.7"
+     },
+     {
+      "name": "Nevada",
+      "rk": "43",
+      "AdjEM": "+14.79",
+      "AdjO": "112.0",
+      "AdjD": "97.2"
+     },
+     {
+      "name": "Providence",
+      "rk": "44",
+      "AdjEM": "+14.73",
+      "AdjO": "116.8",
+      "AdjD": "102.1"
+     },
+     {
+      "name": "Mississippi St.",
+      "rk": "49",
+      "AdjEM": "+14.12",
+      "AdjO": "105.5",
+      "AdjD": "91.3"
+     },
+     {
+      "name": "Missouri",
+      "rk": "51",
+      "AdjEM": "+13.92",
+      "AdjO": "119.3",
+      "AdjD": "105.4"
+     },
+     {
+      "name": "N.C. State",
+      "rk": "55",
+      "AdjEM": "+13.31",
+      "AdjO": "113.9",
+      "AdjD": "100.6"
+     },
+     {
+      "name": "Oral Roberts",
+      "rk": "56",
+      "AdjEM": "+13.25",
+      "AdjO": "115.3",
+      "AdjD": "102.0"
+     },
+     {
+      "name": "VCU",
+      "rk": "58",
+      "AdjEM": "+13.15",
+      "AdjO": "107.2",
+      "AdjD": "94.0"
+     },
+     {
+      "name": "Drake",
+      "rk": "66",
+      "AdjEM": "+12.51",
+      "AdjO": "109.8",
+      "AdjD": "97.3"
+     },
+     {
+      "name": "Arizona St.",
+      "rk": "68",
+      "AdjEM": "+12.38",
+      "AdjO": "107.6",
+      "AdjD": "95.2"
+     },
+     {
+      "name": "Kent St.",
+      "rk": "71",
+      "AdjEM": "+11.90",
+      "AdjO": "108.3",
+      "AdjD": "96.4"
+     },
+     {
+      "name": "Charleston",
+      "rk": "73",
+      "AdjEM": "+11.76",
+      "AdjO": "111.4",
+      "AdjD": "99.6"
+     },
+     {
+      "name": "Iona",
+      "rk": "74",
+      "AdjEM": "+11.71",
+      "AdjO": "110.9",
+      "AdjD": "99.1"
+     },
+     {
+      "name": "Pittsburgh",
+      "rk": "77",
+      "AdjEM": "+11.27",
+      "AdjO": "115.1",
+      "AdjD": "103.8"
+     },
+     {
+      "name": "Furman",
+      "rk": "89",
+      "AdjEM": "+8.43",
+      "AdjO": "114.2",
+      "AdjD": "105.8"
+     },
+     {
+      "name": "Louisiana",
+      "rk": "92",
+      "AdjEM": "+8.20",
+      "AdjO": "112.2",
+      "AdjD": "104.0"
+     },
+     {
+      "name": "UC Santa Barbara",
+      "rk": "102",
+      "AdjEM": "+6.64",
+      "AdjO": "111.3",
+      "AdjD": "104.7"
+     },
+     {
+      "name": "Grand Canyon",
+      "rk": "109",
+      "AdjEM": "+5.99",
+      "AdjO": "112.3",
+      "AdjD": "106.3"
+     },
+     {
+      "name": "Montana St.",
+      "rk": "110",
+      "AdjEM": "+5.75",
+      "AdjO": "105.4",
+      "AdjD": "99.6"
+     },
+     {
+      "name": "Princeton",
+      "rk": "112",
+      "AdjEM": "+5.57",
+      "AdjO": "109.1",
+      "AdjD": "103.5"
+     },
+     {
+      "name": "Vermont",
+      "rk": "113",
+      "AdjEM": "+5.42",
+      "AdjO": "109.8",
+      "AdjD": "104.4"
+     },
+     {
+      "name": "Colgate",
+      "rk": "114",
+      "AdjEM": "+5.29",
+      "AdjO": "113.0",
+      "AdjD": "107.7"
+     },
+     {
+      "name": "Kennesaw St.",
+      "rk": "127",
+      "AdjEM": "+3.64",
+      "AdjO": "106.3",
+      "AdjD": "102.7"
+     },
+     {
+      "name": "UNC Asheville",
+      "rk": "146",
+      "AdjEM": "+1.51",
+      "AdjO": "104.1",
+      "AdjD": "102.6"
+     },
+     {
+      "name": "Northern Kentucky",
+      "rk": "161",
+      "AdjEM": "+0.52",
+      "AdjO": "103.3",
+      "AdjD": "102.8"
+     },
+     {
+      "name": "Texas A&M Corpus Chris",
+      "rk": "170",
+      "AdjEM": "-0.23",
+      "AdjO": "107.4",
+      "AdjD": "107.6"
+     },
+     {
+      "name": "Howard",
+      "rk": "215",
+      "AdjEM": "-3.21",
+      "AdjO": "103.7",
+      "AdjD": "106.9"
+     },
+     {
+      "name": "Southeast Missouri St.",
+      "rk": "257",
+      "AdjEM": "-7.21",
+      "AdjO": "100.9",
+      "AdjD": "108.1"
+     },
+     {
+      "name": "Texas Southern",
+      "rk": "285",
+      "AdjEM": "-9.71",
+      "AdjO": "96.5",
+      "AdjD": "106.2"
+     },
+     {
+      "name": "Fairleigh Dickinson",
+      "rk": "312",
+      "AdjEM": "-12.25",
+      "AdjO": "106.2",
+      "AdjD": "118.4"
+     }
+    ]
+   }
