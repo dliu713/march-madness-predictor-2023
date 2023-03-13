@@ -1,0 +1,125 @@
+Wooden
+
+Zach Edey C Purdue
+Trayce Jackson-Davis F Indiana
+Jaime Jaquez Jr. G/F UCLA
+Keyontae Johnson F Kansas State
+Mike Miles Jr. G TCU
+Brandon Miller F Alabama
+Kris Murray F Iowa
+Jalen Pickett G Penn St
+Marcus Sasser G Houston
+Drew Timme F Gonzaga
+Oscar Tshiebwe F Kentucky
+Azuolas Tubelis F Arizona
+Jalen Wilson F Kansas
+Isaiah Wong G Miami FL
+
+NBA Prospects
+
+Facts/Things to Know/Notes/Bias: https://www.espn.com/mens-college-basketball/story/_/id/35719396/2023-march-madness-bracket-facts-men-ncaa-tournament
+12.7 upsets per tournament (12-13)
+6.1 upsets in the first round (7)
+3.6 upsets in second round (3-4)
+Sweet 16 1.7 (2)
+Most common first round upsets: 10 over 7, 11 over 6, 12 over 5, 13 over 4, 14 over 3
+Most common second round upsets: 6 over 3, 7 over 2, 10 over 2, 11 over 3, 8 over 1, 12 over 4
+
+1st and 2nd:
+Furman will lose
+Marquette is shaky
+Gonzaga won't lose in first round
+Conference USA and MAC have early success
+1 Top 4 seed loses in the first round
+At least 1 first four team always makes it to at least the second round
+If a 14 beats a 3, the 3 is Big 12 team
+13 over 4 is usually close, pick at least 1 13 over 4
+At least one 2 and one 3 seed will lose in second round
+11 seed makes it out of the first round
+At least one 12 over 5
+Never been three straight 15 over 2 upsets
+Teams finished 4 games under .500 don't get upset in first round
+3 seeds beat 6 seeds but lose to 11 seeds in 2nd round
+Auburn is 10-0 in first round
+
+Sweet 16 and Elite 8:
+At least one ACC team in sweet 16
+At least one SEC elite 8 team
+Pick one double digit seed in the sweet 16, usually an 11 seed
+Mountain West never reaches elite 8
+At least two teams seeded 6 or worse reach the elite 8
+6 seeds don’t make the final four, much less the sweet 16
+
+Final Four:
+Arizona is rare
+Xavier won't make it
+3 consecutive final fours with a 3 seed
+A 7 or lower seed always makes the final four (target 8 seed?)
+2 one seeds make the final four
+Teams that are a top 2 seed and top 10 ranked but were unranked entering the season don't reach final four (Purdue, Marquette)
+
+Championship:
+5-seeds have never won a championship (Duke, Miami FL, Saint Mary's, San Diego St)
+1 seed wins the championship (Houston, Alabama, Purdue, Kansas)
+Best team curse (Alabama historically sketchy too)
+No loser of first game in conference tournament ever wins champ (Baylor, Kansas State)
+Gonzaga sucks
+Need a top 25 kenpom adjO and adjD (Houston, Alabama, Texas, UConn, UCLA, Purdue, Kansas, Creighton, A&M, FAU, Maryland, Memphis)
+Big 10 and Pac 12 suck
+
+Alabama won’t reach final four historically
+Big 12 is strongest conference, been on a historical tear
+Defending champions (Kansas) don’t last long (don't make elite 8)
+Purdue and West Virginia won’t win it all
+Missouri is on four straight first round losses
+When Kansas isn’t a 1 or 2 seed it underwhelms
+Gonzaga will make the sweet 16 at least
+Florida doesn’t lose in the first round
+Creighton has never advanced past the second round
+Colorado has one only 2 games in history
+Clemson usually loses in the first round historically
+BYU struggles in the tourney
+Arkansas is 10-0 in the first round
+
+Potential Cinderellas:
+Colgate – mystery, snipers
+Iona – best coach
+Mount St. Mary’s – clutch
+Oral Roberts – Max Abmas
+UC-Santa Barbara – best mascot
+
+THINGS I LEARNED:
+-	Savage theory holds true – team with one superstar who can get hot will usually upset, Max Abmas, Preston
+-	Go 7 first round upsets
+-	Savages should pretty much always be NBA prospects, unless freakishly athletic or notoriously clutch
+-	KenPom underrated teams are successful
+
+Additional point to system in code
+7 foot+ ^^
+Over 40% from 3 gets %%
+Defensive efficiency rounded to nearest integer rank
+BPI rank
+
+KEY:
+Player Awards/Level:
+Bold = AP All-American/SI Top 50 +1
+Cyan Highlight = NBA Prospect +1
+* = talented athlete +1
+
+Shooting/Size (S/S):
+% = 3-pt shooter (35%+)
+^ = size (6’8”+)
+
+Team/Individual Badges:
+{SAVAGE} = Clutch/savage athleticism badge, +5 points
+{STAR} = Wooden Finalist badge, +5 points
+{SUPERSTAR} = Best Player badge (out of wooden finalists) +10 points
+
+Metrics:
+KenPom = Pomeroy Inverted Rank
+Seed = Inverted Seed
+Prob = FiveThirtyEight probability of winning it all
+
+Boosts:
+Reputation/Program (Rep/Prog) = +10-point boost due to coaching or program reputation
+Fan boost +5

@@ -30,7 +30,7 @@ data = json.load(f)
 # Create a team dictionary
 team_dict = {}
 for team in data["kenpom"]:
-    team_dict[team['name']] = [team['rk'], team['AdjEM'], team["AdjO"], team["AdjD"]]
+    team_dict[team['name']] = [team['rk'], team['AdjEM'], team["AdjO"], team["AdjD"], team["seed"], team["Conf"]]
 
 
 
