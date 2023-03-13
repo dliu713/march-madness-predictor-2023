@@ -3,23 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import json
 import sys
-
-'''
-# URL of the statistics page for the men's basketball team
-url = 'https://www.espn.com/mens-college-basketball/team/stats/_/id/26'
-
-# Optional Meth1: Make a GET request to the URL and get the HTML content
-response = requests.get(url)
-html_content = response.content
-soup = BeautifulSoup(html_content, 'html.parser')
-
-# Meth2: Pandas uses BeautifulSoup under the hood
-dfs = pd.read_html(url)
-
-df = dfs[0].join(dfs[1])
-df[['Name','Team']] = df['Name'].str.extract('^(.*?)([A-Z]+)$', expand=True)
-#print(df)
-'''
+from lxml import etree
 
 # Open json file
 f = open('kenpom.json')
@@ -31,8 +15,6 @@ data = json.load(f)
 team_dict = {}
 for team in data["kenpom"]:
     team_dict[team['name']] = [team['rk'], team['AdjEM'], team["AdjO"], team["AdjD"], team["seed"], team["Conf"]]
-
-
 
 url_dict = {
     '1': 'https://www.espn.com/mens-college-basketball/team/stats/_/id/248',

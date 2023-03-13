@@ -1,0 +1,564 @@
+{
+ "player": [
+  {
+   "name": "Brandon Miller",
+   "url": "https://www.nbadraft.net/players/brandon-miller/",
+   "rank": "3",
+   "height": "6-9",
+   "weight": "200",
+   "position": "SF",
+   "team": "Alabama",
+   "yr": "Fr."
+  },
+  {
+   "name": "Anthony Black",
+   "url": "https://www.nbadraft.net/players/anthony-black/",
+   "rank": "4",
+   "height": "6-7",
+   "weight": "200",
+   "position": "PG/SG",
+   "team": "Arkansas",
+   "yr": "Fr."
+  },
+  {
+   "name": "Gradey Dick",
+   "url": "https://www.nbadraft.net/players/gradey-dick/",
+   "rank": "5",
+   "height": "6-8",
+   "weight": "205",
+   "position": "SG",
+   "team": "Kansas",
+   "yr": "Fr."
+  },
+  {
+   "name": "Kris Murray",
+   "url": "https://www.nbadraft.net/players/kris-murray/",
+   "rank": "6",
+   "height": "6-8",
+   "weight": "220",
+   "position": "SF/PF",
+   "team": "Iowa",
+   "yr": "Jr."
+  },
+  {
+   "name": "Nick Smith",
+   "url": "https://www.nbadraft.net/players/nick-smith/",
+   "rank": "7",
+   "height": "6-5",
+   "weight": "185",
+   "position": "PG/SG",
+   "team": "Arkansas",
+   "yr": "Fr."
+  },
+  {
+   "name": "Jarace Walker",
+   "url": "https://www.nbadraft.net/players/jarace-walker/",
+   "rank": "12",
+   "height": "6-8",
+   "weight": "235",
+   "position": "SF/PF",
+   "team": "Houston",
+   "yr": "Fr."
+  },
+  {
+   "name": "Noah Clowney",
+   "url": "https://www.nbadraft.net/players/noah-clowney/",
+   "rank": "13",
+   "height": "6-10",
+   "weight": "210",
+   "position": "PF",
+   "team": "Alabama",
+   "yr": "Fr."
+  },
+  {
+   "name": "Keyonte George",
+   "url": "https://www.nbadraft.net/players/keyonte-george/",
+   "rank": "14",
+   "height": "6-4",
+   "weight": "185",
+   "position": "SG",
+   "team": "Baylor",
+   "yr": "Fr."
+  },
+  {
+   "name": "Jalen Wilson",
+   "url": "https://www.nbadraft.net/players/jalen-wilson/",
+   "rank": "19",
+   "height": "6-7",
+   "weight": "225",
+   "position": "SF/PF",
+   "team": "Kansas",
+   "yr": "Jr."
+  },
+  {
+   "name": "Terquavion Smith",
+   "url": "https://www.nbadraft.net/players/terquavion-smith/",
+   "rank": "20",
+   "height": "6-4",
+   "weight": "165",
+   "position": "PG/SG",
+   "team": "NC State",
+   "yr": "So."
+  },
+  {
+   "name": "Jordan Hawkins",
+   "url": "https://www.nbadraft.net/players/jordan-hawkins/",
+   "rank": "22",
+   "height": "6-5",
+   "weight": "195",
+   "position": "SG",
+   "team": "UConn",
+   "yr": "So."
+  },
+  {
+   "name": "Cason Wallace",
+   "url": "https://www.nbadraft.net/players/cason-wallace/",
+   "rank": "23",
+   "height": "6-4",
+   "weight": "195",
+   "position": "PG",
+   "team": "Kentucky",
+   "yr": "Fr."
+  },
+  {
+   "name": "Julian Strawther",
+   "url": "https://www.nbadraft.net/players/julian-strawther/",
+   "rank": "24",
+   "height": "6-7",
+   "weight": "205",
+   "position": "SF",
+   "team": "Gonzaga",
+   "yr": "Jr."
+  },
+  {
+   "name": "Tyrese Proctor",
+   "url": "https://www.nbadraft.net/players/tyrese-proctor/",
+   "rank": "25",
+   "height": "6-5",
+   "weight": "175",
+   "position": "PG",
+   "team": "Duke",
+   "yr": "Fr."
+  },
+  {
+   "name": "Trayce Jackson-Davis",
+   "url": "https://www.nbadraft.net/players/trayce-jackson-davis/",
+   "rank": "26",
+   "height": "6-9",
+   "weight": "245",
+   "position": "PF",
+   "team": "Indiana",
+   "yr": "Sr."
+  },
+  {
+   "name": "Ricky Council",
+   "url": "https://www.nbadraft.net/players/ricky-council/",
+   "rank": "28",
+   "height": "6-6",
+   "weight": "205",
+   "position": "SG",
+   "team": "Arkansas",
+   "yr": "Jr."
+  },
+  {
+   "name": "Andre Jackson",
+   "url": "https://www.nbadraft.net/players/andre-jackson/",
+   "rank": "31",
+   "height": "6-6",
+   "weight": "210",
+   "position": "SG/SF",
+   "team": "UConn",
+   "yr": "Jr."
+  },
+  {
+   "name": "Azuolas Tubelis",
+   "url": "https://www.nbadraft.net/players/azuolas-tubelis/",
+   "rank": "32",
+   "height": "6-11",
+   "weight": "245",
+   "position": "PF",
+   "team": "Arizona",
+   "yr": "Jr."
+  },
+  {
+   "name": "Jalen Hood-Schifino",
+   "url": "https://www.nbadraft.net/players/jalen-hood-schifino/",
+   "rank": "33",
+   "height": "6-6",
+   "weight": "215",
+   "position": "PG",
+   "team": "Indiana",
+   "yr": "Fr."
+  },
+  {
+   "name": "Keyontae Johnson",
+   "url": "https://www.nbadraft.net/players/keyontae-johnson/",
+   "rank": "34",
+   "height": "6-6",
+   "weight": "230",
+   "position": "SG/SF",
+   "team": "Kansas State",
+   "yr": "Sr."
+  },
+  {
+   "name": "Dariq Whitehead",
+   "url": "https://www.nbadraft.net/players/dariq-whitehead/",
+   "rank": "35",
+   "height": "6-7",
+   "weight": "220",
+   "position": "SF",
+   "team": "Duke",
+   "yr": "Fr."
+  },
+  {
+   "name": "Coleman Hawkins",
+   "url": "https://www.nbadraft.net/players/coleman-hawkins/",
+   "rank": "36",
+   "height": "6-10",
+   "weight": "225",
+   "position": "PF",
+   "team": "Illinois",
+   "yr": "Jr."
+  },
+  {
+   "name": "Kyle Filipowski",
+   "url": "https://www.nbadraft.net/players/kyle-filipowski/",
+   "rank": "37",
+   "height": "7-0",
+   "weight": "230",
+   "position": "PF",
+   "team": "Duke",
+   "yr": "Fr."
+  },
+  {
+   "name": "Marcus Sasser",
+   "url": "https://www.nbadraft.net/players/marcus-sasser/",
+   "rank": "38",
+   "height": "6-2",
+   "weight": "195",
+   "position": "PG/SG",
+   "team": "Houston",
+   "yr": "Sr."
+  },
+  {
+   "name": "Adam Flagler",
+   "url": "https://www.nbadraft.net/players/adam-flagler/",
+   "rank": "39",
+   "height": "6-3",
+   "weight": "185",
+   "position": "SG",
+   "team": "Baylor",
+   "yr": "Sr."
+  },
+  {
+   "name": "LJ Cryer",
+   "url": "https://www.nbadraft.net/players/lj-cryer/",
+   "rank": "40",
+   "height": "6-1",
+   "weight": "190",
+   "position": "PG",
+   "team": "Baylor",
+   "yr": "Jr."
+  },
+  {
+   "name": "Colby Jones",
+   "url": "https://www.nbadraft.net/players/colby-jones/",
+   "rank": "41",
+   "height": "6-6",
+   "weight": "205",
+   "position": "SG",
+   "team": "Xavier",
+   "yr": "Jr."
+  },
+  {
+   "name": "Terrence Shannon",
+   "url": "https://www.nbadraft.net/players/terrence-shannon/",
+   "rank": "42",
+   "height": "6-6",
+   "weight": "215",
+   "position": "SG",
+   "team": "Illinois",
+   "yr": "Sr."
+  },
+  {
+   "name": "Arthur Kaluma",
+   "url": "https://www.nbadraft.net/players/arthur-kaluma/",
+   "rank": "48",
+   "height": "6-7",
+   "weight": "220",
+   "position": "SF/PF",
+   "team": "Creighton",
+   "yr": "So."
+  },
+  {
+   "name": "Adem Bona",
+   "url": "https://www.nbadraft.net/players/adem-bona/",
+   "rank": "49",
+   "height": "6-11",
+   "weight": "260",
+   "position": "C",
+   "team": "UCLA",
+   "yr": "Fr."
+  },
+  {
+   "name": "Seth Lundy",
+   "url": "https://www.nbadraft.net/players/seth-lundy/",
+   "rank": "50",
+   "height": "6-6",
+   "weight": "220",
+   "position": "SG/SF",
+   "team": "Penn State",
+   "yr": "Sr."
+  },
+  {
+   "name": "Isaiah Wong",
+   "url": "https://www.nbadraft.net/players/isaiah-wong/",
+   "rank": "52",
+   "height": "6-4",
+   "weight": "185",
+   "position": "PG/SG",
+   "team": "Miami",
+   "yr": "Sr."
+  },
+  {
+   "name": "Mark Mitchell",
+   "url": "https://www.nbadraft.net/players/mark-mitchell/",
+   "rank": "53",
+   "height": "6-8",
+   "weight": "220",
+   "position": "SF/PF",
+   "team": "Duke",
+   "yr": "Fr."
+  },
+  {
+   "name": "Aidan Mahaney",
+   "url": "https://www.nbadraft.net/players/aidan-mahaney/",
+   "rank": "55",
+   "height": "6-3",
+   "weight": "190",
+   "position": "PG/SG",
+   "team": "St. Mary's",
+   "yr": "Fr."
+  },
+  {
+   "name": "Dereck Lively",
+   "url": "https://www.nbadraft.net/players/dereck-lively/",
+   "rank": "56",
+   "height": "7-1",
+   "weight": "230",
+   "position": "C",
+   "team": "Duke",
+   "yr": "Fr."
+  },
+  {
+   "name": "Jaime Jaquez",
+   "url": "https://www.nbadraft.net/players/jaime-jaquez/",
+   "rank": "57",
+   "height": "6-7",
+   "weight": "225",
+   "position": "SF",
+   "team": "UCLA",
+   "yr": "Sr."
+  },
+  {
+   "name": "Zach Edey",
+   "url": "https://www.nbadraft.net/players/zach-edey/",
+   "rank": "60",
+   "height": "7-4",
+   "weight": "290",
+   "position": "C",
+   "team": "Purdue",
+   "yr": "Jr."
+  },
+  {
+   "name": "Drew Timme",
+   "url": "https://www.nbadraft.net/players/drew-timme/",
+   "rank": "61",
+   "height": "6-10",
+   "weight": "235",
+   "position": "PF/C",
+   "team": "Gonzaga",
+   "yr": "Sr."
+  },
+  {
+   "name": "Jordan Walsh",
+   "url": "https://www.nbadraft.net/players/jordan-walsh/",
+   "rank": "63",
+   "height": "6-7",
+   "weight": "205",
+   "position": "SF",
+   "team": "Arkansas",
+   "yr": "Fr."
+  },
+  {
+   "name": "Baylor Scheierman",
+   "url": "https://www.nbadraft.net/players/baylor-scheierman/",
+   "rank": "64",
+   "height": "6-7",
+   "weight": "200",
+   "position": "SG",
+   "team": "Creighton",
+   "yr": "Sr."
+  },
+  {
+   "name": "Matthew Mayer",
+   "url": "https://www.nbadraft.net/players/matthew-mayer/",
+   "rank": "65",
+   "height": "6-9",
+   "weight": "225",
+   "position": "SG/SF",
+   "team": "Illinois",
+   "yr": "Sr."
+  },
+  {
+   "name": "Amari Bailey",
+   "url": "https://www.nbadraft.net/players/amari-bailey/",
+   "rank": "67",
+   "height": "6-5",
+   "weight": "185",
+   "position": "PG/SG",
+   "team": "UCLA",
+   "yr": "Fr."
+  },
+  {
+   "name": "Reece Beekman",
+   "url": "https://www.nbadraft.net/players/reece-beekman/",
+   "rank": "69",
+   "height": "6-3",
+   "weight": "180",
+   "position": "PG",
+   "team": "Virginia",
+   "yr": "Jr."
+  },
+  {
+   "name": "Dillon Mitchell",
+   "url": "https://www.nbadraft.net/players/dillon-mitchell/",
+   "rank": "70",
+   "height": "6-8",
+   "weight": "205",
+   "position": "SF",
+   "team": "Texas",
+   "yr": "Fr."
+  },
+  {
+   "name": "Oscar Tshiebwe",
+   "url": "https://www.nbadraft.net/players/oscar-tshiebwe/",
+   "rank": "72",
+   "height": "6-9",
+   "weight": "260",
+   "position": "PF/C",
+   "team": "Kentucky",
+   "yr": "Sr."
+  },
+  {
+   "name": "Julian Phillips",
+   "url": "https://www.nbadraft.net/players/julian-phillips/",
+   "rank": "77",
+   "height": "6-8",
+   "weight": "200",
+   "position": "SF",
+   "team": "Tennessee",
+   "yr": "Fr."
+  },
+  {
+   "name": "Chris Livingston",
+   "url": "https://www.nbadraft.net/players/chris-livingston/",
+   "rank": "78",
+   "height": "6-6",
+   "weight": "220",
+   "position": "SF/PF",
+   "team": "Kentucky",
+   "yr": "Fr."
+  },
+  {
+   "name": "Trey Alexander",
+   "url": "https://www.nbadraft.net/players/trey-alexander/",
+   "rank": "79",
+   "height": "6-4",
+   "weight": "185",
+   "position": "SG",
+   "team": "Creighton",
+   "yr": "So."
+  },
+  {
+   "name": "Jaylen Clark",
+   "url": "https://www.nbadraft.net/players/jaylen-clark/",
+   "rank": "80",
+   "height": "6-5",
+   "weight": "210",
+   "position": "SG",
+   "team": "UCLA",
+   "yr": "Jr."
+  },
+  {
+   "name": "Tramon Mark",
+   "url": "https://www.nbadraft.net/players/tramon-mark/",
+   "rank": "82",
+   "height": "6-5",
+   "weight": "195",
+   "position": "SG",
+   "team": "Houston",
+   "yr": "So."
+  },
+  {
+   "name": "Tyrese Hunter",
+   "url": "https://www.nbadraft.net/players/tyrese-hunter/",
+   "rank": "84",
+   "height": "6-0",
+   "weight": "175",
+   "position": "PG",
+   "team": "Texas",
+   "yr": "So."
+  },
+  {
+   "name": "Jaden Bradley",
+   "url": "https://www.nbadraft.net/players/jaden-bradley/",
+   "rank": "88",
+   "height": "6-3",
+   "weight": "185",
+   "position": "PG",
+   "team": "Alabama",
+   "yr": "Fr."
+  },
+  {
+   "name": "Frankie Collins",
+   "url": "https://www.nbadraft.net/players/frankie-collins/",
+   "rank": "89",
+   "height": "6-1",
+   "weight": "185",
+   "position": "PG",
+   "team": "Arizona St.",
+   "yr": "So."
+  },
+  {
+   "name": "Tre Mitchell",
+   "url": "https://www.nbadraft.net/players/tre-mitchell/",
+   "rank": "92",
+   "height": "6-9",
+   "weight": "225",
+   "position": "PF",
+   "team": "West Virginia",
+   "yr": "Sr."
+  },
+  {
+   "name": "Henri Veesaar",
+   "url": "https://www.nbadraft.net/players/henri-veesaar/",
+   "rank": "98",
+   "height": "7-0",
+   "weight": "200",
+   "position": "PF",
+   "team": "Arizona",
+   "yr": "Fr."
+  },
+  {
+   "name": "Jahvon Quinerly",
+   "url": "https://www.nbadraft.net/players/jahvon-quinerly/",
+   "rank": "100",
+   "height": "6-1",
+   "weight": "175",
+   "position": "PG",
+   "team": "Alabama",
+   "yr": "Sr."
+  }
+ ]
+}

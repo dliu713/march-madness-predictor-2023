@@ -15,7 +15,7 @@ Azuolas Tubelis F Arizona
 Jalen Wilson F Kansas
 Isaiah Wong G Miami FL
 
-NBA Prospects
+NBA Prospect Data and Kenpom data compiled using combination of ParseHub and manual scraping
 
 Facts/Things to Know/Notes/Bias: https://www.espn.com/mens-college-basketball/story/_/id/35719396/2023-march-madness-bracket-facts-men-ncaa-tournament
 12.7 upsets per tournament (12-13)
@@ -31,18 +31,19 @@ Marquette is shaky
 Gonzaga won't lose in first round
 Conference USA and MAC have early success
 1 Top 4 seed loses in the first round
-At least 1 first four team always makes it to at least the second round
-If a 14 beats a 3, the 3 is Big 12 team
+At least 1 first four team always makes it to at least the second round (Miss St, Pitt, Arizona St, Nevada)
+If a 14 beats a 3, the 3 is Big 12 team (Baylor, Kansas St)
 13 over 4 is usually close, pick at least 1 13 over 4
 At least one 2 and one 3 seed will lose in second round
 11 seed makes it out of the first round
 At least one 12 over 5
 Never been three straight 15 over 2 upsets
-Teams finished 4 games under .500 don't get upset in first round
+Teams finished 4 games under .500 don't lose in first round (West Virginia)
 3 seeds beat 6 seeds but lose to 11 seeds in 2nd round
 Auburn is 10-0 in first round
 
 Sweet 16 and Elite 8:
+Defending champions (Kansas) don’t last long (don't make elite 8)
 At least one ACC team in sweet 16
 At least one SEC elite 8 team
 Pick one double digit seed in the sweet 16, usually an 11 seed
@@ -65,11 +66,8 @@ Best team curse (Alabama historically sketchy too)
 No loser of first game in conference tournament ever wins champ (Baylor, Kansas State)
 Gonzaga sucks
 Need a top 25 kenpom adjO and adjD (Houston, Alabama, Texas, UConn, UCLA, Purdue, Kansas, Creighton, A&M, FAU, Maryland, Memphis)
-Big 10 and Pac 12 suck
 
-Alabama won’t reach final four historically
-Big 12 is strongest conference, been on a historical tear
-Defending champions (Kansas) don’t last long (don't make elite 8)
+Big 12 is strongest conference, been on a historical tear (target Texas to go far?)
 Purdue and West Virginia won’t win it all
 Missouri is on four straight first round losses
 When Kansas isn’t a 1 or 2 seed it underwhelms
@@ -123,3 +121,5 @@ Prob = FiveThirtyEight probability of winning it all
 Boosts:
 Reputation/Program (Rep/Prog) = +10-point boost due to coaching or program reputation
 Fan boost +5
+
+Create instance of a team class and perform functions on it
