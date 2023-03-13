@@ -82,9 +82,21 @@ Arkansas is 10-0 in the first round
 Potential Cinderellas:
 Colgate – mystery, snipers
 Iona – best coach
-Mount St. Mary’s – clutch
+Providence
 Oral Roberts – Max Abmas
 UC-Santa Barbara – best mascot
+
+Upset Alert First round
+Utah St
+Boise St
+MSU/Pitt
+Drake
+VCU
+Penn St
+USC
+Providence
+Charleston
+ASU/Nevada
 
 THINGS I LEARNED:
 -	Savage theory holds true – team with one superstar who can get hot will usually upset, Max Abmas, Preston
@@ -123,3 +135,11 @@ Reputation/Program (Rep/Prog) = +10-point boost due to coaching or program reput
 Fan boost +5
 
 Create instance of a team class and perform functions on it
+
+Data Curation:
+NBA prospects
+kenpom
+espn
+FiveThirtyEight
+savages/wooden/cinderella/coaches
+ESPN facts/trend_bias

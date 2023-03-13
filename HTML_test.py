@@ -21,7 +21,6 @@ def get_nba_attr(url):
             ele = dom.xpath(f'//*[@id="content"]/div[1]/div[1]/div/div/div/div/div[1]/div[3]/div[1]/div/div/div[{i}]/div[{j}]')[0].text
             ele_list.append(ele)
 
-    print(ele_list)
     attr_dict = {}
     for i in range(len(ele_list)):
         if ele_list[i] != ' NA':
