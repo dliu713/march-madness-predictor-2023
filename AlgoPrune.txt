@@ -137,9 +137,9 @@ Fan boost +5
 Create instance of a team class and perform functions on it
 
 Data Curation:
-NBA prospects
-kenpom
-espn
+NBA prospects*
+kenpom*
+espn*
 FiveThirtyEight
 savages/wooden/cinderella/coaches
 ESPN facts/trend_bias

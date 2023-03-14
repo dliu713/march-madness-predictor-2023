@@ -1,7 +1,11 @@
 import sys
-import requests
 import os
+from scraper import team_dict
 
+for team_rk, team_list in team_dict.items():
+    for i in team_list
+
+'''
 class Team:
     def __init__(self, player):
         self.player
@@ -17,4 +21,4 @@ class Player:
         self.ftp
 
 if __name__ == '__main__':
-
+'''
