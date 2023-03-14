@@ -133,22 +133,22 @@ nbaprospects.json (scrape NBADraft.net w/ParseHub)
 
 Final sim:
 
-{'Alabama': 'Texas A&M Corpus Chris', 'Maryland': 'Southeast Missouri St.', 'San Diego St.': 'West Virginia', 'Virginia': 'Charleston', 'Creighton': 'Furman', 'Baylor': 'N.C. State', 'Missouri': 'UC Santa Barbara', 'Arizona': 'Utah St.'}
-['Alabama', 'Maryland', 'West Virginia', 'Virginia', 'Creighton', 'N.C. State', 'Missouri', 'Utah St.']
-['Alabama', 'West Virginia', 'N.C. State', 'Utah St.']
-['Alabama', 'N.C. State']
+{'Alabama': 'Texas A&M Corpus Chris', 'Maryland': 'West Virginia', 'San Diego St.': 'Charleston', 'Virginia': 'Furman', 'Creighton': 'N.C. State', 'Baylor': 'UC Santa Barbara', 'Missouri': 'Utah St.', 'Arizona': 'Princeton'}
+['Alabama', 'West Virginia', 'Charleston', 'Virginia', 'Creighton', 'Baylor', 'Missouri', 'Princeton']
+['Alabama', 'Charleston', 'Baylor', 'Princeton']
+['Alabama', 'Baylor']
 Alabama
-{'Houston': 'Northern Kentucky', 'Iowa': 'Auburn', 'Miami FL': 'Drake', 'Indiana': 'Kent St.', 'Iowa St.': 'Mississippi St.', 'Xavier': 'Pittsburgh', 'Texas A&M': 'Kennesaw St.', 'Texas': 'Penn St.'}
-['Houston', 'Auburn', 'Miami FL', 'Kent St.', 'Mississippi St.', 'Xavier', 'Texas A&M', 'Penn St.']
-['Houston', 'Miami FL', 'Mississippi St.', 'Penn St.']
-['Houston', 'Mississippi St.']
+{'Houston': 'Northern Kentucky', 'Iowa': 'Auburn', 'Miami FL': 'Drake', 'Indiana': 'Kent St.', 'Iowa St.': 'Mississippi St.', 'Xavier': 'Kennesaw St.', 'Texas A&M': 'Penn St.', 'Texas': 'Colgate'}
+['Houston', 'Auburn', 'Drake', 'Indiana', 'Iowa St.', 'Kennesaw St.', 'Texas A&M', 'Texas']
+['Houston', 'Indiana', 'Iowa St.', 'Texas']
+['Houston', 'Iowa St.']
 Houston
-{'Purdue': 'Texas Southern', 'Memphis': 'Fairleigh Dickinson', 'Duke': 'Florida Atlantic', 'Tennessee': 'Oral Roberts', 'Kentucky': 'Louisiana', 'Kansas St.': 'Providence', 'Michigan St.': 'Montana St.', 'Marquette': 'USC'}
-['Purdue', 'Memphis', 'Duke', 'Tennessee', 'Kentucky', 'Providence', 'Montana St.', 'Marquette']
-['Memphis', 'Duke', 'Providence', 'Montana St.']
-['Memphis', 'Montana St.']
-Montana St.
-{'Kansas': 'Howard', 'Arkansas': 'Illinois', "Saint Mary's": 'VCU', 'Connecticut': 'Iona', 'TCU': 'Nevada', 'Gonzaga': 'Arizona St.', 'Northwestern': 'Grand Canyon', 'UCLA': 'Boise St.'}
+{'Purdue': 'Texas Southern', 'Memphis': 'Florida Atlantic', 'Duke': 'Oral Roberts', 'Tennessee': 'Louisiana', 'Kentucky': 'Providence', 'Kansas St.': 'Montana St.', 'Michigan St.': 'USC', 'Marquette': 'Vermont'}
+['Purdue', 'Memphis', 'Duke', 'Louisiana', 'Providence', 'Kansas St.', 'Michigan St.', 'Marquette']
+['Memphis', 'Louisiana', 'Providence', 'Michigan St.']
+['Louisiana', 'Providence']
+Providence
+{'Kansas': 'Howard', 'Arkansas': 'Illinois', "Saint Mary's": 'VCU', 'Connecticut': 'Iona', 'TCU': 'Nevada', 'Gonzaga': 'Grand Canyon', 'Northwestern': 'Boise St.', 'UCLA': 'UNC Asheville'}
 ['Kansas', 'Arkansas', "Saint Mary's", 'Connecticut', 'TCU', 'Gonzaga', 'Northwestern', 'UCLA']
 ['Arkansas', "Saint Mary's", 'TCU', 'Northwestern']
 ['Arkansas', 'Northwestern']

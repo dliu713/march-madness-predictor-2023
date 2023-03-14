@@ -105,12 +105,15 @@ def road_to_ff_sim(data, region, upset_count_dict):
         game = [team1.name, team2.name]
         count1 = 0
         count2 = 0
-        for i in range(7):
+        run = True
+        while(run):
             winner = random.choices(game, weights=(weight1, weight2), k=2)
             if winner[0] == team1.name and winner[1] == team1.name:
                 count1+=1
+                run=False
             elif winner[0] == team2.name and winner[1] == team2.name:
                 count2+=1
+                run=False
         
         # FINAL BIAS METRICS
         # Team trends
@@ -192,12 +195,15 @@ def road_to_ff_sim(data, region, upset_count_dict):
         # game sim
         count1 = 0
         count2 = 0
-        for i in range(7):
+        run = True
+        while(run):
             winner = random.choices(game, weights=(weight1, weight2), k=2)
             if winner[0] == team1.name and winner[1] == team1.name:
                 count1+=1
+                run = False
             elif winner[0] == team2.name and winner[1] == team2.name:
                 count2+=1
+                run = False
 
         # FINAL BIAS METRICS
         # Track upsets and pick winners
@@ -258,12 +264,15 @@ def road_to_ff_sim(data, region, upset_count_dict):
         # game sim
         count1 = 0
         count2 = 0
-        for i in range(7):
+        run=True
+        while(run):
             winner = random.choices(game, weights=(weight1, weight2), k=2)
             if winner[0] == team1.name and winner[1] == team1.name:
                 count1+=1
+                run=False
             elif winner[0] == team2.name and winner[1] == team2.name:
                 count2+=1
+                run=False
         
         # FINAL BIAS METRICS
         # Track upsets and pick winners
@@ -319,12 +328,15 @@ def road_to_ff_sim(data, region, upset_count_dict):
     # game sim
     count1 = 0
     count2 = 0
-    for i in range(7):
-        winner = random.choices(game, weights=(team1.score, team2.score), k=2)
+    run=True
+    while(run):
+        winner = random.choices(game, weights=(weight1, weight2), k=2)
         if winner[0] == team1.name and winner[1] == team1.name:
             count1+=1
+            run=False
         elif winner[0] == team2.name and winner[1] == team2.name:
             count2+=1
+            run=False
 
     # FINAL TRENDS
     if team1.name == 'Xavier' or team1.name == 'Purdue' or team1.name == 'Marquette':
@@ -356,21 +368,27 @@ def final_four_sim(data, south, midwest, east, west):
     # leftgame sim
     count1 = 0
     count2 = 0
-    for i in range(7):
+    run=True
+    while(run):
         winner = random.choices(left_game, weights=(weight1, weight2), k=2)
         if winner[0] == team1.name and winner[1] == team1.name:
             count1+=1
+            run=False
         elif winner[0] == team2.name and winner[1] == team2.name:
             count2+=1
+            run=False
     # rightgame sim
     count3 = 0
     count4 = 0
-    for i in range(7):
+    run= True
+    while(run):
         winner = random.choices(right_game, weights=(weight3, weight4), k=2)
         if winner[0] == team3.name and winner[1] == team3.name:
             count3+=1
+            run=False
         elif winner[0] == team4.name and winner[1] == team4.name:
             count4+=1
+            run=False
     
      # FINAL TRENDS
     if count1 > count2:
@@ -398,12 +416,15 @@ def final_four_sim(data, south, midwest, east, west):
     # game sim
     count1 = 0
     count2 = 0
-    for i in range(7):
+    run=True
+    while(run):
         winner = random.choices(game, weights=(weight1, weight2), k=2)
         if winner[0] == team1.name and winner[1] == team1.name:
             count1+=1
+            run = False
         elif winner[0] == team2.name and winner[1] == team2.name:
             count2+=1
+            run =False
     #FINAL
 
     if count1 > count2:
