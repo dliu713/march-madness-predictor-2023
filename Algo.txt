@@ -26,12 +26,16 @@ Never been three straight 15 over 2 upsets
 Teams finished 4 games under .500 don't lose in first round (West Virginia)
 3 seeds beat 6 seeds but lose to 11 seeds in 2nd round
 Auburn is 10-0 in first round
+At least one ACC team in sweet 16
+Pick one double digit seed in the sweet 16, usually an 11 seed
+Missouri is on four straight first round losses
+Creighton has never advanced past the second round
+Gonzaga will make the sweet 16 at least
+Arkansas is 10-0 in the first round
 
 Sweet 16 and Elite 8:
 Defending champions (Kansas) don’t last long (don't make elite 8)
-At least one ACC team in sweet 16
 At least one SEC elite 8 team
-Pick one double digit seed in the sweet 16, usually an 11 seed
 Mountain West never reaches elite 8
 At least two teams seeded 6 or worse reach the elite 8
 6 seeds don’t make the final four, much less the sweet 16
@@ -51,18 +55,10 @@ Best team curse (Alabama historically sketchy too)
 No loser of first game in conference tournament ever wins champ (Baylor, Kansas State)
 Gonzaga sucks
 Need a top 25 kenpom adjO and adjD (Houston, Alabama, Texas, UConn, UCLA, Purdue, Kansas, Creighton, A&M, FAU, Maryland, Memphis)
+Purdue and West Virginia won’t win it all
 
 Big 12 is strongest conference, been on a historical tear (target Texas to go far?)
-Purdue and West Virginia won’t win it all
-Missouri is on four straight first round losses
-When Kansas isn’t a 1 or 2 seed it underwhelms
-Gonzaga will make the sweet 16 at least
-Florida doesn’t lose in the first round
-Creighton has never advanced past the second round
-Colorado has one only 2 games in history
-Clemson usually loses in the first round historically
-BYU struggles in the tourney
-Arkansas is 10-0 in the first round
+Colorado has won only 2 games in history
 
 Potential Cinderellas:
 Colgate – mystery, snipers
@@ -134,3 +130,28 @@ kenpom.json (scrape kenpom.json using ParseHub)
 wooden (manually change list)
 fivethirtyeight.json (download and manually string match team names with kenpom)
 nbaprospects.json (scrape NBADraft.net w/ParseHub)
+
+Final sim:
+
+{'Alabama': 'Texas A&M Corpus Chris', 'Maryland': 'Southeast Missouri St.', 'San Diego St.': 'West Virginia', 'Virginia': 'Charleston', 'Creighton': 'Furman', 'Baylor': 'N.C. State', 'Missouri': 'UC Santa Barbara', 'Arizona': 'Utah St.'}
+['Alabama', 'Maryland', 'West Virginia', 'Virginia', 'Creighton', 'N.C. State', 'Missouri', 'Utah St.']
+['Alabama', 'West Virginia', 'N.C. State', 'Utah St.']
+['Alabama', 'N.C. State']
+Alabama
+{'Houston': 'Northern Kentucky', 'Iowa': 'Auburn', 'Miami FL': 'Drake', 'Indiana': 'Kent St.', 'Iowa St.': 'Mississippi St.', 'Xavier': 'Pittsburgh', 'Texas A&M': 'Kennesaw St.', 'Texas': 'Penn St.'}
+['Houston', 'Auburn', 'Miami FL', 'Kent St.', 'Mississippi St.', 'Xavier', 'Texas A&M', 'Penn St.']
+['Houston', 'Miami FL', 'Mississippi St.', 'Penn St.']
+['Houston', 'Mississippi St.']
+Houston
+{'Purdue': 'Texas Southern', 'Memphis': 'Fairleigh Dickinson', 'Duke': 'Florida Atlantic', 'Tennessee': 'Oral Roberts', 'Kentucky': 'Louisiana', 'Kansas St.': 'Providence', 'Michigan St.': 'Montana St.', 'Marquette': 'USC'}
+['Purdue', 'Memphis', 'Duke', 'Tennessee', 'Kentucky', 'Providence', 'Montana St.', 'Marquette']
+['Memphis', 'Duke', 'Providence', 'Montana St.']
+['Memphis', 'Montana St.']
+Montana St.
+{'Kansas': 'Howard', 'Arkansas': 'Illinois', "Saint Mary's": 'VCU', 'Connecticut': 'Iona', 'TCU': 'Nevada', 'Gonzaga': 'Arizona St.', 'Northwestern': 'Grand Canyon', 'UCLA': 'Boise St.'}
+['Kansas', 'Arkansas', "Saint Mary's", 'Connecticut', 'TCU', 'Gonzaga', 'Northwestern', 'UCLA']
+['Arkansas', "Saint Mary's", 'TCU', 'Northwestern']
+['Arkansas', 'Northwestern']
+Arkansas
+['Alabama', 'Houston']
+Houston

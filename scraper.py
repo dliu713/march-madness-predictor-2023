@@ -239,6 +239,9 @@ if __name__ == '__main__':
     
     for team, stats in team_dict.items():
         stats['score'] += ((float(stats['AdjD'])/10) + (float(stats['AdjO'])/10) + ((float(stats['AdjEM']) + 100)/10) + (stats['prob']*100))
+        if team == 'Providence' or team == 'Oral Roberts':
+            cinderella_boost = 20
+            stats['score']+=cinderella_boost
         for player, attributes in stats['roster'].items():
             if (player in savage_list and float(attributes['3p%']) >= 33.5) or int(attributes['Athleticism'])>=8 or int(attributes['Jump Shot'])>=7:
                 stats['score'] += 5
