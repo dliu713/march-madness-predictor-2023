@@ -117,6 +117,9 @@ def road_to_ff_sim(data, region, upset_count_dict):
         if upset_count_dict['64'] > 6 or upset_count_dict['total'] > 12:
             round_32.append(team1.name)
             continue
+        elif team1.seed == '1':
+            round_32.append(team1.name)
+            continue
         elif team2.name == 'Auburn':
             round_32.append(team2.name)
             continue
