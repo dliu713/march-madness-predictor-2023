@@ -6,9 +6,7 @@ import sys
 from lxml import etree
 import os
 import pprint
-from manual_ds import espn_url_dict as url_dict
-from manual_ds import wooden
-
+from create_ds import wooden
 pp = pprint.PrettyPrinter(indent=4)
 
 def scrape_espn(url_dict):
@@ -18,20 +16,20 @@ def scrape_espn(url_dict):
         df = dfs[0].join(dfs[1])
         df[['Name','Team']] = df['Name'].str.extract('^(.*?)([A-Z]+)$', expand=True)
         for i in range(len(df.index)):
-            df['Kenpom'] = key
+            df['id'] = key
 
         data = df.iloc[:-1]  # remove the last row which contains totals
         dictionary = {}
         for i, row in data.iterrows():
             dictionary[row['Name'].strip()] = {
-                'gp': row['GP'], 
-                'min': row['MIN'], 
-                'pts': row['PTS'], 
-                'reb': row['REB'], 
-                'ft%': row['FT%'], 
-                '3p%': row['3P%'], 
-                'pos': row['Team'], 
-                'kenpom': row['Kenpom']
+                'gp': row['GP'],
+                'min': row['MIN'],
+                'pts': row['PTS'],
+                'reb': row['REB'],
+                'ft%': row['FT%'],
+                '3p%': row['3P%'],
+                'pos': row['Team'],
+                'id': row['id']
             }
         espn_player_dict.update(dictionary)
 
@@ -60,71 +58,85 @@ def get_nba_attr(url):
     #print(attr_dict)
     return attr_dict
 
-# Open json file
-f = open('kenpom.json')
+def create_nba_dict():
+    # Load NBA Prospect json
+    f = open('nba_prospects.json')
+    data = json.load(f)
+    nba_dict = {}
+    for player in data['player']:
+        nba_dict[player['name']] = [player['url'], player['rank'], player['height'], player['position'], player['team'], player["yr"]]
 
-# Returns json object as a dictionary
-data = json.load(f)
+    # Create NBA Prospect dictionary
+    for player, val in nba_dict.items():
+        url = val[0]
+        attr_dict = get_nba_attr(url)
+        attr_dict['stock'] = val[1]
+        attr_dict['height'] = val[2]
+        attr_dict['position'] = val[3]
+        attr_dict['team'] = val[4]
+        attr_dict['yr'] = val[5]
+        nba_dict[player] = attr_dict
+    
+    #pp.pprint(nba_dict)
+    return nba_dict
 
-# Create a team dictionary (or instances?)
-team_dict = {}
-for team in data["kenpom"]:
-    team_dict[team['rk']] = {
-        "name": team['name'], 
-        "AdjEM": team['AdjEM'], 
-        "AdjO": team["AdjO"], 
-        "AdjD": team["AdjD"], 
-        "seed": team["seed"], 
-        "Conf": team["Conf"]
-    }
-#pp.pprint(team_dict)
+def FiveThirtyEight():
+    # Load FiveThirtyEight json
+    # manually edit fivethirtyeight.json to match kenpom.json (all State to St., etc)
+    f = open('fivethirtyeight.json')
+    data = json.load(f)
+    probs_dict = {}
+    for team in data:
+        probs_dict[team["team_id"]] = [team["team_name"], team["rd7_win"]]
+    #pp.pprint(probs_dict)
+    return probs_dict
 
-# Scrape ESPN
-espn_player_dict = scrape_espn(url_dict)
-#pp.pprint(espn_player_dict)
+def create_espn_urls(probs_dict):
+    url_dict = {}
+    for id, val in probs_dict.items():
+        url_dict.update({id: f'https://www.espn.com/mens-college-basketball/team/stats/_/id/{id}'})
+    #pp.pprint(url_dict)
+    return url_dict
 
-# Load NBA Prospect json
-f = open('nba_prospects.json')
-data = json.load(f)
-nba_dict = {}
-for player in data['player']:
-    nba_dict[player['name']] = [player['url'], player['rank'], player['height'], player['position'], player['team'], player["yr"]]
+def create_team_dict(probs_dict):
+    # Open json file
+    f = open('kenpom.json')
 
-# Create NBA Prospect dictionary
-for player, val in nba_dict.items():
-    url = val[0]
-    attr_dict = get_nba_attr(url)
-    attr_dict['stock'] = val[1]
-    attr_dict['height'] = val[2]
-    attr_dict['position'] = val[3]
-    attr_dict['team'] = val[4]
-    attr_dict['yr'] = val[5]
-    nba_dict[player] = attr_dict
+    # Returns json object as a dictionary
+    data = json.load(f)
 
-#pp.pprint(nba_dict)
+    # Create a team dictionary (or instances?)
+    team_dict = {}
+    for team in data["kenpom"]:
+        team_dict[team['name']] = {
+            "rk": team['rk'],
+            "AdjEM": team['AdjEM'],
+            "AdjO": team["AdjO"],
+            "AdjD": team["AdjD"],
+            "seed": team["seed"],
+            "Conf": team["Conf"],
+            "roster": {}
+        }
 
-# Load FiveThirtyEight json
-f = open('fivethirtyeight.json')
-data = json.load(f)
-probs_dict = {}
-for team in data:
-    probs_dict[team["team_id"]] = [team["team_name"], team["rd7_win"]]
-#pp.pprint(probs_dict)
+    for id, val in probs_dict.items():
+        team_dict[val[0]].update({"id": id})
+    #pp.pprint(team_dict)
+    return team_dict
 
-# Construct final team data structure
-for player, attrs in nba_dict.items():
-    espn_player_dict[player].update(attrs)
+# Scrape ESPN and create espn_dict
+def create_espn_dict(url_dict, probs_dict, nba_dict):
+    espn_player_dict = scrape_espn(url_dict)
 
-for player, val in espn_player_dict.items():
-    team_dict[val['kenpom']].update({player: val})
-pp.pprint(team_dict)
+    for player, attrs in espn_player_dict.items():
+        for id, team in probs_dict.items():
+            if attrs["id"] == id:
+                espn_player_dict[player].update({"tm_name": team[0]})
+    
+    for player in wooden:
+        espn_player_dict[player].update({"Wooden": "yes"})
+    
+    for player, attrs in nba_dict.items():
+        espn_player_dict[player].update(attrs)
+    #pp.pprint(espn_player_dict)
+    return espn_player_dict
 
-# Acquire bias data structures
-savage_bias = []
-for key, val in nba_dict.items():
-    if val['Athleticism'] != 'NA' and val['Jump Shot'] != 'NA':
-        if int(val['Athleticism']) >= 8 and int(val['Jump Shot']) >= 7:
-            savage_bias.append(key)
-#print(savage_bias)
-
-# datasets: espn_player_dict, probs_dict, nba_dict, team_dict, savage_bias, wooden
