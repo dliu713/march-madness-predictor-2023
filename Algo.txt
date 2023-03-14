@@ -1,19 +1,4 @@
-Wooden
 
-Zach Edey C Purdue
-Trayce Jackson-Davis F Indiana
-Jaime Jaquez Jr. G/F UCLA
-Keyontae Johnson F Kansas State
-Mike Miles Jr. G TCU
-Brandon Miller F Alabama
-Kris Murray F Iowa
-Jalen Pickett G Penn St
-Marcus Sasser G Houston
-Drew Timme F Gonzaga
-Oscar Tshiebwe F Kentucky
-Azuolas Tubelis F Arizona
-Jalen Wilson F Kansas
-Isaiah Wong G Miami FL
 
 NBA Prospect Data and Kenpom data compiled using combination of ParseHub and manual scraping
 
@@ -143,3 +128,9 @@ espn*
 FiveThirtyEight
 savages/wooden/cinderella/coaches
 ESPN facts/trend_bias
+
+Necessary files for reset:
+kenpom.json (scrape kenpom.json using ParseHub)
+wooden (manually change list)
+fivethirtyeight.json (download and manually string match team names with kenpom)
+nbaprospects.json (scrape NBADraft.net w/ParseHub)

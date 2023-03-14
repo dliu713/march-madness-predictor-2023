@@ -1,40 +1,55 @@
 import sys
 import os
+import json
 import pprint
 from scraper import *
 pp = pprint.PrettyPrinter(indent=4)
 
-if __name__ == '__main__': 
-    # Construct final team data structure
-    nba_dict = create_nba_dict()
-    probs_dict = FiveThirtyEight()
-    url_dict = create_espn_urls(probs_dict)
-    team_dict = create_team_dict(probs_dict)
-    espn_dict = create_espn_dict(url_dict, probs_dict, nba_dict)
-
-    for player, val in espn_dict.items():
-        team_dict[val['tm_name']]["roster"].update({player: val})
-    
-# dataset composition: espn_player_dict, probs_dict, nba_dict, team_dict, wooden
-# Acquire bias data structures
-
-#for team_rk, team_list in team_dict.items():
-    #for i in team_list
-
-'''
 class Team:
-    def __init__(self, player):
-        self.player
+    def __init__(self, name: str, data: dict):
+        self.name = name
+        self.id = data[name]['id']
+        self.seed = data[name]['seed']
+        self.kprk = data[name]['rk']
+        self.conf = data[name]['Conf']
+        self.AdjEM = data[name]['AdjEM']
+        self.AdjO = data[name]['AdjO']
+        self.AdjD = data[name]['AdjD']
+        self.players = []
+        for player, attributes in data[name]['roster'].items():
+            self.players.append(Player(player, attributes))
 
 class Player:
-    def __init__(self, height, ppg, rpg, three, three_p, ft, ftp):
-        self.height
-        self.ppg
-        self.rpg
-        self.three
-        self.three_p
-        self.ft
-        self.ftp
+    def __init__(self, player, attributes: dict):
+        self.name = player
+        self.pos = attributes['pos']
+        self.team = attributes['tm_name']
+        self.team_id = attributes['id']
+        self.gp = attributes['gp']
+        self.min = attributes['min']
+        self.pts = attributes['pts']
+        self.three_p = attributes['3p%']
+        self.ftp = attributes['ft%']
+        self.reb = attributes['reb']
+        self.height = attributes['height']
+        self.athleticism = attributes['Athleticism']
+        self.jumper = attributes['Jump Shot']
+        self.quickness = attributes['Quickness']
+        self.wooden = attributes['Wooden']
+        self.yr = attributes['yr']
 
-if __name__ == '__main__':
-'''
+if __name__ == '__main__': 
+    f = open('teams.json')
+    data = json.load(f)
+    #pp.pprint(data)
+
+    #team = Team(name, data)
+    '''Template: 
+    team = Team('Houston', team_dict)
+    print(team.AdjEM)
+    print(team.players)
+    for player in team.players:
+        if(int(player.athleticism) >= 8):
+            print(player.name)'''
+
+    
