@@ -138,7 +138,7 @@ def road_to_ff_sim(data, region, upset_count_dict):
             round_32.append(team2.name)
             continue
         # Track upsets and pick winners
-        elif upset_count_dict['64'] > 7 or upset_count_dict['total'] > 13:
+        elif upset_count_dict['64'] > 6 or upset_count_dict['total'] > 12:
             round_32.append(team1.name)
             continue
         elif count1 > count2:
@@ -213,7 +213,7 @@ def road_to_ff_sim(data, region, upset_count_dict):
                 upset_count_dict['32']+=1
                 upset_count_dict['total'] += 1
             continue
-        if upset_count_dict['32'] > 4 or upset_count_dict['total'] > 13:
+        if upset_count_dict['32'] > 3 or upset_count_dict['total'] > 12:
             if int(team1.seed) > int(team2.seed):
                 sweet_16.append(team1.name)
             else:
@@ -288,7 +288,7 @@ def road_to_ff_sim(data, region, upset_count_dict):
                 upset_count_dict['16'] += 1
                 upset_count_dict['total']+= 1  
             continue
-        if upset_count_dict['16'] > 2 or upset_count_dict['total'] > 13:
+        if upset_count_dict['16'] > 1 or upset_count_dict['total'] > 12:
             if int(team1.seed) > int(team2.seed):
                 elite_8.append(team1.name)
             else:
@@ -456,6 +456,8 @@ if __name__ == '__main__':
         west = road_to_ff_sim(data, "West", upset_count_dict)
 
         champion = final_four_sim(data, south, midwest, east, west)
+
+        print(upset_count_dict)
 
     except IndexError:
         print('Trends not passed, please run again')
