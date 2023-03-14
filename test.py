@@ -11,13 +11,17 @@ class Team:
         self.id = data[name]['id']
         self.seed = data[name]['seed']
         self.kprk = data[name]['rk']
+        self.prob = data[name]['prob']
+        self.region = data[name]['region']
+        self.slot = data[name]['slot']
         self.conf = data[name]['Conf']
         self.AdjEM = data[name]['AdjEM']
         self.AdjO = data[name]['AdjO']
         self.AdjD = data[name]['AdjD']
         self.players = []
-        for player, attributes in data[name]['roster'].items():
+        for player, attributes in data[name]["roster"].items():
             self.players.append(Player(player, attributes))
+        self.ffour = data[name]['ffour']
 
 class Player:
     def __init__(self, player, attributes: dict):
