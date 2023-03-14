@@ -74,32 +74,15 @@ def road_to_ff_sim(data, region, upset_count_dict):
     for i in range(len(favorites)):
         reg_round_64[favorites[i]] = underdogs[i]
     print(reg_round_64)
+
     # Simulate round of 64
     round_32 = []
     for key, val in reg_round_64.items():
         team1 = Team(key, data)
         team2 = Team(val, data)
-        game = [team1.name, team2.name]
-
-        # Seed bias
-        seed_bias = abs(int(team2.seed) - int(team1.seed))
-        team1.score += seed_bias
-
-        # Score weights
-        if team1.seed == '7' or team1.seed == '6' or team1.seed == '5' or team1.seed == '4':
-            team1.score += 10
-        elif team1.seed == '3':
-            team2.score += 5
-        elif team1.ffour == 1:
-            team1.score += 5
-        elif team2.ffour == 1:
-            team2.score += 5
-        elif team1.conf == 'CUSA' or team1.conf == 'MAC':
-            team1.score += 1
-        elif team2.conf == 'CUSA' or team2.conf == 'MAC':
-            team2.score += 1
 
         # game simulation
+        game = [team1.name, team2.name]
         count1 = 0
         count2 = 0
         run = True
@@ -112,30 +95,8 @@ def road_to_ff_sim(data, region, upset_count_dict):
                 count2+=1
                 run=False
         
-        # Trend result weights
-        # Check counts
         if upset_count_dict['64'] > 6 or upset_count_dict['total'] > 12:
             round_32.append(team1.name)
-            continue
-        elif team2.name == 'Auburn':
-            round_32.append(team2.name)
-            continue
-        elif team1.name == 'Arkansas':
-            round_32.append(team1.name)
-            continue
-        elif team2.name == 'Furman':
-            round_32.append(team1.name)
-            continue
-        elif team1.name == 'Gonzaga':
-            round_32.append(team1.name)
-            continue
-        elif team1.name == 'Misouri':
-            round_32.append(team2.name)
-            upset_count_dict['64']+=1
-            upset_count_dict['total']+=1
-            continue
-        elif team2.name == 'West Virginia':
-            round_32.append(team2.name)
             continue
         elif count1 > count2:
             round_32.append(team1.name)
@@ -158,39 +119,6 @@ def road_to_ff_sim(data, region, upset_count_dict):
         team1 = Team(key, data)
         team2 = Team(val, data)
         game = [team1.name, team2.name]
-
-        # Seed bias
-        seed_bias = abs(int(team2.seed) - int(team1.seed))
-        if int(team1.seed) < int(team2.seed):
-            team1.score += seed_bias
-        else:
-            team2.score+=seed_bias
-
-        # Score weights
-        if team2.name == 'Marquette':
-            team2.score -= 10
-        elif team2.name == 'Gonzaga':
-            team2.score += 10
-        elif team1.ffour == 1:
-            team1.score += 5
-        elif team2.ffour == 1:
-            team2.score += 5 
-        elif team1.seed == '2' or team1.seed == '3':
-            team1.score -=5
-        elif team2.seed == '2' or team2.seed == '3':
-            team2.score -= 5
-        elif team1.seed == '11':
-            team1.score += 5
-        elif team2.seed == '11':
-            team2.score += 5
-        elif team1.seed == '3' and team2.seed == '11':
-            team2.score += 5
-        elif team1.seed == '11' and team2.seed == '3':
-            team1.score += 5
-        elif team1.conf == 'ACC':
-            team1.score += 1
-        elif team2.conf == 'ACC':
-            team2.score += 1
         
         # game sim
         count1 = 0
@@ -205,24 +133,18 @@ def road_to_ff_sim(data, region, upset_count_dict):
                 count2+=1
                 run = False
 
-        # Result weights
+        # FINAL BIAS METRICS
         if upset_count_dict['32'] > 3 or upset_count_dict['total'] > 12:
             if int(team1.seed) < int(team2.seed):
                 sweet_16.append(team1.name)
             else:
                 sweet_16.append(team2.name)
             continue
-        elif team1.name == 'Creighton':
-            sweet_16.append(team2.name)
-            if int(team2.seed) > int(team1.seed):
-                upset_count_dict['32']+=1
-                upset_count_dict['total'] += 1
-            continue
         elif count1 > count2:
             sweet_16.append(team1.name)
             if int(team1.seed) > int(team2.seed):
                 upset_count_dict['32'] += 1
-                upset_count_dict['total']+= 1 
+                upset_count_dict['total']+= 1
             continue
         else:
             sweet_16.append(team2.name)
@@ -237,41 +159,35 @@ def road_to_ff_sim(data, region, upset_count_dict):
     bottom = [sweet_16[1], sweet_16[3]]
     for i in range(len(top)):
         reg_sweet_16[top[i]] = bottom[i]
-
     # Simulate the sweet 16
     elite_8 = []
     for key, val in reg_sweet_16.items():
         team1 = Team(key, data)
         team2 = Team(val, data)
+        weight1 = team1.score
+        weight2 = team2.score
         game = [team1.name, team2.name]
 
-        # Seed bias
-        seed_bias = abs(int(team2.seed) - int(team1.seed))
-        if int(team1.seed) < int(team2.seed):
-            team1.score += seed_bias
-        else:
-            team2.score+=seed_bias
-
-        # score trends
+        # BIAS METRICS Trends
         if team1.name == 'Kansas':
-            team1.score -= 10
+            weight1 -= 10
         elif team2.name == 'Kansas':
-            team2.score -= 10
-        elif team1.conf == 'SEC':
-            team1.score += 5
-        elif team2.conf == 'SEC':
-            team2.score += 5
-        elif int(team1.seed) >= 6:
-            team1.score += 5
-        elif int(team2.seed) >=6:
-            team2.score += 5
+            weight2 -= 10
+        if team1.conf == 'SEC':
+            weight1 += 5
+        if team2.conf == 'SEC':
+            weight2 += 5
+        if int(team1.seed) <= 6:
+            weight1 += 5
+        if int(team2.seed) <=6:
+            weight2 += 5
         
         # game sim
         count1 = 0
         count2 = 0
         run=True
         while(run):
-            winner = random.choices(game, weights=(team1.score, team2.score), k=2)
+            winner = random.choices(game, weights=(weight1, weight2), k=2)
             if winner[0] == team1.name and winner[1] == team1.name:
                 count1+=1
                 run=False
@@ -279,35 +195,35 @@ def road_to_ff_sim(data, region, upset_count_dict):
                 count2+=1
                 run=False
         
-        # Result weighting
-        # Track upsets
+        # FINAL BIAS METRICS
+        # Track upsets and pick winners
+        if team1.conf == 'MWC':
+            elite_8.append(team2.name)
+            if int(team2.seed) > int(team1.seed):
+                upset_count_dict['16'] += 1
+                upset_count_dict['total']+= 1  
+            continue
+        if team2.conf == 'MWC':
+            elite_8.append(team1.name)
+            if int(team1.seed) > int(team2.seed):
+                upset_count_dict['16'] += 1
+                upset_count_dict['total']+= 1  
+            continue
         if upset_count_dict['16'] > 1 or upset_count_dict['total'] > 12:
-            if int(team1.seed) < int(team2.seed):
+            if int(team1.seed) > int(team2.seed):
                 elite_8.append(team1.name)
             else:
                 elite_8.append(team2.name)
             continue
-        elif team1.conf == 'MWC':
-            elite_8.append(team2.name)
-            if int(team2.seed) > int(team1.seed):
-                upset_count_dict['16'] += 1
-                upset_count_dict['total']+= 1  
-            continue
-        elif team2.conf == 'MWC':
+        if count1 > count2:
             elite_8.append(team1.name)
-            if int(team1.seed) > int(team2.seed):
-                upset_count_dict['16'] += 1
-                upset_count_dict['total']+= 1  
-            continue
-        elif count1 > count2:
-            elite_8.append(team1.name)
-            if int(team1.seed) > int(team2.seed):
+            if int(team1.seed) < int(team2.seed):
                 upset_count_dict['16'] += 1
                 upset_count_dict['total']+= 1 
             continue
-        elif count2 > count1:
+        else:
             elite_8.append(team2.name)
-            if int(team2.seed) > int(team1.seed):
+            if int(team2.seed) < int(team1.seed):
                 upset_count_dict['16'] += 1
                 upset_count_dict['total']+= 1 
     print(elite_8)
@@ -316,31 +232,26 @@ def road_to_ff_sim(data, region, upset_count_dict):
     final_four = ''
     team1 = Team(elite_8[0], data)
     team2 = Team(elite_8[1], data)
+    weight1 = team1.score
+    weight2 = team2.score
     game = [team1.name, team2.name]
 
-    # Seed bias
-    seed_bias = abs(int(team2.seed) - int(team1.seed))
-    if int(team1.seed) < int(team2.seed):
-        team1.score += seed_bias
-    else:
-        team2.score+=seed_bias
-
-    # score weight
+    # BIAS
     if team1.name == 'Arizona':
-        team1.score -= 10
-    elif team2.name == 'Arizona':
-        team2.score -= 10
-    elif team1.seed == '3' or int(team1.seed) >= 7 or team1.seed == '1':
-        team1.score += 10
-    elif team2.seed == '3' or int(team1.seed) >= 7 or team2.seed == '1':
-        team2.score += 10
+        weight1 -= 10
+    if team2.name == 'Arizona':
+        weight2 -= 10
+    if team1.seed == '3' or int(team1.seed) <= 7 or team1.seed == '1':
+        weight1 += 10
+    if team2.seed == '3' or int(team1.seed) <= 7 or team2.seed == '1':
+        weight2 += 10
 
     # game sim
     count1 = 0
     count2 = 0
     run=True
     while(run):
-        winner = random.choices(game, weights=(team1.score, team2.score), k=2)
+        winner = random.choices(game, weights=(weight1, weight2), k=2)
         if winner[0] == team1.name and winner[1] == team1.name:
             count1+=1
             run=False
@@ -348,12 +259,13 @@ def road_to_ff_sim(data, region, upset_count_dict):
             count2+=1
             run=False
 
-    # result bias:
+    # FINAL TRENDS
     if team1.name == 'Xavier' or team1.name == 'Purdue' or team1.name == 'Marquette':
         final_four = team2.name
     elif team2.name == 'Xavier' or team1.name == 'Purdue' or team1.name == 'Marquette':
         final_four = team1.name
-    elif count1 > count2:
+    
+    if count1 > count2:
         final_four = team1.name
     else:
         final_four = team2.name
@@ -367,39 +279,31 @@ def final_four_sim(data, south, midwest, east, west):
     team2 = Team(east, data)
     team3 = Team(midwest, data)
     team4 = Team(west, data)
+    weight1 = team1.score
+    weight2 = team2.score
+    weight3 = team3.score
+    weight4 = team4.score
     left_game = [team1.name, team2.name]
     right_game = [team3.name, team4.name]
 
-    # Seed bias
-    seed_bias1 = abs(int(team2.seed) - int(team1.seed))
-    if int(team1.seed) < int(team2.seed):
-        team1.score += seed_bias1
-    else:
-        team2.score+=seed_bias1
-
-    seed_bias2 = abs(int(team4.seed) - int(team3.seed))
-    if int(team3.seed) < int(team4.seed):
-        team3.score += seed_bias2
-    else:
-        team4.score+=seed_bias2
-
-    #game sim
+    # leftgame sim
     count1 = 0
     count2 = 0
     run=True
     while(run):
-        winner = random.choices(left_game, weights=(team1.score, team2.score), k=2)
+        winner = random.choices(left_game, weights=(weight1, weight2), k=2)
         if winner[0] == team1.name and winner[1] == team1.name:
             count1+=1
             run=False
         elif winner[0] == team2.name and winner[1] == team2.name:
             count2+=1
             run=False
+    # rightgame sim
     count3 = 0
     count4 = 0
     run= True
     while(run):
-        winner = random.choices(right_game, weights=(team3.score, team4.score), k=2)
+        winner = random.choices(right_game, weights=(weight3, weight4), k=2)
         if winner[0] == team3.name and winner[1] == team3.name:
             count3+=1
             run=False
@@ -407,7 +311,7 @@ def final_four_sim(data, south, midwest, east, west):
             count4+=1
             run=False
     
-     # results
+     # FINAL TRENDS
     if count1 > count2:
         if int(team1.seed) <= 3:
             championship.append(team1.name)
@@ -426,43 +330,40 @@ def final_four_sim(data, south, midwest, east, west):
     national_champ = ''
     team1 = Team(championship[0], data)
     team2 = Team(championship[1], data)
+    weight1 = team1.score
+    weight2 = team2.score
     game = [team1.name, team2.name]
-
-    # Seed bias
-    seed_bias = abs(int(team2.seed) - int(team1.seed))
-    if int(team1.seed) < int(team2.seed):
-        team1.score += seed_bias
-    else:
-        team2.score+=seed_bias
 
     # game sim
     count1 = 0
     count2 = 0
     run=True
     while(run):
-        winner = random.choices(game, weights=(team1.score, team2.score), k=2)
+        winner = random.choices(game, weights=(weight1, weight2), k=2)
         if winner[0] == team1.name and winner[1] == team1.name:
             count1+=1
             run = False
         elif winner[0] == team2.name and winner[1] == team2.name:
             count2+=1
             run =False
+    #FINAL
 
-    # final result weights
+    if count1 > count2:
+        national_champ = team1.name
+    else:
+        national_champ = team2.name
+
     if team1.seed == '5':
         national_champ = team2.name
     elif team2.seed == '5':
         national_champ = team1.name
-    elif count1 > count2:
-        national_champ = team1.name
-    elif count2>count1:
-        national_champ = team2.name
     
-    if national_champ not in ['Houston', 'Alabama', 'Purdue', 'Kansas']:
+    if national_champ not in ['Houston', 'Alabama', 'Kansas']:
         print('Trends not passed, please run again')
         return IndexError
 
     print(national_champ)
+    return national_champ
 
 if __name__ == '__main__': 
     f = open('teams.json')
@@ -475,11 +376,9 @@ if __name__ == '__main__':
         east = road_to_ff_sim(data, "East", upset_count_dict)
         west = road_to_ff_sim(data, "West", upset_count_dict)
 
-        final_four_sim(data, south, midwest, east, west)
+        champion = final_four_sim(data, south, midwest, east, west)
 
         print(upset_count_dict)
 
     except IndexError:
         print('Trends not passed, please run again')
-
-    
