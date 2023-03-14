@@ -135,7 +135,8 @@ def create_espn_dict(url_dict, probs_dict, nba_dict):
         'position': '0',
         'stock': '0',
         'team': '0',
-        'yr': '0'
+        'yr': '0',
+        'prospect': 0
     }
 
     for player in espn_player_dict.keys():
@@ -143,7 +144,17 @@ def create_espn_dict(url_dict, probs_dict, nba_dict):
 
     for player, attrs in nba_dict.items():
         espn_player_dict[player].update(attrs)
-        
+        espn_player_dict[player].update({'prospect': 1})
+
+    # min cutoff: 12.5
+    delete_list = []
+    for player, attrs in espn_player_dict.items():
+        if float(attrs['min']) < 12.5:
+            delete_list.append(player)
+    
+    for i in delete_list:
+        del espn_player_dict[i]
+
     #pp.pprint(espn_player_dict)
     return espn_player_dict
 
@@ -191,6 +202,60 @@ if __name__ == '__main__':
     url_dict = create_espn_urls(probs_dict)
     espn_dict = create_espn_dict(url_dict, probs_dict, nba_dict)
     team_dict = create_team_dict(probs_dict, espn_dict)
+
+    # Use data structure to calculate the score for each team
+    for stats in team_dict.values():
+        stats.update({'score': 0})
+
+    # Eye test - Neural Network eventually?
+    savage_list = [
+        'Brandon Miller',
+        'Nick Smith Jr.',
+        'Jarace Walker',
+        'Noah Clowney',
+        'Keyonte George',
+        'Terquavion Smith',
+        'Jordan Hawkins',
+        'Cason Wallace',
+        'Ricky Council IV',
+        'Jalen Hood-Schifino',
+        'Keyontae Johnson',
+        'Marcus Sasser',
+        'Adam Flagler',
+        'LJ Cryer',
+        'Terrence Shannon Jr.',
+        'Seth Lundy',
+        'Isaiah Wong',
+        'Mark Mitchell',
+        'Jaime Jaquez Jr.',
+        'Amari Bailey',
+        'Reece Beekman',
+        'Julian Phillips',
+        'Trey Alexander',
+        'Tramon Mark',
+        'Tyrese Hunter',
+        'Jahvon Quinerly'
+    ]
+    
+    for team, stats in team_dict.items():
+        stats['score'] += ((float(stats['AdjD'])/10) + (float(stats['AdjO'])/10) + ((float(stats['AdjEM']) + 100)/10) + (stats['prob']*100))
+        for player, attributes in stats['roster'].items():
+            if (player in savage_list and float(attributes['3p%']) >= 33.5) or int(attributes['Athleticism'])>=8 or int(attributes['Jump Shot'])>=7:
+                stats['score'] += 5
+            if attributes['height'] == '7-0' or attributes['height'] == '7-1' or attributes['height'] == '7-2' or attributes['height'] == '7-3' or attributes['height'] == '7-4' or attributes['height'] == '7-5':
+                stats['score'] += 2
+            if attributes['height'] == '6-8' or attributes['height'] == '6-9' or attributes['height'] == '6-10' or attributes['height'] == '6-11':
+                stats['score'] += 1
+            if float(attributes['3p%']) >= 40.0:
+                stats['score'] += 2
+            if float(attributes['3p%']) >= 35.0:
+                stats['score'] += 1
+            if attributes['prospect'] == 1:
+                stats['score'] += 1
+            if attributes['Wooden'] == 'yes':
+                stats['score'] += 5
+
+    # data dump for simulation
     JSON_obj = json.dumps(team_dict, indent = 4)
     print(JSON_obj)
     #pp.pprint(team_dict)
