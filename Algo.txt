@@ -130,10 +130,15 @@ savages/wooden/cinderella/coaches
 ESPN facts/trend_bias
 
 Necessary files for reset:
-kenpom.json (scrape kenpom.json using ParseHub)
+kenpom.json (scrape kenpom.json using ParseHub, manually edit post first four)
 wooden (manually change list)
-fivethirtyeight.json (download and manually string match team names with kenpom)
-nbaprospects.json (scrape NBADraft.net w/ParseHub)
+fivethirtyeight.json (download and manually string match team names with kenpom, manually edit post first four)
+nbaprospects.json (scrape NBADraft.net w/ParseHub, manually edit post first four)
+STEPS for simulation
+1) load into data json file teams.json using scraper:
+> python3 scraper_final.py > teams.json
+2) run the simulation
+> python3 weighted_sim.py
 
 test.py sim example run:
 {'Alabama': 'Texas A&M Corpus Chris', 'Maryland': 'West Virginia', 'San Diego St.': 'Charleston', 'Virginia': 'Furman', 'Creighton': 'N.C. State', 'Baylor': 'UC Santa Barbara', 'Missouri': 'Utah St.', 'Arizona': 'Princeton'}
