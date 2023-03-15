@@ -60,7 +60,7 @@ def get_nba_attr(url):
 
 def create_nba_dict():
     # Load NBA Prospect json
-    f = open('nba_prospects_exp.json')
+    f = open('nba_prospects.json')
     data = json.load(f)
     nba_dict = {}
     for player in data['player']:
@@ -88,7 +88,7 @@ def create_nba_dict():
 def FiveThirtyEight():
     # Load FiveThirtyEight json
     # manually edit fivethirtyeight.json to match kenpom.json (all State to St., etc)
-    f = open('fivethirtyeight_exp.json')
+    f = open('fivethirtyeight.json')
     data = json.load(f)
     probs_dict = {}
     for team in data:
@@ -160,7 +160,7 @@ def create_espn_dict(url_dict, probs_dict, nba_dict):
 
 def create_team_dict(probs_dict, espn_dict):
     # Open json file
-    f = open('kenpom_exp.json')
+    f = open('kenpom.json')
 
     # Returns json object as a dictionary
     data = json.load(f)

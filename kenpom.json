@@ -370,15 +370,6 @@
       "Conf": "BE"
      },
      {
-      "name": "Mississippi St.",
-      "rk": "49",
-      "AdjEM": "+14.12",
-      "AdjO": "105.5",
-      "AdjD": "91.3",
-      "seed": "11",
-      "Conf": "SEC"
-     },
-     {
       "name": "Missouri",
       "rk": "51",
       "AdjEM": "+13.92",
@@ -584,15 +575,6 @@
       "AdjD": "106.9",
       "seed": "16",
       "Conf": "MEAC"
-     },
-     {
-      "name": "Southeast Missouri St.",
-      "rk": "257",
-      "AdjEM": "-7.21",
-      "AdjO": "100.9",
-      "AdjD": "108.1",
-      "seed": "16",
-      "Conf": "OVC"
      },
      {
       "name": "Texas Southern",
