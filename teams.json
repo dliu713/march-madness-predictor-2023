@@ -283,7 +283,9 @@
         "region": "Midwest",
         "slot": 96,
         "ffour": 0,
-        "score": 84.5980705325
+        "shooting_score": 2,
+        "score": 29,
+        "kenpom_score": 33.681999999999995
     },
     "UCLA": {
         "rk": "2",
@@ -481,7 +483,9 @@
         "region": "West",
         "slot": 92,
         "ffour": 0,
-        "score": 60.265767218899995
+        "shooting_score": 4,
+        "score": 28,
+        "kenpom_score": 32.973
     },
     "Alabama": {
         "rk": "3",
@@ -769,7 +773,9 @@
         "region": "South",
         "slot": 0,
         "ffour": 0,
-        "score": 76.86915872590001
+        "shooting_score": 3,
+        "score": 33,
+        "kenpom_score": 33.224
     },
     "Connecticut": {
         "rk": "4",
@@ -1055,7 +1061,9 @@
         "region": "West",
         "slot": 76,
         "ffour": 0,
-        "score": 52.8860227002
+        "shooting_score": 9,
+        "score": 18,
+        "kenpom_score": 33.887
     },
     "Tennessee": {
         "rk": "5",
@@ -1341,7 +1349,9 @@
         "region": "East",
         "slot": 44,
         "ffour": 0,
-        "score": 37.473204635399995
+        "shooting_score": 1,
+        "score": 4,
+        "kenpom_score": 32.541
     },
     "Texas": {
         "rk": "6",
@@ -1597,7 +1607,9 @@
         "region": "Midwest",
         "slot": 124,
         "ffour": 0,
-        "score": 58.2763126498
+        "shooting_score": 4,
+        "score": 19,
+        "kenpom_score": 33.317
     },
     "Purdue": {
         "rk": "7",
@@ -1855,7 +1867,9 @@
         "region": "East",
         "slot": 32,
         "ffour": 0,
-        "score": 50.3482504886
+        "shooting_score": 3,
+        "score": 12,
+        "kenpom_score": 33.875
     },
     "Gonzaga": {
         "rk": "8",
@@ -2083,7 +2097,9 @@
         "region": "West",
         "slot": 84,
         "ffour": 0,
-        "score": 60.2011354996
+        "shooting_score": 8,
+        "score": 23,
+        "kenpom_score": 34.801
     },
     "Kansas": {
         "rk": "9",
@@ -2279,7 +2295,9 @@
         "region": "West",
         "slot": 64,
         "ffour": 0,
-        "score": 54.7373036867
+        "shooting_score": 4,
+        "score": 19,
+        "kenpom_score": 32.924
     },
     "Arizona": {
         "rk": "10",
@@ -2507,7 +2525,9 @@
         "region": "South",
         "slot": 28,
         "ffour": 0,
-        "score": 53.6074304992
+        "shooting_score": 9,
+        "score": 17,
+        "kenpom_score": 33.996
     },
     "Saint Mary's": {
         "rk": "11",
@@ -2703,7 +2723,9 @@
         "region": "West",
         "slot": 72,
         "ffour": 0,
-        "score": 41.3518453669
+        "shooting_score": 7,
+        "score": 9,
+        "kenpom_score": 32.7
     },
     "Marquette": {
         "rk": "12",
@@ -2929,7 +2951,9 @@
         "region": "East",
         "slot": 60,
         "ffour": 0,
-        "score": 39.4776769332
+        "shooting_score": 3,
+        "score": 3,
+        "kenpom_score": 33.863
     },
     "Creighton": {
         "rk": "13",
@@ -3125,7 +3149,9 @@
         "region": "South",
         "slot": 16,
         "ffour": 0,
-        "score": 48.365763272399995
+        "shooting_score": 5,
+        "score": 16,
+        "kenpom_score": 32.925
     },
     "San Diego St.": {
         "rk": "14",
@@ -3411,7 +3437,9 @@
         "region": "South",
         "slot": 8,
         "ffour": 0,
-        "score": 41.2398932941
+        "shooting_score": 8,
+        "score": 8,
+        "kenpom_score": 32.385
     },
     "Baylor": {
         "rk": "15",
@@ -3697,7 +3725,9 @@
         "region": "South",
         "slot": 20,
         "ffour": 0,
-        "score": 64.8872136468
+        "shooting_score": 10,
+        "score": 31,
+        "kenpom_score": 34.378
     },
     "Xavier": {
         "rk": "16",
@@ -3923,7 +3953,9 @@
         "region": "Midwest",
         "slot": 116,
         "ffour": 0,
-        "score": 46.6206718647
+        "shooting_score": 11,
+        "score": 13,
+        "kenpom_score": 33.859
     },
     "West Virginia": {
         "rk": "17",
@@ -4151,7 +4183,9 @@
         "region": "South",
         "slot": 6,
         "ffour": 0,
-        "score": 40.7918320645
+        "shooting_score": 5,
+        "score": 8,
+        "kenpom_score": 33.424
     },
     "Utah St.": {
         "rk": "18",
@@ -4407,7 +4441,9 @@
         "region": "South",
         "slot": 26,
         "ffour": 0,
-        "score": 44.8540999765
+        "shooting_score": 11,
+        "score": 11,
+        "kenpom_score": 33.558
     },
     "Memphis": {
         "rk": "19",
@@ -4723,7 +4759,9 @@
         "region": "East",
         "slot": 36,
         "ffour": 0,
-        "score": 43.4476816295
+        "shooting_score": 10,
+        "score": 10,
+        "kenpom_score": 32.939
     },
     "Arkansas": {
         "rk": "20",
@@ -4979,7 +5017,9 @@
         "region": "West",
         "slot": 68,
         "ffour": 0,
-        "score": 56.15360892539999
+        "shooting_score": 4,
+        "score": 27,
+        "kenpom_score": 32.522999999999996
     },
     "Duke": {
         "rk": "21",
@@ -5269,7 +5309,9 @@
         "region": "East",
         "slot": 40,
         "ffour": 0,
-        "score": 58.7193169935
+        "shooting_score": 4,
+        "score": 29,
+        "kenpom_score": 32.649
     },
     "Maryland": {
         "rk": "22",
@@ -5495,7 +5537,9 @@
         "region": "South",
         "slot": 4,
         "ffour": 0,
-        "score": 36.223178317999995
+        "shooting_score": 3,
+        "score": 3,
+        "kenpom_score": 32.827
     },
     "Iowa St.": {
         "rk": "23",
@@ -5751,7 +5795,9 @@
         "region": "Midwest",
         "slot": 112,
         "ffour": 0,
-        "score": 34.8008761315
+        "shooting_score": 2,
+        "score": 2,
+        "kenpom_score": 31.982999999999997
     },
     "Kansas St.": {
         "rk": "24",
@@ -5977,7 +6023,9 @@
         "region": "East",
         "slot": 52,
         "ffour": 0,
-        "score": 53.170504012600006
+        "shooting_score": 9,
+        "score": 21,
+        "kenpom_score": 32.501000000000005
     },
     "Texas A&M": {
         "rk": "25",
@@ -6233,7 +6281,9 @@
         "region": "Midwest",
         "slot": 120,
         "ffour": 0,
-        "score": 37.264123487099994
+        "shooting_score": 3,
+        "score": 3,
+        "kenpom_score": 32.897999999999996
     },
     "Florida Atlantic": {
         "rk": "26",
@@ -6519,7 +6569,9 @@
         "region": "East",
         "slot": 38,
         "ffour": 0,
-        "score": 39.0159491017
+        "shooting_score": 6,
+        "score": 6,
+        "kenpom_score": 32.853
     },
     "TCU": {
         "rk": "27",
@@ -6835,7 +6887,9 @@
         "region": "West",
         "slot": 80,
         "ffour": 0,
-        "score": 42.448759906999996
+        "shooting_score": 4,
+        "score": 9,
+        "kenpom_score": 32.476
     },
     "Kentucky": {
         "rk": "28",
@@ -7063,7 +7117,9 @@
         "region": "East",
         "slot": 48,
         "ffour": 0,
-        "score": 62.9588114671
+        "shooting_score": 4,
+        "score": 31,
+        "kenpom_score": 33.48
     },
     "Auburn": {
         "rk": "29",
@@ -7319,7 +7375,9 @@
         "region": "Midwest",
         "slot": 102,
         "ffour": 0,
-        "score": 38.284742468
+        "shooting_score": 5,
+        "score": 5,
+        "kenpom_score": 32.535
     },
     "Indiana": {
         "rk": "30",
@@ -7607,7 +7665,9 @@
         "region": "Midwest",
         "slot": 108,
         "ffour": 0,
-        "score": 55.26381401820001
+        "shooting_score": 8,
+        "score": 23,
+        "kenpom_score": 32.93600000000001
     },
     "Boise St.": {
         "rk": "31",
@@ -7833,7 +7893,9 @@
         "region": "West",
         "slot": 90,
         "ffour": 0,
-        "score": 39.406797561
+        "shooting_score": 7,
+        "score": 7,
+        "kenpom_score": 32.193
     },
     "Michigan St.": {
         "rk": "32",
@@ -8059,7 +8121,9 @@
         "region": "East",
         "slot": 56,
         "ffour": 0,
-        "score": 43.192487831399994
+        "shooting_score": 10,
+        "score": 10,
+        "kenpom_score": 32.681
     },
     "Illinois": {
         "rk": "33",
@@ -8377,7 +8441,9 @@
         "region": "West",
         "slot": 70,
         "ffour": 0,
-        "score": 43.8499552978
+        "shooting_score": 1,
+        "score": 14,
+        "kenpom_score": 32.438
     },
     "Virginia": {
         "rk": "34",
@@ -8633,7 +8699,9 @@
         "region": "South",
         "slot": 12,
         "ffour": 0,
-        "score": 42.867054777199996
+        "shooting_score": 4,
+        "score": 11,
+        "kenpom_score": 32.241
     },
     "USC": {
         "rk": "36",
@@ -8859,7 +8927,9 @@
         "region": "East",
         "slot": 58,
         "ffour": 0,
-        "score": 35.785519895099995
+        "shooting_score": 3,
+        "score": 3,
+        "kenpom_score": 32.623
     },
     "Iowa": {
         "rk": "37",
@@ -9085,7 +9155,9 @@
         "region": "Midwest",
         "slot": 100,
         "ffour": 0,
-        "score": 42.586756160899995
+        "shooting_score": 1,
+        "score": 9,
+        "kenpom_score": 34.099999999999994
     },
     "Penn St.": {
         "rk": "39",
@@ -9281,7 +9353,9 @@
         "region": "Midwest",
         "slot": 122,
         "ffour": 0,
-        "score": 55.560944591799995
+        "shooting_score": 11,
+        "score": 23,
+        "kenpom_score": 33.364
     },
     "Miami FL": {
         "rk": "40",
@@ -9507,7 +9581,9 @@
         "region": "Midwest",
         "slot": 104,
         "ffour": 0,
-        "score": 51.9880664692
+        "shooting_score": 7,
+        "score": 19,
+        "kenpom_score": 33.641
     },
     "Northwestern": {
         "rk": "42",
@@ -9763,7 +9839,9 @@
         "region": "West",
         "slot": 88,
         "ffour": 0,
-        "score": 34.8239320281
+        "shooting_score": 3,
+        "score": 3,
+        "kenpom_score": 31.703
     },
     "Nevada": {
         "rk": "43",
@@ -10049,7 +10127,9 @@
         "region": "West",
         "slot": 83,
         "ffour": 1,
-        "score": 39.429475415700004
+        "shooting_score": 7,
+        "score": 12,
+        "kenpom_score": 32.399
     },
     "Providence": {
         "rk": "44",
@@ -10275,7 +10355,9 @@
         "region": "East",
         "slot": 50,
         "ffour": 0,
-        "score": 58.6399237944
+        "shooting_score": 5,
+        "score": 15,
+        "kenpom_score": 33.363
     },
     "Mississippi St.": {
         "rk": "49",
@@ -10501,7 +10583,9 @@
         "region": "Midwest",
         "slot": 114,
         "ffour": 1,
-        "score": 31.301109010199998
+        "shooting_score": 0,
+        "score": 5,
+        "kenpom_score": 31.092
     },
     "Missouri": {
         "rk": "51",
@@ -10757,7 +10841,9 @@
         "region": "South",
         "slot": 24,
         "ffour": 0,
-        "score": 41.98130644329999
+        "shooting_score": 8,
+        "score": 8,
+        "kenpom_score": 33.861999999999995
     },
     "N.C. State": {
         "rk": "55",
@@ -10983,7 +11069,9 @@
         "region": "South",
         "slot": 18,
         "ffour": 0,
-        "score": 42.8739065156
+        "shooting_score": 4,
+        "score": 11,
+        "kenpom_score": 32.781
     },
     "Oral Roberts": {
         "rk": "56",
@@ -11209,7 +11297,9 @@
         "region": "East",
         "slot": 42,
         "ffour": 0,
-        "score": 62.08216871649999
+        "shooting_score": 9,
+        "score": 19,
+        "kenpom_score": 33.05499999999999
     },
     "VCU": {
         "rk": "58",
@@ -11465,7 +11555,9 @@
         "region": "West",
         "slot": 74,
         "ffour": 0,
-        "score": 37.500292956600006
+        "shooting_score": 6,
+        "score": 6,
+        "kenpom_score": 31.435000000000002
     },
     "Drake": {
         "rk": "66",
@@ -11691,7 +11783,9 @@
         "region": "Midwest",
         "slot": 106,
         "ffour": 0,
-        "score": 40.1035941064
+        "shooting_score": 8,
+        "score": 8,
+        "kenpom_score": 31.961000000000002
     },
     "Kent St.": {
         "rk": "71",
@@ -11947,7 +12041,9 @@
         "region": "Midwest",
         "slot": 110,
         "ffour": 0,
-        "score": 36.6978348493
+        "shooting_score": 5,
+        "score": 5,
+        "kenpom_score": 31.66
     },
     "Charleston": {
         "rk": "73",
@@ -12233,7 +12329,9 @@
         "region": "South",
         "slot": 10,
         "ffour": 0,
-        "score": 35.3331266765
+        "shooting_score": 3,
+        "score": 3,
+        "kenpom_score": 32.276
     },
     "Iona": {
         "rk": "74",
@@ -12489,7 +12587,9 @@
         "region": "West",
         "slot": 78,
         "ffour": 0,
-        "score": 37.190249176
+        "shooting_score": 5,
+        "score": 5,
+        "kenpom_score": 32.171
     },
     "Furman": {
         "rk": "89",
@@ -12745,7 +12845,9 @@
         "region": "South",
         "slot": 14,
         "ffour": 0,
-        "score": 36.867573416800006
+        "shooting_score": 4,
+        "score": 4,
+        "kenpom_score": 32.843
     },
     "Louisiana": {
         "rk": "92",
@@ -13001,7 +13103,9 @@
         "region": "East",
         "slot": 46,
         "ffour": 0,
-        "score": 40.445198388099996
+        "shooting_score": 8,
+        "score": 8,
+        "kenpom_score": 32.44
     },
     "UC Santa Barbara": {
         "rk": "102",
@@ -13257,7 +13361,9 @@
         "region": "South",
         "slot": 22,
         "ffour": 0,
-        "score": 37.265259958600005
+        "shooting_score": 5,
+        "score": 5,
+        "kenpom_score": 32.264
     },
     "Grand Canyon": {
         "rk": "109",
@@ -13543,7 +13649,9 @@
         "region": "West",
         "slot": 86,
         "ffour": 0,
-        "score": 45.461905033200004
+        "shooting_score": 13,
+        "score": 13,
+        "kenpom_score": 32.459
     },
     "Montana St.": {
         "rk": "110",
@@ -13799,7 +13907,9 @@
         "region": "East",
         "slot": 54,
         "ffour": 0,
-        "score": 41.0762920937
+        "shooting_score": 10,
+        "score": 10,
+        "kenpom_score": 31.075
     },
     "Princeton": {
         "rk": "112",
@@ -14085,7 +14195,9 @@
         "region": "South",
         "slot": 30,
         "ffour": 0,
-        "score": 39.817759079
+        "shooting_score": 8,
+        "score": 8,
+        "kenpom_score": 31.816999999999997
     },
     "Vermont": {
         "rk": "113",
@@ -14371,7 +14483,9 @@
         "region": "East",
         "slot": 62,
         "ffour": 0,
-        "score": 41.96619726350001
+        "shooting_score": 10,
+        "score": 10,
+        "kenpom_score": 31.962000000000003
     },
     "Colgate": {
         "rk": "114",
@@ -14597,7 +14711,9 @@
         "region": "Midwest",
         "slot": 126,
         "ffour": 0,
-        "score": 39.601497637200005
+        "shooting_score": 7,
+        "score": 7,
+        "kenpom_score": 32.599000000000004
     },
     "Kennesaw St.": {
         "rk": "127",
@@ -14853,7 +14969,9 @@
         "region": "Midwest",
         "slot": 118,
         "ffour": 0,
-        "score": 37.2646402722
+        "shooting_score": 6,
+        "score": 6,
+        "kenpom_score": 31.264
     },
     "UNC Asheville": {
         "rk": "146",
@@ -15109,7 +15227,9 @@
         "region": "West",
         "slot": 94,
         "ffour": 0,
-        "score": 38.821148293700006
+        "shooting_score": 8,
+        "score": 8,
+        "kenpom_score": 30.821
     },
     "Northern Kentucky": {
         "rk": "161",
@@ -15305,7 +15425,9 @@
         "region": "Midwest",
         "slot": 98,
         "ffour": 0,
-        "score": 32.6622003985
+        "shooting_score": 2,
+        "score": 2,
+        "kenpom_score": 30.662
     },
     "Texas A&M Corpus Chris": {
         "rk": "170",
@@ -15561,7 +15683,9 @@
         "region": "South",
         "slot": 2,
         "ffour": 1,
-        "score": 41.4770246821
+        "shooting_score": 10,
+        "score": 15,
+        "kenpom_score": 31.477
     },
     "Howard": {
         "rk": "215",
@@ -15817,7 +15941,9 @@
         "region": "West",
         "slot": 66,
         "ffour": 0,
-        "score": 37.7390034964
+        "shooting_score": 7,
+        "score": 7,
+        "kenpom_score": 30.739000000000004
     },
     "Texas Southern": {
         "rk": "285",
@@ -16163,6 +16289,8 @@
         "region": "East",
         "slot": 34,
         "ffour": 1,
-        "score": 30.2990019773
+        "shooting_score": 1,
+        "score": 6,
+        "kenpom_score": 29.299000000000003
     }
 }
