@@ -133,7 +133,7 @@ Necessary files for reset:
 kenpom.json (scrape kenpom.json using ParseHub, manually edit post first four)
 wooden (manually change list)
 fivethirtyeight.json (download and manually string match team names with kenpom, manually edit post first four)
-nbaprospects.json (scrape NBADraft.net w/ParseHub, manually edit post first four)
+nbaprospects.json (scrape NBADraft.net w/ParseHub, manually edit out non teams and edit post first four)
 STEPS for simulation
 1) load into data json file teams.json using scraper:
 > python3 scraper_final.py > teams.json
