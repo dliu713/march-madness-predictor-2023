@@ -19,8 +19,8 @@ if int(team1.seed) < int(team2.seed):
 else:
     team2.score+=seed_bias'''
 
-print(f'First score: {team1.score}')
-print(f'Second score: {team2.score}')
+#print(f'First score: {team1.score}')
+#print(f'Second score: {team2.score}')
 
 # game sim
 count1 = 0
@@ -35,5 +35,20 @@ while(run):
         count2+=1
         run =False
 
-print(count1)
-print(count2)
+#print(count1)
+#print(count2)
+
+myList = ["Oral Roberts", "Drake", "Providence"]
+
+newList = random.choices(myList, weights = [30, 10, 20], k=100)
+print(newList)
+
+freq = {}
+for i in newList:
+    if i in freq:
+        freq[i] += 1
+    else:
+        freq[i] = 1
+
+for key, value in freq.items():
+    print(f'{key} {value}')

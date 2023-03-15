@@ -91,7 +91,7 @@ def round_of_64(data, region_list):
     _13_over_4 = 21.5
     _14_over_3 = 15.3
     _15_over_2 = 6.3
-
+    possible_upsets = {}
     regional_results = []
     for region in region_list:
         # Load the teams
@@ -113,6 +113,10 @@ def round_of_64(data, region_list):
         for i in range(len(favorites)):
             reg_round_64[favorites[i]] = underdogs[i]
         #print(reg_round_64)
+        for fav, und in reg_round_64.items():
+            id = Team(fav, data)
+            if id.seed != '1' and id.seed != '8':
+                possible_upsets.update({und: fav})
 
         # ROUND OF 64
         round_32 = []
@@ -183,14 +187,83 @@ def round_of_64(data, region_list):
 
             if count2 > count1:
                 round_32.append(team2.name)
-                upset_count_dict['64'] += 1
-                upset_count_dict['total'] += 1
-                first_round_upsets.update({team2.name: team1.name})
+                if (team2.seed != '9'):
+                    upset_count_dict['64'] += 1
+                    upset_count_dict['total'] += 1
+                    first_round_upsets.update({team2.name: team1.name})
             else:
                 round_32.append(team1.name)
-        print(round_32)
+        #print(round_32)
         regional_results.append(round_32)
 
+    # Create Priority Queue for upsets
+    upsetList = []
+    for upset in possible_upsets.keys():
+        upsetList.append(upset)
+
+    weights_list = [0]*len(upsetList)
+    for i in range(len(upsetList)):
+        upset = Team(upsetList[i], data)
+        if upset.seed == '10':
+            weights_list[i] = _10_over_7
+        elif upset.seed == '11':
+            weights_list[i] = _11_over_6
+        elif upset.seed == '12':
+            weights_list[i] = _12_over_5
+        elif upset.seed == '13':
+            weights_list[i] = _13_over_4
+        elif upset.seed == '14':
+            weights_list[i] = _14_over_3
+        elif upset.seed == '15':
+            weights_list[i] = _15_over_2
+
+    sim_upsets = random.choices(upsetList, weights = weights_list, k = 100)
+    freq = {}
+    for i in sim_upsets:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i] = 1
+    priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
+    priority_remove = dict(sorted(freq.items(), key=lambda x:x[1]))
+    
+    if upset_count_dict['64'] < 7:
+        num_to_add = 7 - upset_count_dict['64']
+        priority_queue = []
+        for i in list(priority_add):
+            if i not in list(first_round_upsets):
+                priority_queue.append(i)
+        add_list = []
+        for i in range(num_to_add):
+            add_list.append(priority_queue[i])
+        # get dict values
+        add_dict ={}
+        for upset, fav in possible_upsets.items():
+            if upset in add_list:
+                add_dict.update({fav: upset})
+
+        for i in range(len(regional_results)):
+            for j in range(len(regional_results[i])):
+                if regional_results[i][j] in list(add_dict):
+                    regional_results[i][j] = add_dict[regional_results[i][j]]
+        upset_count_dict['64'] += num_to_add
+        upset_count_dict['total']+= num_to_add
+    '''
+    if upset_count_dict['64'] > 7:
+        num_to_flip = upset_count_dict['64'] - 7
+        target_is = []
+        for i in range(num_to_flip):
+            target_is.append(random.randint(0, len(first_round_upsets)-1))
+        targets = []
+        for i, upset in enumerate(first_round_upsets):
+            if i in target_is:
+                targets.append(upset)
+        for i in range(len(regional_results)):
+            if regional_results[i] in targets:
+                regional_results[i] = first_round_upsets[regional_results[i]]'''
+
+    for i in regional_results:
+        print(i)
     return regional_results
 
 def round_of_32(data, region_list):
@@ -441,7 +514,12 @@ if __name__ == '__main__':
 
     regional_list = ['South', 'East', 'Midwest', 'West']
     regional_results_64 = round_of_64(data, regional_list)
-    regional_results_32 = round_of_32(data, regional_results_64)
+    '''regional_results_32 = round_of_32(data, regional_results_64)
     regional_results_16 = run_sweet_16(data, regional_results_32)
-    final_four = run_elite_8(data, regional_results_16)
+    final_four = run_elite_8(data, regional_results_16)'''
+    print(upset_count_dict)
+    #print(first_round_upsets)
+    #print(second_round_upsets)
+    #print(sweet_16_upsets)
+    
 
