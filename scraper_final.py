@@ -236,7 +236,6 @@ if __name__ == '__main__':
         'Trey Alexander',
         'Tramon Mark',
         'Tyrese Hunter',
-        'Jahvon Quinerly'
     ]
     
     for team, stats in team_dict.items():

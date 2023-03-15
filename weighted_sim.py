@@ -82,6 +82,59 @@ def update_count(winner, name, count, weight):
         count+=weight
     return count
 
+def add_upsets(regional_results, possible_upsets, priority_add, round, round_upsets_dict, target_upsets):
+        num_to_add = target_upsets - upset_count_dict[round]
+        priority_queue = []
+        for i in list(priority_add):
+            if i not in list(round_upsets_dict):
+                priority_queue.append(i)
+        add_list = []
+        for i in range(num_to_add):
+            add_list.append(priority_queue[i])
+        # get dict values
+        add_dict ={}
+        for upset, fav in possible_upsets.items():
+            if upset in add_list:
+                add_dict.update({fav: upset})
+        for i in range(len(regional_results)):
+            for j in range(len(regional_results[i])):
+                if regional_results[i][j] in list(add_dict):
+                    regional_results[i][j] = add_dict[regional_results[i][j]]
+        upset_count_dict[round] += num_to_add
+        upset_count_dict['total']+= num_to_add
+        return regional_results
+
+def remove_upsets(regional_results, possible_upsets, priority_remove, round, round_upsets_dict, target_upsets):
+    num_to_remove = upset_count_dict[round] - target_upsets
+    priority_queue = []
+    for i in list(priority_remove):
+        if i in list(round_upsets_dict):
+            priority_queue.append(i)
+    remove_list = []
+    for i in range(num_to_remove):
+        remove_list.append(priority_queue[i])
+    remove_dict = {}
+    for upset, fav in possible_upsets.items():
+        if upset in remove_list:
+            remove_dict.update({upset: fav})
+    for i in range(len(regional_results)):
+        for j in range(len(regional_results[i])):
+            if regional_results[i][j] in list(remove_dict):
+                regional_results[i][j] = remove_dict[regional_results[i][j]]
+    upset_count_dict[round] -= num_to_remove
+    upset_count_dict['total'] -= num_to_remove
+    return regional_results
+
+def simulate_upsets(upsetList, weights_list):
+    sim_upsets = random.choices(upsetList, weights = weights_list, k = 100)
+    freq = {}
+    for i in sim_upsets:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i] = 1
+    return freq
+
 def round_of_64(data, region_list):
     # https://www.ncaa.com/news/basketball-men/bracketiq/2018-03-13/heres-how-pick-march-madness-upsets-according-data
     # first round upset probabilities:
@@ -217,51 +270,16 @@ def round_of_64(data, region_list):
         elif upset.seed == '15':
             weights_list[i] = _15_over_2
 
-    sim_upsets = random.choices(upsetList, weights = weights_list, k = 100)
-    freq = {}
-    for i in sim_upsets:
-        if i in freq:
-            freq[i] += 1
-        else:
-            freq[i] = 1
+    freq = simulate_upsets(upsetList, weights_list)
     priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
     priority_remove = dict(sorted(freq.items(), key=lambda x:x[1]))
     
     if upset_count_dict['64'] < 7:
-        num_to_add = 7 - upset_count_dict['64']
-        priority_queue = []
-        for i in list(priority_add):
-            if i not in list(first_round_upsets):
-                priority_queue.append(i)
-        add_list = []
-        for i in range(num_to_add):
-            add_list.append(priority_queue[i])
-        # get dict values
-        add_dict ={}
-        for upset, fav in possible_upsets.items():
-            if upset in add_list:
-                add_dict.update({fav: upset})
-
-        for i in range(len(regional_results)):
-            for j in range(len(regional_results[i])):
-                if regional_results[i][j] in list(add_dict):
-                    regional_results[i][j] = add_dict[regional_results[i][j]]
-        upset_count_dict['64'] += num_to_add
-        upset_count_dict['total']+= num_to_add
-    '''
-    if upset_count_dict['64'] > 7:
-        num_to_flip = upset_count_dict['64'] - 7
-        target_is = []
-        for i in range(num_to_flip):
-            target_is.append(random.randint(0, len(first_round_upsets)-1))
-        targets = []
-        for i, upset in enumerate(first_round_upsets):
-            if i in target_is:
-                targets.append(upset)
-        for i in range(len(regional_results)):
-            if regional_results[i] in targets:
-                regional_results[i] = first_round_upsets[regional_results[i]]'''
-
+        regional_results = add_upsets(regional_results, possible_upsets, priority_add, '64', first_round_upsets, 7)
+    elif upset_count_dict['64'] > 7:
+        regional_results = remove_upsets(regional_results, possible_upsets, priority_remove, '64', first_round_upsets, 7)
+    else:
+        regional_results = regional_results
     for i in regional_results:
         print(i)
     return regional_results
@@ -275,6 +293,7 @@ def round_of_32(data, region_list):
     _8_over_1 = 14/36
     _12_over_4 = 13/36
     _9_over_1 = 6/36
+    possible_upsets = {}
     regional_results=[]
 
     for round_32 in region_list:
@@ -284,6 +303,13 @@ def round_of_32(data, region_list):
         bottom = [round_32[1], round_32[3], round_32[5], round_32[7]]
         for i in range(len(top)):
             reg_round_32[top[i]] = bottom[i]
+        for key, val in reg_round_32.items():
+            top = Team(key, data)
+            bottom = Team(val, data)
+            if int(top.seed) > int(bottom.seed):
+                possible_upsets.update({top.name: bottom.name})
+            else:
+                possible_upsets.update({bottom.name: top.name})
 
         sweet_16 = []
         for key, val in reg_round_32.items():
@@ -362,9 +388,49 @@ def round_of_32(data, region_list):
                 sweet_16.append(team1.name)
         print(sweet_16)
         regional_results.append(sweet_16)
+
+    #print(possible_upsets)
+    # Create Priority Queue for upsets
+    upsetList = []
+    for upset in possible_upsets.keys():
+        upsetList.append(upset)
+
+    weights_list = [0]*len(upsetList)
+    for i in range(len(upsetList)):
+        upset = Team(upsetList[i], data)
+        if upset.seed == '6':
+            weights_list[i] = _6_over_3
+        elif upset.seed == '7':
+            weights_list[i] = _7_over_2
+        elif upset.seed == '10':
+            weights_list[i] = _10_over_2
+        elif upset.seed == '11':
+            weights_list[i] = _11_over_3
+        elif upset.seed == '8':
+            weights_list[i] = _8_over_1
+        elif upset.seed == '12':
+            weights_list[i] = _12_over_4
+        elif upset.seed == '9':
+            weights_list[i] = _9_over_1
+
+    freq = simulate_upsets(upsetList, weights_list)
+    priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
+    priority_remove = dict(sorted(freq.items(), key=lambda x:x[1]))
+    #print(priority_add)
+    # generate target_upsets
+    target_upsets = random.randint(3, 4)
+    if upset_count_dict['32'] < target_upsets:
+        regional_results = add_upsets(regional_results, possible_upsets, priority_add, '32', second_round_upsets, target_upsets)
+    elif upset_count_dict['32'] > target_upsets:
+        regional_results = remove_upsets(regional_results, possible_upsets, priority_remove, '32', second_round_upsets, target_upsets)
+    else:
+        regional_results = regional_results
+    for i in regional_results:
+        print(i)
     return regional_results
 
 def run_sweet_16(data, region_list):
+    possible_upsets = {}
     regional_results=[]
     for sweet_16 in region_list:
         # Load teams
@@ -373,6 +439,13 @@ def run_sweet_16(data, region_list):
         bottom = [sweet_16[1], sweet_16[3]]
         for i in range(len(top)):
             reg_sweet_16[top[i]] = bottom[i]
+        for key, val in reg_sweet_16.items():
+            top = Team(key, data)
+            bottom = Team(val, data)
+            if int(top.seed) > int(bottom.seed):
+                possible_upsets.update({top.name: bottom.name})
+            else:
+                possible_upsets.update({bottom.name: top.name})
 
         elite_8 = []
         for key, val in reg_sweet_16.items():
@@ -437,11 +510,32 @@ def run_sweet_16(data, region_list):
                 sweet_16_upsets.update({team2.name: team1.name})
             else:
                 elite_8.append(team1.name)
-        print(elite_8)
+        #print(elite_8)
         regional_results.append(elite_8)
+    
+    # Create Priority Queue for upsets
+    upsetList = []
+    for upset in possible_upsets.keys():
+        upsetList.append(upset)
+    
+    weights_list = [1]*len(upsetList)
+    freq = simulate_upsets(upsetList, weights_list)
+    priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
+    priority_remove = dict(sorted(freq.items(), key=lambda x:x[1]))
+    #print(priority_add)
+    if upset_count_dict['16'] < 2:
+        regional_results = add_upsets(regional_results, possible_upsets, priority_add, '16', sweet_16_upsets, 2)
+    elif upset_count_dict['16'] > 2:
+        regional_results = remove_upsets(regional_results, possible_upsets, priority_remove, '16', sweet_16_upsets, 2)
+    else:
+        regional_results = regional_results
+    for i in regional_results:
+        print(i)
     return regional_results
 
 def run_elite_8(data, region_list):
+    possible_upsets = {}
+    seed_losers = {}
     regional_results=[]
     for elite_8 in region_list:
         # Load teams
@@ -455,6 +549,13 @@ def run_elite_8(data, region_list):
             team2 = temp_team
         count1 = 0
         count2 = 0
+        if(int(team2.seed) >= 7 and int(team1.seed) < 7):
+            possible_upsets.update({team2.name: team1.name})
+        
+        '''if(team1.seed == '6'):
+            seed_losers.update({team1.name: team1.name})
+        if(team2.seed == '6'):
+            seed_losers.update({team2.name: team1.name})'''
 
         # Simulation and counts
         # upset_sim -- 4
@@ -504,9 +605,99 @@ def run_elite_8(data, region_list):
             final_four = team2.name
         else:
             final_four = team1.name
-        print(final_four)
+        #print(final_four)
         regional_results.append(final_four)
+
+    #print(possible_upsets)
+    #print(seed_losers)
+    upset_found = False
+    for i in regional_results:
+        find_tm = Team(i, data)
+        if int(find_tm.seed) >= 7:
+            upset_found = True
+    # If possible and necessary, call one big upset into final four
+    if len(possible_upsets) > 0 and upset_found == False:
+        pull_index = random.randint(0, len(possible_upsets)-1)
+        for i, (key, val) in enumerate(possible_upsets.items()):
+            if i == pull_index:
+                upset_tm = key
+                upsetted = val
+        for i in range(len(regional_results)):
+            if regional_results[i] == upsetted:
+                regional_results[i] = upset_tm
+    
+    print(regional_results)
     return regional_results
+
+def init_gamefeed_simulator(data, one, two):
+    team1 = Team(one, data)
+    team2 = Team(two, data)
+    # Simulation and counts
+    count1=0
+    count2=0
+    # upset_sim -- 4
+    if team1.kenpom+team1.score > team2.kenpom+team2.score:
+        winner = team1.name
+    else:
+        winner = team2.name
+    count1 = update_count(winner, team1.name, count1, 4)
+    count2 = update_count(winner, team2.name, count2, 4)
+
+    # shooting_score->1
+    if team1.shooting_score > team2.shooting_score:
+        winner = team1.name
+    elif team2.shooting_score > team1.shooting_score:
+        winner = team2.name
+    else:
+        winner = matchup_simulator(team1.name, team2.name, team1.shooting_score, team2.shooting_score)
+    count1 = update_count(winner, team1.name, count1, 1)
+    count2 = update_count(winner, team2.name, count2, 1)
+        
+    # score->1
+    if team1.score > team2.score:
+        winner = team1.name
+    elif team2.score > team1.score:
+        winner = team2.name
+    else:
+        winner = matchup_simulator(team1.name, team2.name, team1.score, team2.score)
+    count1 = update_count(winner, team1.name, count1, 1)
+    count2 = update_count(winner, team2.name, count2, 1)
+        
+    # 538_sim -- 1
+    winner = matchup_simulator(team1.name, team2.name, team1.prob, team2.prob)
+    count1 = update_count(winner, team1.name, count1, 1)
+    count2 = update_count(winner, team2.name, count2, 1)
+
+    # kenpom->2
+    if team1.kenpom > team2.kenpom:
+        winner = team1.name
+    elif team2.kenpom > team1.kenpom:
+        winner = team2.name
+    else:
+        winner = matchup_simulator(team1.name, team2.name, team1.kenpom, team2.kenpom)
+    count1 = update_count(winner, team1.name, count1, 2)
+    count2 = update_count(winner, team2.name, count2, 2)
+
+    if count2 > count1:
+        result = team2.name
+    else:
+        result = team1.name
+    
+    return result
+
+def run_final_four(data, final_four):
+    # left
+    left = init_gamefeed_simulator(data, final_four[0], final_four[1])
+    # right
+    right = init_gamefeed_simulator(data, final_four[2], final_four[3])
+    championship = [left, right]
+    print(championship)
+    return championship
+
+def run_championship(data, championship):
+    champion = init_gamefeed_simulator(data, championship[0], championship[1])
+    #print(champion)
+    return champion
 
 if __name__ == '__main__': 
     f = open('teams.json')
@@ -514,9 +705,12 @@ if __name__ == '__main__':
 
     regional_list = ['South', 'East', 'Midwest', 'West']
     regional_results_64 = round_of_64(data, regional_list)
-    '''regional_results_32 = round_of_32(data, regional_results_64)
+    regional_results_32 = round_of_32(data, regional_results_64)
     regional_results_16 = run_sweet_16(data, regional_results_32)
-    final_four = run_elite_8(data, regional_results_16)'''
+    final_four = run_elite_8(data, regional_results_16)
+    championship = run_final_four(data, final_four)
+    national_champion = run_championship(data, championship)
+    print(national_champion)
     print(upset_count_dict)
     #print(first_round_upsets)
     #print(second_round_upsets)
