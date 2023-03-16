@@ -129,52 +129,37 @@ FiveThirtyEight
 savages/wooden/cinderella/coaches
 ESPN facts/trend_bias
 
+Usage:
 Necessary files for reset:
 kenpom.json (scrape kenpom.json using ParseHub, manually edit post first four)
 wooden (manually change list)
 fivethirtyeight.json (download and manually string match team names with kenpom, manually edit post first four)
 nbaprospects.json (scrape NBADraft.net w/ParseHub, manually edit out non teams and edit post first four)
 STEPS for simulation
-1) load into data json file teams.json using scraper:
+1) load into data json file teams.json using scraper at command line:
 > python3 scraper_final.py > teams.json
 2) run the simulation
 > python3 weighted_sim.py
+Fill out brackets using this predictor as a tool (possibly running multiple simulations or using this txt document for insights)
 
-test.py sim example run:
-{'Alabama': 'Texas A&M Corpus Chris', 'Maryland': 'West Virginia', 'San Diego St.': 'Charleston', 'Virginia': 'Furman', 'Creighton': 'N.C. State', 'Baylor': 'UC Santa Barbara', 'Missouri': 'Utah St.', 'Arizona': 'Princeton'}
-['Alabama', 'West Virginia', 'Charleston', 'Virginia', 'Creighton', 'Baylor', 'Missouri', 'Arizona']
+weighted_sim.py
+['Alabama', 'West Virginia', 'San Diego St.', 'Virginia', 'N.C. State', 'Baylor', 'Utah St.', 'Arizona']
+['Purdue', 'Memphis', 'Oral Roberts', 'Tennessee', 'Kentucky', 'Kansas St.', 'Michigan St.', 'Vermont']
+['Houston', 'Iowa', 'Miami FL', 'Indiana', 'Iowa St.', 'Xavier', 'Penn St.', 'Texas']
+['Kansas', 'Arkansas', "Saint Mary's", 'Connecticut', 'Nevada', 'Gonzaga', 'Boise St.', 'UCLA']
 ['Alabama', 'Virginia', 'Baylor', 'Arizona']
-['Alabama', 'Baylor']
-Alabama
-{'Houston': 'Northern Kentucky', 'Iowa': 'Auburn', 'Miami FL': 'Drake', 'Indiana': 'Kent St.', 'Iowa St.': 'Mississippi St.', 'Xavier': 'Kennesaw St.', 'Texas A&M': 'Penn St.', 'Texas': 'Colgate'}
-['Houston', 'Auburn', 'Drake', 'Kent St.', 'Mississippi St.', 'Xavier', 'Penn St.', 'Texas']
-['Auburn', 'Drake', 'Xavier', 'Penn St.']
-['Auburn', 'Penn St.']
-Penn St.
-{'Purdue': 'Texas Southern', 'Memphis': 'Florida Atlantic', 'Duke': 'Oral Roberts', 'Tennessee': 'Louisiana', 'Kentucky': 'Providence', 'Kansas St.': 'Montana St.', 'Michigan St.': 'USC', 'Marquette': 'Vermont'}
-['Purdue', 'Oral Roberts', 'Tennessee', 'Providence', 'Kansas St.', 'Michigan St.', 'Marquette']
-Trends not passed, please run again
-(base) davidliu@Davids-MacBook-Pro march-madness-predictor-2023 % python3 test.py
-{'Alabama': 'Texas A&M Corpus Chris', 'Maryland': 'West Virginia', 'San Diego St.': 'Charleston', 'Virginia': 'Furman', 'Creighton': 'N.C. State', 'Baylor': 'UC Santa Barbara', 'Missouri': 'Utah St.', 'Arizona': 'Princeton'}
-['Alabama', 'West Virginia', 'San Diego St.', 'Virginia', 'Creighton', 'Baylor', 'Missouri', 'Princeton']
-['Alabama', 'Virginia', 'Baylor', 'Princeton']
-['Alabama', 'Baylor']
-Alabama
-{'Houston': 'Northern Kentucky', 'Iowa': 'Auburn', 'Miami FL': 'Drake', 'Indiana': 'Kent St.', 'Iowa St.': 'Mississippi St.', 'Xavier': 'Kennesaw St.', 'Texas A&M': 'Penn St.', 'Texas': 'Colgate'}
-['Houston', 'Auburn', 'Drake', 'Indiana', 'Iowa St.', 'Kennesaw St.', 'Texas A&M', 'Texas']
-['Houston', 'Drake', 'Kennesaw St.', 'Texas']
-['Houston', 'Texas']
-Houston
-{'Purdue': 'Texas Southern', 'Memphis': 'Florida Atlantic', 'Duke': 'Oral Roberts', 'Tennessee': 'Louisiana', 'Kentucky': 'Providence', 'Kansas St.': 'Montana St.', 'Michigan St.': 'USC', 'Marquette': 'Vermont'}
-['Purdue', 'Memphis', 'Duke', 'Tennessee', 'Kentucky', 'Kansas St.', 'Michigan St.', 'Vermont']
-['Purdue', 'Tennessee', 'Kansas St.', 'Vermont']
-['Tennessee', 'Kansas St.']
-Kansas St.
-{'Kansas': 'Howard', 'Arkansas': 'Illinois', "Saint Mary's": 'VCU', 'Connecticut': 'Iona', 'TCU': 'Nevada', 'Gonzaga': 'Grand Canyon', 'Northwestern': 'Boise St.', 'UCLA': 'UNC Asheville'}
-['Kansas', 'Arkansas', "Saint Mary's", 'Connecticut', 'TCU', 'Gonzaga', 'Northwestern', 'UCLA']
+['Purdue', 'Tennessee', 'Kansas St.', 'Michigan St.']
+['Houston', 'Indiana', 'Xavier', 'Texas']
 ['Kansas', 'Connecticut', 'Gonzaga', 'UCLA']
-['Connecticut', 'UCLA']
-Connecticut
+['Alabama', 'Virginia', 'N.C. State', 'Arizona']
+['Purdue', 'Tennessee', 'Kentucky', 'Michigan St.']
+['Houston', 'Indiana', 'Xavier', 'Texas']
+['Kansas', 'Connecticut', 'Nevada', 'UCLA']
+['Alabama', 'N.C. State']
+['Purdue', 'Michigan St.']
+['Houston', 'Texas']
+['Kansas', 'UCLA']
+['Alabama', 'Michigan St.', 'Houston', 'UCLA']
 ['Alabama', 'Houston']
 Houston
-{'total': 10, '64': 4, '32': 4, '16': 2}
+{'total': 12, '64': 7, '32': 3, '16': 2}

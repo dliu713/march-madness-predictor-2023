@@ -6,6 +6,14 @@ import sys
 from lxml import etree
 import os
 
+url = 'https://www.espn.com/mens-college-basketball/team/stats/_/id/248'
+dfs = pd.read_html(url)
+print(dfs)
+df = dfs[2].join(dfs[3])
+df[['Name','Team']] = df['Name'].str.extract('^(.*?)([A-Z]+)$', expand=True)
+print(df)
+
+'''
 def get_nba_attr(url):
     headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=headers)
@@ -48,4 +56,4 @@ for player, val in nba_dict.items():
     nba_dict[player] = attr_dict
 
 print(nba_dict)
-
+'''

@@ -352,15 +352,6 @@
       "Conf": "B10"
      },
      {
-      "name": "Nevada",
-      "rk": "43",
-      "AdjEM": "+14.79",
-      "AdjO": "112.0",
-      "AdjD": "97.2",
-      "seed": "11",
-      "Conf": "MWC"
-     },
-     {
       "name": "Providence",
       "rk": "44",
       "AdjEM": "+14.73",
@@ -575,15 +566,6 @@
       "AdjD": "106.9",
       "seed": "16",
       "Conf": "MEAC"
-     },
-     {
-      "name": "Texas Southern",
-      "rk": "285",
-      "AdjEM": "-9.71",
-      "AdjO": "96.5",
-      "AdjD": "106.2",
-      "seed": "16",
-      "Conf": "SWAC"
      },
      {
       "name": "Fairleigh Dickinson",
