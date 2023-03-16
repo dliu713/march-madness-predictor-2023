@@ -71,9 +71,31 @@ primary_guard_list = [
     'Cason Wallace'
 ]
 
-stepup = [
+# ESPN eye test based on kenpom underseeds
+stepup_clutch = [
     'Jarkel Joiner',
     'Tristen Newton',
+    'Keonte Kennedy',
+    'Desmond Cambridge Jr.',
+    'DJ Horne',
+    'Frankie Collins',
+    'Kedrian Johnson',
+    'Joe Toussaint',
+    'Josiah-Jordan James',
+    'Jaylen Clark',
+    "Sir'Jabarri Rice",
+    'Kam Jones',
+    'Souley Boum',
+    'Johnell Davis',
+    'Alijah Martin',
+    'Michael Forrest',
+    'Allen Flanigan',
+    'Wendell Green Jr.',
+    'Noah Locke',
+    'Bryce Hopkins',
+    'Jamarius Burton',
+    'Boogie Ellis',
+    'Marcus Shaver Jr.'
 ]
 
 snipers = [

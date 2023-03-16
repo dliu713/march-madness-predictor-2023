@@ -5,19 +5,19 @@ from weighted_sim import *
 f = open('teams.json')
 data = json.load(f)
 
-championship = ['N.C. State', 'Creighton']
+championship = ['VCU', 'Drake']
 
 national_champ = ''
 team1 = Team(championship[0], data)
 team2 = Team(championship[1], data)
-print('Baylor') #score-1, score+kenpom-4, shooting_score-1
+print('Team1') #score-1, score+kenpom-4, shooting_score-1
 print(team1.score) #1
 print(team1.score+team1.kenpom) #4
 print(team1.shooting_score) #1
 print(team1.prob) #1
 print(team1.kenpom) #2
 print('---------------')
-print('Houston') #prob-1, kenpom-2
+print('Team2') #prob-1, kenpom-2
 print(team2.score) #1
 print(team2.score+team1.kenpom) #4
 print(team2.shooting_score) #1
