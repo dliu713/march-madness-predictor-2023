@@ -95,7 +95,9 @@ stepup_clutch = [
     'Bryce Hopkins',
     'Jamarius Burton',
     'Boogie Ellis',
-    'Marcus Shaver Jr.'
+    'Marcus Shaver Jr.',
+    'Hakim Hart',
+    'Jahmir Young'
 ]
 
 snipers = [
