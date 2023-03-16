@@ -27,6 +27,7 @@ update_dict = {
     'prospect': 0
 }
 
+# BIAS STRUCTURES
 wooden = [
     'Zach Edey',
     'Trayce Jackson-Davis',
@@ -45,7 +46,7 @@ wooden = [
 ]
 
 # https://www.sbnation.com/college-basketball/2023/3/14/23629013/march-madness-best-players-ranked-ncaa-tournament-2023-men
-guard_list = [
+primary_guard_list = [
     'Marcus Sasser',
     'Jalen Pickett',
     'Keyonte George',
@@ -56,7 +57,6 @@ guard_list = [
     'Mike Miles Jr.',
     'Marcus Carr',
     'Kendric Davis',
-    'Adam Flagler',
     'Markquis Nowell',
     'Wade Taylor IV',
     'Nick Smith Jr.',
@@ -68,9 +68,12 @@ guard_list = [
     'Grant Singleton',
     'Jalen Hood-Schifino',
     'Jordan Hawkins',
-    'Tristen Newton',
-    'Jarkel Joiner',
     'Cason Wallace'
+]
+
+stepup = [
+    'Jarkel Joiner',
+    'Tristen Newton',
 ]
 
 snipers = [
@@ -90,6 +93,7 @@ savage_list = [
     'Terquavion Smith',
     'Jordan Hawkins',
     'Cason Wallace',
+    'Adam Flagler',
     'Ricky Council IV',
     'Jalen Hood-Schifino',
     'Keyontae Johnson',

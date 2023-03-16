@@ -543,7 +543,7 @@ def run_sweet_16(data, region_list):
     priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
     priority_remove = dict(sorted(freq.items(), key=lambda x:x[1]))
     #print(possible_upsets)
-    print(priority_add)
+    #print(priority_add)
     if upset_count_dict['16'] < 2:
         regional_results = add_upsets(regional_results, possible_upsets, priority_add, '16', sweet_16_upsets, 2)
     elif upset_count_dict['16'] > 2:
@@ -794,11 +794,17 @@ def run_SIMUL(data):
             final_champion[national_champion]= 1
         n = n - 1
 
+    print("First Round Results")
     pprint.pprint(dict(sorted(final_second_round.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
+    print("\nSecond Round Results")
     pprint.pprint(dict(sorted(final_sweet_16.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
+    print("\nSweet 16 Results")
     pprint.pprint(dict(sorted(final_elite_8.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
+    print("\nElite 8 Results")
     pprint.pprint(dict(sorted(final_4.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
+    print("\nFinal Four Results") 
     pprint.pprint(dict(sorted(final_game.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
+    print("\n Champions")
     pprint.pprint(dict(sorted(final_champion.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
 
 if __name__ == '__main__': 
@@ -828,7 +834,7 @@ if __name__ == '__main__':
     #print(second_round_upsets)
     #print(sweet_16_upsets)
 
-    #run_SIMUL(data)
+    run_SIMUL(data)
     
     
 
