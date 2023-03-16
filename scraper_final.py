@@ -6,7 +6,7 @@ import sys
 from lxml import etree
 import os
 import pprint
-from create_ds import wooden
+from create_ds import *
 pp = pprint.PrettyPrinter(indent=4)
 
 def scrape_espn(url_dict):
@@ -60,7 +60,7 @@ def get_nba_attr(url):
 
 def create_nba_dict():
     # Load NBA Prospect json
-    f = open('nba_prospects_exp.json')
+    f = open('nba_prospects.json')
     data = json.load(f)
     nba_dict = {}
     for player in data['player']:
@@ -88,7 +88,7 @@ def create_nba_dict():
 def FiveThirtyEight():
     # Load FiveThirtyEight json
     # manually edit fivethirtyeight.json to match kenpom.json (all State to St., etc)
-    f = open('fivethirtyeight_exp.json')
+    f = open('fivethirtyeight.json')
     data = json.load(f)
     probs_dict = {}
     for team in data:
@@ -117,27 +117,6 @@ def create_espn_dict(url_dict, probs_dict, nba_dict):
 
     for player in wooden:
         espn_player_dict[player]["Wooden"] = "yes"
-    
-    update_dict = {   
-        'Athleticism': '0',
-        'Ball Handling': '0',
-        'Defense': '0',
-        'Intangibles': '0',
-        'Jump Shot': '0',
-        'Leadership': '0',
-        'NBA Ready': '0',
-        'Passing': '0',
-        'Potential': '0',
-        'Quickness': '0',
-        'Size': '0',
-        'Strength': '0',
-        'height': '0',
-        'position': '0',
-        'stock': '0',
-        'team': '0',
-        'yr': '0',
-        'prospect': 0
-    }
 
     for player in espn_player_dict.keys():
         espn_player_dict[player].update(update_dict)
@@ -160,7 +139,7 @@ def create_espn_dict(url_dict, probs_dict, nba_dict):
 
 def create_team_dict(probs_dict, espn_dict):
     # Open json file
-    f = open('kenpom_exp.json')
+    f = open('kenpom.json')
 
     # Returns json object as a dictionary
     data = json.load(f)
@@ -208,35 +187,6 @@ if __name__ == '__main__':
         stats.update({'shooting_score': 0})
         stats.update({'score': 0})
         stats.update({'kenpom_score': 0})
-
-    # Eye test - Neural Network eventually?
-    savage_list = [
-        'Brandon Miller',
-        'Nick Smith Jr.',
-        'Jarace Walker',
-        'Noah Clowney',
-        'Keyonte George',
-        'Terquavion Smith',
-        'Jordan Hawkins',
-        'Cason Wallace',
-        'Ricky Council IV',
-        'Jalen Hood-Schifino',
-        'Keyontae Johnson',
-        'Marcus Sasser',
-        'Adam Flagler',
-        'LJ Cryer',
-        'Terrence Shannon Jr.',
-        'Seth Lundy',
-        'Isaiah Wong',
-        'Mark Mitchell',
-        'Jaime Jaquez Jr.',
-        'Amari Bailey',
-        'Reece Beekman',
-        'Julian Phillips',
-        'Trey Alexander',
-        'Tramon Mark',
-        'Tyrese Hunter',
-    ]
     
     for team, stats in team_dict.items():
         stats['kenpom_score'] += ((float(stats['AdjD'])/10) + (float(stats['AdjO'])/10) + ((float(stats['AdjEM']) + 100)/10))
@@ -247,13 +197,13 @@ if __name__ == '__main__':
             playin_boost = 5
             stats['score']+=playin_boost
         for player, attributes in stats['roster'].items():
-            if (player in savage_list and float(attributes['3p%']) >= 33.5) or int(attributes['Athleticism'])>=8 or int(attributes['Jump Shot'])>=7:
+            if (player in savage_list and float(attributes['3p%']) >= 33.5):
                 stats['score']+=5
-            if attributes['height'] == '7-0' or attributes['height'] == '7-1' or attributes['height'] == '7-2' or attributes['height'] == '7-3' or attributes['height'] == '7-4' or attributes['height'] == '7-5':
+            if attributes['height'] == '7-0' or attributes['height'] == '7-1' or attributes['height'] == '7-2' or attributes['height'] == '7-3' or attributes['height'] == '7-4' or attributes['height'] == '7-5' or int(attributes['Athleticism'])>=8:
                 stats['score']+=2
             if attributes['height'] == '6-8' or attributes['height'] == '6-9' or attributes['height'] == '6-10' or attributes['height'] == '6-11':
                 stats['score'] += 1
-            if float(attributes['3p%']) >= 40.0:
+            if float(attributes['3p%']) >= 40.0 or int(attributes['Jump Shot'])>=7:
                 stats['shooting_score'] += 2
                 stats['score'] += 2
             if float(attributes['3p%']) >= 35.0:
@@ -263,6 +213,8 @@ if __name__ == '__main__':
                 stats['score'] += 2
             if attributes['Wooden'] == 'yes':
                 stats['score'] += 5
+            if player in guard_list or player in snipers:
+                stats['score']+=2
 
     # data dump for simulation
     JSON_obj = json.dumps(team_dict, indent = 4)

@@ -280,8 +280,8 @@ def round_of_64(data, region_list):
         regional_results = remove_upsets(regional_results, possible_upsets, priority_remove, '64', first_round_upsets, 7)
     else:
         regional_results = regional_results
-    for i in regional_results:
-        print(i)
+    #for i in regional_results:
+        #print(i)
     return regional_results
 
 def round_of_32(data, region_list):
@@ -386,7 +386,7 @@ def round_of_32(data, region_list):
                 second_round_upsets.update({team2.name: team1.name})
             else:
                 sweet_16.append(team1.name)
-        print(sweet_16)
+       #print(sweet_16)
         regional_results.append(sweet_16)
 
     #print(possible_upsets)
@@ -425,8 +425,8 @@ def round_of_32(data, region_list):
         regional_results = remove_upsets(regional_results, possible_upsets, priority_remove, '32', second_round_upsets, target_upsets)
     else:
         regional_results = regional_results
-    for i in regional_results:
-        print(i)
+    #for i in regional_results:
+        #print(i)
     return regional_results
 
 def run_sweet_16(data, region_list):
@@ -529,8 +529,8 @@ def run_sweet_16(data, region_list):
         regional_results = remove_upsets(regional_results, possible_upsets, priority_remove, '16', sweet_16_upsets, 2)
     else:
         regional_results = regional_results
-    for i in regional_results:
-        print(i)
+    #for i in regional_results:
+        #print(i)
     return regional_results
 
 def run_elite_8(data, region_list):
@@ -626,7 +626,7 @@ def run_elite_8(data, region_list):
             if regional_results[i] == upsetted:
                 regional_results[i] = upset_tm
     
-    print(regional_results)
+    #print(regional_results)
     return regional_results
 
 def init_gamefeed_simulator(data, one, two):
@@ -691,7 +691,7 @@ def run_final_four(data, final_four):
     # right
     right = init_gamefeed_simulator(data, final_four[2], final_four[3])
     championship = [left, right]
-    print(championship)
+    #print(championship)
     return championship
 
 def run_championship(data, championship):
@@ -699,21 +699,115 @@ def run_championship(data, championship):
     #print(champion)
     return champion
 
+def flatten(nestedlist):
+    flatlist=[element for sublist in nestedlist for element in sublist]
+    return flatlist
+
+def run_SIMUL(data):
+    n=1000
+    regional_list = ['South', 'East', 'Midwest', 'West']
+    final_second_round = {}
+    final_sweet_16 = {}
+    final_elite_8 = {}
+    final_4 = {}
+    final_game={}
+    final_champion={}
+
+    while( n > 0 ):
+        global upset_count_dict
+        upset_count_dict = {
+            'total': 0,
+            '64': 0,
+            '32': 0,
+            '16': 0
+        }
+
+        global first_round_upsets
+        first_round_upsets = {}
+
+        global second_round_upsets
+        second_round_upsets = {}
+
+        global sweet_16_upsets
+        sweet_16_upsets = {}        
+
+        regional_results_64 = round_of_64(data, regional_list)
+        for team in flatten(regional_results_64):
+            if team in final_second_round:
+                final_second_round[team] += 1
+            else:
+                final_second_round[team] = 1
+        
+        regional_results_32 = round_of_32(data, regional_results_64)
+        for team in flatten(regional_results_32):
+            if team in final_sweet_16:
+                final_sweet_16[team] += 1
+            else:
+                final_sweet_16[team] = 1
+
+        regional_results_16 = run_sweet_16(data, regional_results_32)
+        for team in flatten(regional_results_16):
+            if team in final_elite_8:
+                final_elite_8[team] += 1
+            else:
+                final_elite_8[team] = 1
+
+        final_four = run_elite_8(data, regional_results_16)
+        for team in final_four:
+            if team in final_4:
+                final_4[team] += 1
+            else:
+                final_4[team] = 1
+
+        championship = run_final_four(data, final_four)
+        for team in championship:
+            if team in final_game:
+                final_game[team] += 1
+            else:
+                final_game[team] = 1
+        
+        national_champion = run_championship(data, championship)
+        if national_champion in final_champion:
+            final_champion[national_champion]+=1
+        else:
+            final_champion[national_champion]= 1
+        n = n - 1
+
+    pprint.pprint(dict(sorted(final_second_round.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
+    pprint.pprint(dict(sorted(final_sweet_16.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
+    pprint.pprint(dict(sorted(final_elite_8.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
+    pprint.pprint(dict(sorted(final_4.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
+    pprint.pprint(dict(sorted(final_game.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
+    pprint.pprint(dict(sorted(final_champion.items(), key=lambda x:x[1], reverse = True)), sort_dicts = False)
+
 if __name__ == '__main__': 
     f = open('teams.json')
     data = json.load(f)
 
+    # Sample run:
     regional_list = ['South', 'East', 'Midwest', 'West']
     regional_results_64 = round_of_64(data, regional_list)
+    for i in regional_results_64:
+        print(i)
     regional_results_32 = round_of_32(data, regional_results_64)
+    for i in regional_results_32:
+        print(i)
     regional_results_16 = run_sweet_16(data, regional_results_32)
+    for i in regional_results_16:
+        print(i)
     final_four = run_elite_8(data, regional_results_16)
+    print(final_four)
     championship = run_final_four(data, final_four)
+    print(championship)
     national_champion = run_championship(data, championship)
     print(national_champion)
+    
     print(upset_count_dict)
     #print(first_round_upsets)
     #print(second_round_upsets)
     #print(sweet_16_upsets)
+
+    run_SIMUL(data)
+    
     
 

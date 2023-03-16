@@ -143,23 +143,4 @@ STEPS for simulation
 Fill out brackets using this predictor as a tool (possibly running multiple simulations or using this txt document for insights)
 
 weighted_sim.py
-['Alabama', 'West Virginia', 'San Diego St.', 'Virginia', 'N.C. State', 'Baylor', 'Utah St.', 'Arizona']
-['Purdue', 'Memphis', 'Oral Roberts', 'Tennessee', 'Kentucky', 'Kansas St.', 'Michigan St.', 'Vermont']
-['Houston', 'Iowa', 'Miami FL', 'Indiana', 'Iowa St.', 'Xavier', 'Penn St.', 'Texas']
-['Kansas', 'Arkansas', "Saint Mary's", 'Connecticut', 'Nevada', 'Gonzaga', 'Boise St.', 'UCLA']
-['Alabama', 'Virginia', 'Baylor', 'Arizona']
-['Purdue', 'Tennessee', 'Kansas St.', 'Michigan St.']
-['Houston', 'Indiana', 'Xavier', 'Texas']
-['Kansas', 'Connecticut', 'Gonzaga', 'UCLA']
-['Alabama', 'Virginia', 'N.C. State', 'Arizona']
-['Purdue', 'Tennessee', 'Kentucky', 'Michigan St.']
-['Houston', 'Indiana', 'Xavier', 'Texas']
-['Kansas', 'Connecticut', 'Nevada', 'UCLA']
-['Alabama', 'N.C. State']
-['Purdue', 'Michigan St.']
-['Houston', 'Texas']
-['Kansas', 'UCLA']
-['Alabama', 'Michigan St.', 'Houston', 'UCLA']
-['Alabama', 'Houston']
-Houston
-{'total': 12, '64': 7, '32': 3, '16': 2}
+
