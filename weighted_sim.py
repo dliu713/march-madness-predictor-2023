@@ -271,6 +271,12 @@ def round_of_64(data, region_list):
             weights_list[i] = _15_over_2
 
     freq = simulate_upsets(upsetList, weights_list)
+    for team, score in freq.items():
+        id1 = Team(team, data)
+        for upset, fav in possible_upsets.items():
+            id2 = Team(fav, data)
+            if upset == id1.name:
+                freq[team]=score+id1.score+id1.kenpom-id2.score-id2.kenpom
     priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
     priority_remove = dict(sorted(freq.items(), key=lambda x:x[1]))
     
@@ -306,9 +312,9 @@ def round_of_32(data, region_list):
         for key, val in reg_round_32.items():
             top = Team(key, data)
             bottom = Team(val, data)
-            if int(top.seed) > int(bottom.seed):
+            if int(top.seed) > int(bottom.seed) and top.seed != '5' and bottom.seed !='4':
                 possible_upsets.update({top.name: bottom.name})
-            else:
+            elif int(top.seed) < int(bottom.seed) and top.seed != '5' and bottom.seed !='4':
                 possible_upsets.update({bottom.name: top.name})
 
         sweet_16 = []
@@ -381,9 +387,10 @@ def round_of_32(data, region_list):
 
             if count2 > count1:
                 sweet_16.append(team2.name)
-                upset_count_dict['32'] += 1
-                upset_count_dict['total'] += 1
-                second_round_upsets.update({team2.name: team1.name})
+                if int(team2.seed) - int(team1.seed) > 1:
+                    upset_count_dict['32'] += 1
+                    upset_count_dict['total'] += 1
+                    second_round_upsets.update({team2.name: team1.name})
             else:
                 sweet_16.append(team1.name)
        #print(sweet_16)
@@ -414,6 +421,12 @@ def round_of_32(data, region_list):
             weights_list[i] = _9_over_1
 
     freq = simulate_upsets(upsetList, weights_list)
+    for team, score in freq.items():
+        id1 = Team(team, data)
+        for upset, fav in possible_upsets.items():
+            id2 = Team(fav, data)
+            if upset == id1.name:
+                freq[team]=score+id1.score+id1.kenpom-id2.score-id2.kenpom
     priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
     priority_remove = dict(sorted(freq.items(), key=lambda x:x[1]))
     #print(priority_add)
@@ -442,9 +455,9 @@ def run_sweet_16(data, region_list):
         for key, val in reg_sweet_16.items():
             top = Team(key, data)
             bottom = Team(val, data)
-            if int(top.seed) > int(bottom.seed):
+            if int(top.seed) > int(bottom.seed) and top.seed != '3' and bottom.seed != '2':
                 possible_upsets.update({top.name: bottom.name})
-            else:
+            elif int(bottom.seed) > int(top.seed) and top.seed != '3' and bottom.seed != '2':
                 possible_upsets.update({bottom.name: top.name})
 
         elite_8 = []
@@ -505,9 +518,10 @@ def run_sweet_16(data, region_list):
 
             if count2 > count1:
                 elite_8.append(team2.name)
-                upset_count_dict['16'] += 1
-                upset_count_dict['total'] += 1
-                sweet_16_upsets.update({team2.name: team1.name})
+                if int(team2.seed) - int(team1.seed) > 1:
+                    upset_count_dict['16'] += 1
+                    upset_count_dict['total'] += 1
+                    sweet_16_upsets.update({team2.name: team1.name})
             else:
                 elite_8.append(team1.name)
         #print(elite_8)
@@ -520,9 +534,16 @@ def run_sweet_16(data, region_list):
     
     weights_list = [1]*len(upsetList)
     freq = simulate_upsets(upsetList, weights_list)
+    for team, score in freq.items():
+        id1 = Team(team, data)
+        for upset, fav in possible_upsets.items():
+            id2 = Team(fav, data)
+            if upset == id1.name:
+                freq[team]=score+id1.score+id1.kenpom-id2.score-id2.kenpom
     priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
     priority_remove = dict(sorted(freq.items(), key=lambda x:x[1]))
-    #print(priority_add)
+    #print(possible_upsets)
+    print(priority_add)
     if upset_count_dict['16'] < 2:
         regional_results = add_upsets(regional_results, possible_upsets, priority_add, '16', sweet_16_upsets, 2)
     elif upset_count_dict['16'] > 2:
@@ -807,7 +828,7 @@ if __name__ == '__main__':
     #print(second_round_upsets)
     #print(sweet_16_upsets)
 
-    run_SIMUL(data)
+    #run_SIMUL(data)
     
     
 

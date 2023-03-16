@@ -189,8 +189,8 @@ if __name__ == '__main__':
         stats.update({'kenpom_score': 0})
     
     for team, stats in team_dict.items():
-        stats['kenpom_score'] += ((float(stats['AdjD'])/10) + (float(stats['AdjO'])/10) + ((float(stats['AdjEM']) + 100)/10))
-        if team == 'Providence' or team == 'Oral Roberts':
+        stats['kenpom_score'] += float(stats['AdjEM']) 
+        if team == 'Providence':
             cinderella_boost = 10
             stats['score']+=cinderella_boost
         elif stats['ffour'] == 1:
@@ -206,15 +206,15 @@ if __name__ == '__main__':
             if float(attributes['3p%']) >= 40.0 or int(attributes['Jump Shot'])>=7:
                 stats['shooting_score'] += 2
                 stats['score'] += 2
-            if float(attributes['3p%']) >= 35.0:
+            if float(attributes['3p%']) >= 35.0 or player in snipers:
                 stats['shooting_score'] += 1
                 stats['score'] += 1
             if attributes['prospect'] == 1:
                 stats['score'] += 2
             if attributes['Wooden'] == 'yes':
                 stats['score'] += 5
-            if player in guard_list or player in snipers:
-                stats['score']+=2
+            if player in guard_list:
+                stats['score']+=5
 
     # data dump for simulation
     JSON_obj = json.dumps(team_dict, indent = 4)

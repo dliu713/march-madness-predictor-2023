@@ -68,7 +68,9 @@ guard_list = [
     'Grant Singleton',
     'Jalen Hood-Schifino',
     'Jordan Hawkins',
-    'Tristen Newton'
+    'Tristen Newton',
+    'Jarkel Joiner',
+    'Cason Wallace'
 ]
 
 snipers = [
@@ -92,12 +94,11 @@ savage_list = [
     'Jalen Hood-Schifino',
     'Keyontae Johnson',
     'Marcus Sasser',
-    'Adam Flagler',
-    'LJ Cryer',
     'Terrence Shannon Jr.',
     'Seth Lundy',
     'Isaiah Wong',
     'Mark Mitchell',
+    'Dariq Whitehead',
     'Jaime Jaquez Jr.',
     'Amari Bailey',
     'Reece Beekman',
