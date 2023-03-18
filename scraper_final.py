@@ -209,7 +209,7 @@ if __name__ == '__main__':
             if float(attributes['3p%']) >= 33.5 or player in snipers:
                 stats['shooting_score'] += 1
                 stats['score'] += 1
-            if attributes['prospect'] == 1 or player in clutch:
+            if attributes['prospect'] == 1 or player in savage:
                 stats['score'] += 2
             if attributes['Wooden'] == 'yes':
                 stats['score'] += 5
