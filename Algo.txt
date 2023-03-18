@@ -1,4 +1,3 @@
-upset_sim -- 4
 shooting_score->1
 score->1
 kenpom->2
@@ -13,9 +12,11 @@ Facts/Things to Know/Notes/Bias: https://www.espn.com/mens-college-basketball/st
 Sweet 16 1.7 (2)
 Most common first round upsets: 10 over 7 (3), 11 over 6 (2), 12 over 5 (1), 13 over 4 (1), 14 over 3
 Most common second round upsets: 6 over 3, 7 over 2, 10 over 2, 11 over 3, 8 over 1, 12 over 4
+https://www.ncaa.com/news/basketball-men/bracketiq/2018-03-13/heres-how-pick-march-madness-upsets-according-data
+
+
 
 1st and 2nd:
---Furman will lose
 Marquette is shaky
 Gonzaga won't lose in first round
 Conference USA and MAC have early success

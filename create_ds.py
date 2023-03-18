@@ -27,7 +27,7 @@ update_dict = {
     'prospect': 0
 }
 
-# BIAS STRUCTURES
+# BIAS STRUCTURES - manual work knowledge
 wooden = [
     'Zach Edey',
     'Trayce Jackson-Davis',
@@ -46,6 +46,9 @@ wooden = [
 ]
 
 # https://www.sbnation.com/college-basketball/2023/3/14/23629013/march-madness-best-players-ranked-ncaa-tournament-2023-men
+# eye test --neural network/ai/manual? go to espn, film, and images to identify biometrics, killers, reasonable jumper 33.5+, role sniper 39.5%+, ppg >= 9.5, min >= 12.5
+    # for shooters, check attempts if 50% or more and makes
+# good teams with good guards eye test:
 primary_guard_list = [
     'Marcus Sasser',
     'Jalen Pickett',
@@ -68,38 +71,89 @@ primary_guard_list = [
     'Grant Singleton',
     'Jalen Hood-Schifino',
     'Jordan Hawkins',
-    'Cason Wallace'
+    'Cason Wallace',
 ]
 
-# ESPN eye test based on kenpom underseeds
-stepup_clutch = [
-    'Jarkel Joiner',
+# cinderella/underrated eye test based on seeds 7+ and kenpom underseeds, ignore if in primary_guards or snipers
+clutch = [
+    'Alex Karaban',
     'Tristen Newton',
+    'Adama Sanogo',
+    'Chase Audige',
+    'Joey Hauser',
+    'Jaden Akins',
+    'Kobe Brown',
+    "D'Moi Hodge",
+    'DeAndre Gholston',
+    'Wade Taylor IV',
+    'Andrew Funk',
+    'Max Rice',
+    'Chibuzo Agbo',
+    'Boogie Ellis',
+    'Hakim Hart',
+    'Jahmir Young',
     'Keonte Kennedy',
+    'DeAndre Williams',
+    'Davonte Davis',
+    'Kedrian Johnson',
+    'Joe Toussaint',
+    'Allen Flanigan',
+    'Wendell Green Jr.',
+    'Johnell Davis',
+    'Alijah Martin',
+    'Michael Forrest',
+    'Jarkel Joiner',
+    'Casey Morsell',
+    'Jamarius Burton',
+    'Blake Hinson',
+    'Bryce Hopkins',
+    'Noah Locke',
     'Desmond Cambridge Jr.',
     'DJ Horne',
     'Frankie Collins',
-    'Kedrian Johnson',
-    'Joe Toussaint',
+    'Devan Cambridge',
+    'Claudell Harris Jr.',
+    'Tahlik Chavez',
+    'Tyeree Bryan',
+    'Tucker DeVries',
+    'Isaiah McBride',
+    'Adrian Baldwin Jr.',
+    'Jayden Nunn',
+    'Greg Williams Jr.',
+    'Walter Clayton Jr.',
+    'Daniss Jenkins',
+    'Mike Bothwell',
+    'Jalen Slawson',
+    'JP Pegues',
+    'Marcus Foster',
+    'Malique Jacobs',
+    'Chris Youngblood',
+    'Terrell Burden',
+    'Brandon Stroud',
+    'Tosan Evbuomwan',
+    'Matt Allocco',
+    'Miles Norris',
+    'RaeQuan Battle',
+    'Chance McMillian',
+    'Taijon Jones'
+    'Aaron Deloney'
+    'Oliver Lynch-Daniels'
     'Josiah-Jordan James',
     'Jaylen Clark',
     "Sir'Jabarri Rice",
     'Kam Jones',
     'Souley Boum',
-    'Johnell Davis',
-    'Alijah Martin',
-    'Michael Forrest',
-    'Allen Flanigan',
-    'Wendell Green Jr.',
-    'Noah Locke',
-    'Bryce Hopkins',
-    'Jamarius Burton',
-    'Boogie Ellis',
-    'Marcus Shaver Jr.',
-    'Hakim Hart',
-    'Jahmir Young'
+    'Antonio Reeves',
+    'Jacob Toppin',
+    'Demetre Roberts',
+    'Grant Singleton',
+    'Ansley Almonor',
+    'Joe Munden Jr.',
+    'Sean Moore'
 ]
 
+
+# Possible best shooter in the tourney
 snipers = [
     'Gradey Dick',
     'Aidan Mahaney',
@@ -107,7 +161,7 @@ snipers = [
     'Tucker Richardson'
 ]
 
-# Eye test - Neural Network eventually?
+# Eye test of nba_prospects - Neural Network eventually?
 savage_list = [
     'Brandon Miller',
     'Nick Smith Jr.',
@@ -134,5 +188,4 @@ savage_list = [
     'Trey Alexander',
     'Tramon Mark',
     'Tyrese Hunter',
-    'Adama Sanogo',
 ]

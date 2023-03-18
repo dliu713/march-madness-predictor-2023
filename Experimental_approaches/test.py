@@ -3,7 +3,7 @@ import os
 import json
 import pprint
 import random
-from scraper import *
+from Experimental_approaches.scraper import *
 pp = pprint.PrettyPrinter(indent=4)
 
 global upset_count_dict

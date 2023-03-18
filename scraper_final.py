@@ -206,10 +206,10 @@ if __name__ == '__main__':
             if float(attributes['3p%']) >= 40.0 or int(attributes['Jump Shot'])>=7:
                 stats['shooting_score'] += 2
                 stats['score'] += 2
-            if float(attributes['3p%']) >= 35.0 or player in snipers:
+            if float(attributes['3p%']) >= 33.5 or player in snipers:
                 stats['shooting_score'] += 1
                 stats['score'] += 1
-            if attributes['prospect'] == 1 or player in stepup_clutch:
+            if attributes['prospect'] == 1 or player in clutch:
                 stats['score'] += 2
             if attributes['Wooden'] == 'yes':
                 stats['score'] += 5

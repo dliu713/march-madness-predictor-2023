@@ -1,6 +1,6 @@
 import sys
 import random
-from weighted_sim import *
+from Experimental_approaches.weighted_sim import *
 
 f = open('teams.json')
 data = json.load(f)
