@@ -127,6 +127,55 @@ def simulate_upsets(upsetList, weights_list):
             freq[i] = 1
     return freq
 
+def init_gamefeed_simulator(data, one, two):
+    team1 = Team(one, data)
+    team2 = Team(two, data)
+    # Simulation and counts
+    count1=0
+    count2=0
+
+    # shooting_score->1
+    if team1.shooting_score > team2.shooting_score:
+        winner = team1.name
+    elif team2.shooting_score > team1.shooting_score:
+        winner = team2.name
+    else:
+        winner = matchup_simulator(team1.name, team2.name, team1.shooting_score, team2.shooting_score)
+    count1 = update_count(winner, team1.name, count1, 1)
+    count2 = update_count(winner, team2.name, count2, 1)
+        
+    # score->1
+    if team1.score > team2.score:
+        winner = team1.name
+    elif team2.score > team1.score:
+        winner = team2.name
+    else:
+        winner = matchup_simulator(team1.name, team2.name, team1.score, team2.score)
+    count1 = update_count(winner, team1.name, count1, 1)
+    count2 = update_count(winner, team2.name, count2, 1)
+        
+    # 538_sim -- 1
+    winner = matchup_simulator(team1.name, team2.name, team1.prob, team2.prob)
+    count1 = update_count(winner, team1.name, count1, 1)
+    count2 = update_count(winner, team2.name, count2, 1)
+
+    # kenpom->2
+    if team1.kenpom > team2.kenpom:
+        winner = team1.name
+    elif team2.kenpom > team1.kenpom:
+        winner = team2.name
+    else:
+        winner = matchup_simulator(team1.name, team2.name, team1.kenpom, team2.kenpom)
+    count1 = update_count(winner, team1.name, count1, 2)
+    count2 = update_count(winner, team2.name, count2, 2)
+
+    if count2 > count1:
+        result = team2.name
+    else:
+        result = team1.name
+    
+    return result
+
 def round_of_64(data, region_list):
     # https://www.ncaa.com/news/basketball-men/bracketiq/2018-03-13/heres-how-pick-march-madness-upsets-according-data
     # first round upset probabilities:
@@ -167,9 +216,13 @@ def round_of_64(data, region_list):
     
         # ROUND OF 64 chalk
         round_32 = []
-        for key in reg_round_64.keys():
+        for key, val in reg_round_64.items():
             team1 = Team(key, data)
-            round_32.append(team1.name)
+            team2 = Team(val, data)
+            if team1.seed == '8':
+                round_32.append(init_gamefeed_simulator(data, team1.name, team2.name))
+            else:
+                round_32.append(team1.name) 
         #print(round_32)
         regional_results.append(round_32)
     
@@ -226,7 +279,7 @@ def round_of_64(data, region_list):
         else:
             u_cinderella.update({team: prob})
     #print(u10over7)
-   # print(u11over6)
+    #print(u11over6)
     #print(u12over5)
     #print(u13over4)
     #print(u_cinderella)
@@ -282,7 +335,10 @@ def round_of_32(data, region_list):
                 temp_team = team1
                 team1 = team2
                 team2 = temp_team
-            sweet_16.append(team1.name)
+            if team1.seed == '4':
+                sweet_16.append(init_gamefeed_simulator(data, team1.name, team2.name))
+            else:   
+                sweet_16.append(team1.name)
         #print(round_32)
         regional_results.append(sweet_16)
 
@@ -355,8 +411,10 @@ def run_sweet_16(data, region_list):
                 temp_team = team1
                 team1 = team2
                 team2 = temp_team
-        
-            elite_8.append(team1.name)
+            if team1.seed == '2':
+                elite_8.append(init_gamefeed_simulator(data, team1.name, team2.name))
+            else:
+                elite_8.append(team1.name) 
         #print(elite_8)
         regional_results.append(elite_8)
     
@@ -450,55 +508,6 @@ def run_elite_8(data, region_list):
 
     #print(regional_results)
     return regional_results
-
-def init_gamefeed_simulator(data, one, two):
-    team1 = Team(one, data)
-    team2 = Team(two, data)
-    # Simulation and counts
-    count1=0
-    count2=0
-
-    # shooting_score->1
-    if team1.shooting_score > team2.shooting_score:
-        winner = team1.name
-    elif team2.shooting_score > team1.shooting_score:
-        winner = team2.name
-    else:
-        winner = matchup_simulator(team1.name, team2.name, team1.shooting_score, team2.shooting_score)
-    count1 = update_count(winner, team1.name, count1, 1)
-    count2 = update_count(winner, team2.name, count2, 1)
-        
-    # score->1
-    if team1.score > team2.score:
-        winner = team1.name
-    elif team2.score > team1.score:
-        winner = team2.name
-    else:
-        winner = matchup_simulator(team1.name, team2.name, team1.score, team2.score)
-    count1 = update_count(winner, team1.name, count1, 1)
-    count2 = update_count(winner, team2.name, count2, 1)
-        
-    # 538_sim -- 1
-    winner = matchup_simulator(team1.name, team2.name, team1.prob, team2.prob)
-    count1 = update_count(winner, team1.name, count1, 1)
-    count2 = update_count(winner, team2.name, count2, 1)
-
-    # kenpom->2
-    if team1.kenpom > team2.kenpom:
-        winner = team1.name
-    elif team2.kenpom > team1.kenpom:
-        winner = team2.name
-    else:
-        winner = matchup_simulator(team1.name, team2.name, team1.kenpom, team2.kenpom)
-    count1 = update_count(winner, team1.name, count1, 2)
-    count2 = update_count(winner, team2.name, count2, 2)
-
-    if count2 > count1:
-        result = team2.name
-    else:
-        result = team1.name
-    
-    return result
 
 def run_final_four(data, final_four):
     # left
