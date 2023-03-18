@@ -74,7 +74,7 @@ primary_guard_list = [
     'Cason Wallace',
 ]
 
-# cinderella/underrated eye test based on seeds 7+ and kenpom underseeds, ignore if in primary_guards or snipers
+# cinderella/underrated eye test based on seeds 7+ and kenpom underseeds, ignore if in primary_guards or snipers, pick one 16 seed w/ the most savages to add
 clutch = [
     'Alex Karaban',
     'Tristen Newton',
