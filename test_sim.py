@@ -278,11 +278,13 @@ def round_of_64(data, region_list):
             u13over4.update({team: prob})
         else:
             u_cinderella.update({team: prob})
+    #print('\n')
     #print(u10over7)
     #print(u11over6)
     #print(u12over5)
     #print(u13over4)
     #print(u_cinderella)
+    #print('\n')
 
     add_list = []
     add_list.append(list(u10over7.keys())[0])
@@ -342,7 +344,9 @@ def round_of_32(data, region_list):
         #print(round_32)
         regional_results.append(sweet_16)
 
+    #print('\n')
     #print(possible_upsets)
+    #print('\n')
     # Create Priority Queue for upsets
     upsetList = []
     for upset in possible_upsets.keys():
@@ -374,7 +378,9 @@ def round_of_32(data, region_list):
             if upset == id1.name:
                 freq[team]=score+id1.score+id1.kenpom-id2.score-id2.kenpom
     priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
+    #print('\n')
     #print(priority_add)
+    #print('\n')
 
     # generate target_upsets
     target_upsets = random.randint(3, 4)
@@ -432,8 +438,11 @@ def run_sweet_16(data, region_list):
             if upset == id1.name:
                 freq[team]=score+id1.score+id1.kenpom-id2.score-id2.kenpom
     priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
+    #print('\n')
     #print(possible_upsets)
+    #print('\n')
     #print(priority_add)
+    #print('\n')
 
     regional_results = add_upsets(regional_results, possible_upsets, priority_add, '16', 2)
     #for i in regional_results:
