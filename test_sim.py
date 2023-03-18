@@ -614,7 +614,7 @@ if __name__ == '__main__':
     national_champion = run_championship(data, championship)
     print(national_champion)
     
-    print(upset_count_dict)
+    #print(upset_count_dict)
     #print(first_round_upsets)
     #print(second_round_upsets)
     #print(sweet_16_upsets)
