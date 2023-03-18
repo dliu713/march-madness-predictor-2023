@@ -5,5 +5,6 @@ Model for predicting the 2023 March Madness bracket.  Combines various sources o
 Usage:
 At command line:
 > python3 scraper_final.py > teams.json
+
 > python3 test_sim.py
 
