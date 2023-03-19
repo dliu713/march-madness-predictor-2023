@@ -5,7 +5,7 @@ from Experimental_approaches.weighted_sim import *
 f = open('teams.json')
 data = json.load(f)
 
-championship = ['VCU', 'Drake']
+championship = ['Kentucky', 'Duke']
 
 national_champ = ''
 team1 = Team(championship[0], data)

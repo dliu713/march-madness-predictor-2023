@@ -149,7 +149,8 @@ savage = [
     'Grant Singleton',
     'Ansley Almonor',
     'Joe Munden Jr.',
-    'Sean Moore'
+    'Sean Moore',
+    'Jeremy Roach'
 ]
 
 
@@ -180,7 +181,6 @@ savage_list = [
     'Seth Lundy',
     'Isaiah Wong',
     'Mark Mitchell',
-    'Dariq Whitehead',
     'Jaime Jaquez Jr.',
     'Amari Bailey',
     'Reece Beekman',
@@ -188,4 +188,5 @@ savage_list = [
     'Trey Alexander',
     'Tramon Mark',
     'Tyrese Hunter',
+    'Chris Livingston',
 ]

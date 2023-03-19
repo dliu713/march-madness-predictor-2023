@@ -171,8 +171,10 @@ def init_gamefeed_simulator(data, one, two):
 
     if count2 > count1:
         result = team2.name
-    else:
+    elif count2 < count1:
         result = team1.name
+    else:
+        result = matchup_simulator(team1.name, team2.name, team1.kenpom+team1.score, team2.kenpom+team2.score)
     
     return result
 
@@ -382,6 +384,14 @@ def round_of_32(data, region_list):
     #print(priority_add)
     #print('\n')
 
+    for key in priority_add.keys():
+        tm = Team(key, data)
+        if int(tm.seed) >= 11:
+            priority_add[key] += 500
+            break
+    priority_add = dict(sorted(priority_add.items(), key=lambda x:x[1], reverse = True))
+    #print(priority_add)
+
     # generate target_upsets
     target_upsets = random.randint(3, 4)
     regional_results = add_upsets(regional_results, possible_upsets, priority_add, '32', target_upsets)
@@ -507,8 +517,10 @@ def run_elite_8(data, region_list):
 
         if count2 > count1:
             final_four = team2.name
-        else:
+        elif count2 < count1:
             final_four = team1.name
+        else:
+            final_four = matchup_simulator(team1.name, team2.name, team1.kenpom+team1.score, team2.kenpom+team2.score)
         #print(final_four)
         regional_results.append(final_four)
 
@@ -632,7 +644,7 @@ if __name__ == '__main__':
     national_champion = run_championship(data, championship)
     print(national_champion)
     
-    #print(upset_count_dict)
+    print(upset_count_dict)
     #print(first_round_upsets)
     #print(second_round_upsets)
     #print(sweet_16_upsets)
