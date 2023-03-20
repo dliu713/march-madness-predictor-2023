@@ -390,10 +390,10 @@ def round_of_32(data, region_list):
             priority_add[key] += 500
             break
     priority_add = dict(sorted(priority_add.items(), key=lambda x:x[1], reverse = True))
-    #print(priority_add)
+    print(priority_add)
 
     # generate target_upsets
-    target_upsets = random.randint(3, 4)
+    target_upsets = 4
     regional_results = add_upsets(regional_results, possible_upsets, priority_add, '32', target_upsets)
 
     #for i in regional_results:
@@ -451,7 +451,7 @@ def run_sweet_16(data, region_list):
     #print('\n')
     #print(possible_upsets)
     #print('\n')
-    #print(priority_add)
+    print(priority_add)
     #print('\n')
 
     regional_results = add_upsets(regional_results, possible_upsets, priority_add, '16', 2)

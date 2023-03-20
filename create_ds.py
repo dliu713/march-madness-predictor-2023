@@ -46,7 +46,7 @@ wooden = [
 ]
 
 # https://www.sbnation.com/college-basketball/2023/3/14/23629013/march-madness-best-players-ranked-ncaa-tournament-2023-men
-# eye test --neural network/ai/manual? go to espn, film, and images to identify biometrics, killers, reasonable jumper 33.5+, role sniper 39.5%+, ppg >= 9.5, min >= 12.5
+# eye test --neural network/ai/manual? go to espn, film, and images to identify biometrics, killers, reasonable jumper 33.5+, role sniper 39.5%+, ppg >= 8-9.5, min >= 12.5
     # for shooters, check attempts if 50% or more and makes
 # good teams with good guards eye test:
 primary_guard_list = [
@@ -66,7 +66,6 @@ primary_guard_list = [
     'Terquavion Smith',
     'Reece Beekman',
     'Boo Buie',
-    'Julian Strawther',
     'Tyson Walker',
     'Grant Singleton',
     'Jalen Hood-Schifino',
@@ -74,11 +73,8 @@ primary_guard_list = [
     'Cason Wallace',
 ]
 
-# cinderella/underrated eye test based on seeds 7+ and kenpom underseeds, ignore if in primary_guards or snipers, pick one 16 seed w/ the most savages to add
+# cinderella/underrated eye test based on teams and cinderellas and kenpom underseeds, ignore if in primary_guards, wooden, savage_list, or snipers, pick one 16 seed w/ the most savages to add
 savage = [
-    'Alex Karaban',
-    'Tristen Newton',
-    'Adama Sanogo',
     'Chase Audige',
     'Joey Hauser',
     'Jaden Akins',
@@ -86,7 +82,6 @@ savage = [
     "D'Moi Hodge",
     'DeAndre Gholston',
     'Wade Taylor IV',
-    'Andrew Funk',
     'Max Rice',
     'Chibuzo Agbo',
     'Boogie Ellis',
@@ -135,22 +130,76 @@ savage = [
     'Miles Norris',
     'RaeQuan Battle',
     'Chance McMillian',
-    'Taijon Jones'
-    'Aaron Deloney'
-    'Oliver Lynch-Daniels'
-    'Josiah-Jordan James',
-    'Jaylen Clark',
-    "Sir'Jabarri Rice",
-    'Kam Jones',
-    'Souley Boum',
-    'Antonio Reeves',
-    'Jacob Toppin',
+    'Taijon Jones',
+    'Aaron Deloney',
     'Demetre Roberts',
     'Grant Singleton',
     'Ansley Almonor',
     'Joe Munden Jr.',
     'Sean Moore',
-    'Jeremy Roach'
+    'Oliver Lynch-Daniels',
+    'Seth Lundy',
+
+    'Alex Karaban',
+    'Tristen Newton',
+    'Adama Sanogo',
+
+    'Jamal Shead',
+
+    'Dajuan Harris Jr.',
+
+    'Courtney Ramey',
+
+    'Mark Sears',
+    'Jahvon Quinerly',
+
+    'Josiah-Jordan James',
+
+    'Jaylen Clark',
+    'Tyger Campbell',
+    'Adem Bona',
+
+    'LJ Cryer',
+
+    "Sir'Jabarri Rice",
+
+    'Kam Jones',
+
+    'Souley Boum',
+
+    'Antonio Reeves',
+    'Jacob Toppin',
+
+    'Jeremy Roach',
+
+    'Colby Jones',
+    'Adam Kunkel',
+
+    "Nae'Qwan Tomlin",
+
+    'Rasir Bolton',
+    'Malachi Smith',
+    'Julian Strawther',
+
+    'Armaan Franklin',
+
+    'Ryan Nembhard',
+    'Arthur Kaluma',
+
+    'Xavier Johnson',
+
+    'Darrion Trammell',
+    'Lamont Butler',
+
+    'Alex Ducas',
+
+    'Jordan Miller',
+    'Nijel Pack',
+    'Wooga Poplar',
+
+    'Damion Baugh',
+    'Emanuel Miller'
+
 ]
 
 
@@ -178,7 +227,6 @@ savage_list = [
     'Keyontae Johnson',
     'Marcus Sasser',
     'Terrence Shannon Jr.',
-    'Seth Lundy',
     'Isaiah Wong',
     'Mark Mitchell',
     'Jaime Jaquez Jr.',
