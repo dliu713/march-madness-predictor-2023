@@ -344,8 +344,13 @@ def round_of_32(data, region_list):
                 temp_team = team1
                 team1 = team2
                 team2 = temp_team
-            if team1.seed == '4':
-                sweet_16.append(init_gamefeed_simulator(data, team1.name, team2.name))
+            if team1.seed == '4' and team2.seed == '5':
+                #sweet_16.append(init_gamefeed_simulator(data, team1.name, team2.name))
+                advantage = init_gamefeed_simulator(data, team1.name, team2.name)
+                if advantage == team1.name:
+                    sweet_16.append(matchup_simulator(advantage, team2.name, 1.5, 1))
+                if advantage == team2.name:
+                    sweet_16.append(matchup_simulator(team1.name, advantage, 1, 1.5))
             else:   
                 sweet_16.append(team1.name)
         #print(round_32)
@@ -432,8 +437,13 @@ def run_sweet_16(data, region_list):
                 temp_team = team1
                 team1 = team2
                 team2 = temp_team
-            if team1.seed == '2':
-                elite_8.append(init_gamefeed_simulator(data, team1.name, team2.name))
+            if team1.seed == '2' and team2.seed == '3':
+                #elite_8.append(init_gamefeed_simulator(data, team1.name, team2.name))
+                advantage = init_gamefeed_simulator(data, team1.name, team2.name)
+                if advantage == team1.name:
+                    elite_8.append(matchup_simulator(advantage, team2.name, 1.5, 1))
+                if advantage == team2.name:
+                    elite_8.append(matchup_simulator(team1.name, advantage, 1, 1.5))
             else:
                 elite_8.append(team1.name) 
         #print(elite_8)
