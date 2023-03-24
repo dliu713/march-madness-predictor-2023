@@ -5,7 +5,7 @@ from Experimental_approaches.weighted_sim import *
 f = open('teams.json')
 data = json.load(f)
 
-matchup = ['Kansas', 'Arkansas']
+matchup = ['Memphis', 'Kentucky']
 
 team1 = Team(matchup[0], data)
 team2 = Team(matchup[1], data)

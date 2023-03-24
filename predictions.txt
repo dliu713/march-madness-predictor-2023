@@ -1,0 +1,162 @@
+['Alabama', 'Maryland', 'San Diego St.', 'Furman', 'Creighton', 'Baylor', 'Utah St.', 'Arizona']
+['Purdue', 'Florida Atlantic', 'Duke', 'Tennessee', 'Kentucky', 'Kansas St.', 'Michigan St.', 'Marquette']
+['Houston', 'Auburn', 'Miami FL', 'Indiana', 'Pittsburgh', 'Kennesaw St.', 'Penn St.', 'Texas']
+['Kansas', 'Arkansas', 'VCU', 'Connecticut', 'Arizona St.', 'Gonzaga', 'Northwestern', 'UCLA']
+['Alabama', 'San Diego St.', 'Baylor', 'Arizona']
+['Purdue', 'Duke', 'Kentucky', 'Michigan St.']
+['Houston', 'Indiana', 'Pittsburgh', 'Texas']
+['Arkansas', 'Connecticut', 'Arizona St.', 'UCLA']
+['Alabama', 'Arizona']
+['Duke', 'Kentucky']
+['Houston', 'Texas']
+['Arkansas', 'UCLA']
+['Alabama', 'Duke', 'Houston', 'UCLA']
+['Alabama', 'Houston']
+Houston
+{'total': 13, '64': 7, '32': 4, '16': 2}
+First Round Results
+{'Alabama': 1000,
+ 'Baylor': 1000,
+ 'Duke': 1000,
+ 'Kentucky': 1000,
+ 'Kansas St.': 1000,
+ 'Michigan St.': 1000,
+ 'Houston': 1000,
+ 'Miami FL': 1000,
+ 'Indiana': 1000,
+ 'Kansas': 1000,
+ 'Connecticut': 1000,
+ 'UCLA': 1000,
+ 'Purdue': 998,
+ 'Texas': 998,
+ 'Pittsburgh': 997,
+ 'Penn St.': 986,
+ 'Gonzaga': 983,
+ 'San Diego St.': 969,
+ 'VCU': 969,
+ 'Arizona': 945,
+ 'N.C. State': 848,
+ 'TCU': 845,
+ 'Furman': 810,
+ 'Tennessee': 810,
+ 'Xavier': 726,
+ 'Arkansas': 700,
+ 'West Virginia': 695,
+ 'Auburn': 678,
+ 'Memphis': 675,
+ 'Vermont': 650,
+ 'Boise St.': 556,
+ 'Missouri': 542,
+ 'Utah St.': 458,
+ 'Northwestern': 444,
+ 'Marquette': 350,
+ 'Florida Atlantic': 325,
+ 'Iowa': 322,
+ 'Maryland': 305,
+ 'Illinois': 300,
+ 'Kennesaw St.': 274,
+ 'Virginia': 190,
+ 'Louisiana': 190,
+ 'Arizona St.': 155,
+ 'Creighton': 152,
+ 'Princeton': 55,
+ 'Charleston': 31,
+ "Saint Mary's": 31,
+ 'Grand Canyon': 17,
+ 'Texas A&M': 14,
+ 'Iowa St.': 3,
+ 'Fairleigh Dickinson': 2,
+ 'Colgate': 2}
+
+Second Round Results
+{'Alabama': 1000,
+ 'Kentucky': 1000,
+ 'Houston': 1000,
+ 'Indiana': 1000,
+ 'Connecticut': 1000,
+ 'UCLA': 1000,
+ 'Michigan St.': 999,
+ 'Pittsburgh': 994,
+ 'San Diego St.': 969,
+ 'Arizona': 905,
+ 'Gonzaga': 825,
+ 'Baylor': 769,
+ 'Texas': 625,
+ 'Arkansas': 624,
+ 'Duke': 614,
+ 'Memphis': 499,
+ 'Purdue': 494,
+ 'Tennessee': 386,
+ 'Kansas': 375,
+ 'Penn St.': 374,
+ 'N.C. State': 229,
+ 'TCU': 123,
+ 'Arizona St.': 52,
+ 'Missouri': 50,
+ 'Utah St.': 45,
+ 'Charleston': 25,
+ 'Florida Atlantic': 7,
+ 'Virginia': 6,
+ 'Xavier': 6,
+ 'Creighton': 2,
+ 'Marquette': 1,
+ 'Texas A&M': 1,
+ 'Illinois': 1}
+
+Sweet 16 Results
+{'UCLA': 1000,
+ 'Alabama': 999,
+ 'Kentucky': 986,
+ 'Houston': 891,
+ 'Arizona': 683,
+ 'Texas': 625,
+ 'Arkansas': 558,
+ 'Duke': 455,
+ 'Connecticut': 442,
+ 'Memphis': 354,
+ 'Baylor': 317,
+ 'Penn St.': 251,
+ 'Tennessee': 160,
+ 'Pittsburgh': 119,
+ 'Indiana': 109,
+ 'Purdue': 27,
+ 'Michigan St.': 13,
+ 'Florida Atlantic': 4,
+ 'Xavier': 4,
+ 'San Diego St.': 1,
+ 'Marquette': 1,
+ 'Texas A&M': 1}
+
+Elite 8 Results
+{'Alabama': 992,
+ 'Houston': 891,
+ 'UCLA': 774,
+ 'Memphis': 353,
+ 'Duke': 291,
+ 'Kentucky': 234,
+ 'Connecticut': 205,
+ 'Texas': 99,
+ 'Tennessee': 95,
+ 'Purdue': 26,
+ 'Arkansas': 21,
+ 'Indiana': 9,
+ 'Baylor': 7,
+ 'Arizona': 1,
+ 'Xavier': 1,
+ 'Marquette': 1}
+
+Final Four Results
+{'Alabama': 985,
+ 'Houston': 891,
+ 'UCLA': 78,
+ 'Connecticut': 28,
+ 'Baylor': 6,
+ 'Duke': 6,
+ 'Texas': 2,
+ 'Arizona': 1,
+ 'Kentucky': 1,
+ 'Tennessee': 1,
+ 'Indiana': 1}
+
+ Champions
+{'Houston': 891, 'Alabama': 101, 'UCLA': 7, 'Connecticut': 1}

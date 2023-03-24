@@ -222,7 +222,12 @@ def round_of_64(data, region_list):
             team1 = Team(key, data)
             team2 = Team(val, data)
             if team1.seed == '8':
-                round_32.append(init_gamefeed_simulator(data, team1.name, team2.name))
+                #round_32.append(init_gamefeed_simulator(data, team1.name, team2.name))
+                advantage = init_gamefeed_simulator(data, team1.name, team2.name)
+                if advantage == team1.name:
+                    round_32.append(matchup_simulator(advantage, team2.name, 1.5, 1))
+                if advantage == team2.name:
+                    round_32.append(matchup_simulator(team1.name, advantage, 1, 1.5))
             else:
                 round_32.append(team1.name) 
         #print(round_32)
@@ -390,7 +395,7 @@ def round_of_32(data, region_list):
             priority_add[key] += 500
             break
     priority_add = dict(sorted(priority_add.items(), key=lambda x:x[1], reverse = True))
-    print(priority_add)
+    #print(priority_add)
 
     # generate target_upsets
     target_upsets = 4
@@ -451,7 +456,7 @@ def run_sweet_16(data, region_list):
     #print('\n')
     #print(possible_upsets)
     #print('\n')
-    print(priority_add)
+    #print(priority_add)
     #print('\n')
 
     regional_results = add_upsets(regional_results, possible_upsets, priority_add, '16', 2)
