@@ -275,5 +275,6 @@ SAVloc = [
     'Tristen Newton',
     "Sir'Jabarri Rice",
     'Darrion Trammell',
-    'Allen Flanigan'
+    'Allen Flanigan',
+    'Jordan Miller'
 ]

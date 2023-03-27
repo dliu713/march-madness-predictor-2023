@@ -1,172 +1,2537 @@
-['Alabama', 'West Virginia', 'San Diego St.', 'Furman', 'N.C. State', 'Baylor', 'Utah St.', 'Arizona']
-['Purdue', 'Memphis', 'Duke', 'Tennessee', 'Kentucky', 'Kansas St.', 'Michigan St.', 'Vermont']
-['Houston', 'Iowa', 'Miami FL', 'Indiana', 'Pittsburgh', 'Xavier', 'Penn St.', 'Texas']
-['Kansas', 'Illinois', 'VCU', 'Connecticut', 'TCU', 'Gonzaga', 'Northwestern', 'UCLA']
-['Alabama', 'San Diego St.', 'Baylor', 'Utah St.']
-['Memphis', 'Duke', 'Kentucky', 'Michigan St.']
-['Houston', 'Indiana', 'Pittsburgh', 'Texas']
-['Kansas', 'Connecticut', 'Gonzaga', 'UCLA']
-['Alabama', 'Baylor']
-['Memphis', 'Kentucky']
-['Houston', 'Texas']
-['Connecticut', 'Gonzaga']
-['Alabama', 'Memphis', 'Houston', 'Connecticut']
-['Alabama', 'Houston']
-Houston
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Utah St.': 8.959999999999996, 'Boise St.': 7.299999999999999, 'USC': -4.079999999999998}
+{'Arizona St.': 9.320000000000004, 'Pittsburgh': 8.940000000000001, 'N.C. State': -6.339999999999996, 'Providence': -15.07}
+{'VCU': 4.25, 'Oral Roberts': -14.239999999999998, 'Charleston': -19.490000000000002, 'Drake': -20.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -8.46, 'Louisiana': -20.51, 'Iona': -34.66}
+{'Kennesaw St.': -13.05, 'Fairleigh Dickinson': -13.8, 'Vermont': -14.409999999999998, 'Princeton': -17.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -31.34, 'Montana St.': -33.56, 'Howard': -41.35, 'UNC Asheville': -45.12, 'Northern Kentucky': -59.3}
+
+
+['Alabama', 'West Virginia', 'San Diego St.', 'Furman', 'Creighton', 'Baylor', 'Utah St.', 'Arizona']
+['Purdue', 'Florida Atlantic', 'Duke', 'Tennessee', 'Kentucky', 'Kansas St.', 'Michigan St.', 'Marquette']
+['Houston', 'Auburn', 'Miami FL', 'Indiana', 'Pittsburgh', 'Kennesaw St.', 'Penn St.', 'Texas']
+['Kansas', 'Arkansas', 'VCU', 'Connecticut', 'Arizona St.', 'Gonzaga', 'Northwestern', 'UCLA']
+
+Second Round Priority Upsets
+{'Michigan St.': 17.880000000000003, 'Florida Atlantic': 12.680000000000003, 'Arkansas': 9.489999999999995, 'Creighton': 8.669999999999998, 'Kentucky': 5.489999999999998, 'Utah St.': 3.019999999999996, 'Arizona St.': 2.070000000000004, 'Penn St.': -6.530000000000001, 'Northwestern': -15.8, 'West Virginia': -20.4, 'Auburn': -31.369999999999997}
+
+
+['Alabama', 'San Diego St.', 'Creighton', 'Arizona']
+['Florida Atlantic', 'Duke', 'Kansas St.', 'Michigan St.']
+['Houston', 'Miami FL', 'Pittsburgh', 'Texas']
+['Arkansas', 'Connecticut', 'Gonzaga', 'UCLA']
+
+Sweet 16 Priority Upsets
+{'Florida Atlantic': 20.740000000000006, 'Miami FL': 16.089999999999996, 'Arkansas': 15.259999999999994, 'San Diego St.': -8.29}
+
+
+['Alabama', 'Arizona']
+['Florida Atlantic', 'Kansas St.']
+['Miami FL', 'Texas']
+['Connecticut', 'UCLA']
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 89.91999999999999}
+
+
+['Alabama', 'Florida Atlantic', 'Texas', 'Connecticut']
+['Alabama', 'Connecticut']
+Connecticut
 {'total': 13, '64': 7, '32': 4, '16': 2}
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 7.959999999999999, 'Boise St.': 7.299999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 15.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -9.339999999999996, 'Providence': -11.07}
+{'VCU': -0.75, 'Oral Roberts': -16.24, 'Charleston': -20.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -9.46, 'Louisiana': -20.51, 'Iona': -38.66}
+{'Kennesaw St.': -11.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -14.8, 'Princeton': -16.29, 'Grand Canyon': -21.319999999999997, 'UC Santa Barbara': -31.34, 'Montana St.': -32.56, 'Howard': -40.35, 'UNC Asheville': -45.12}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 12.880000000000003, 'Arkansas': 11.489999999999995, 'Florida Atlantic': 10.680000000000003, 'Creighton': 10.669999999999998, 'Utah St.': 5.019999999999996, 'Arizona St.': 4.070000000000004, 'Kentucky': 2.4899999999999984, 'Penn St.': -1.5300000000000011, 'Northwestern': -14.8, 'Maryland': -18.169999999999995, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Florida Atlantic': 23.740000000000006, 'Arkansas': 12.259999999999994, 'Indiana': -1.4600000000000009, 'San Diego St.': -4.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 61.92, 'Arkansas': 22.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 7.959999999999999, 'Penn St.': 7.759999999999998, 'Boise St.': 7.299999999999999, 'USC': -3.0799999999999983}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -8.339999999999996, 'Providence': -12.07}
+{'VCU': 0.25, 'Charleston': -17.490000000000002, 'Oral Roberts': -18.24, 'Drake': -18.400000000000002}
+{'Furman': 2.0199999999999996, 'Kent St.': -10.46, 'Louisiana': -21.51, 'Iona': -39.66}
+{'Kennesaw St.': -11.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -21.319999999999997, 'Colgate': -29.28, 'UC Santa Barbara': -31.34, 'Howard': -40.35, 'UNC Asheville': -45.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 14.880000000000003, 'Creighton': 14.669999999999998, 'Florida Atlantic': 10.680000000000003, 'Kentucky': 9.489999999999998, 'Arkansas': 6.489999999999995, 'Utah St.': 2.019999999999996, 'Penn St.': -2.530000000000001, 'Arizona St.': -3.929999999999996, 'Northwestern': -13.8, 'West Virginia': -20.4, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 43.230000000000004, 'Michigan St.': 10.91, 'Florida Atlantic': 6.7400000000000055, 'San Diego St.': -2.289999999999999, 'Indiana': -10.46}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 83.22000000000001}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Utah St.': 6.959999999999999, 'Boise St.': 5.299999999999999, 'USC': -1.0799999999999983}
+{'Pittsburgh': 14.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -14.07}
+{'VCU': 2.25, 'Oral Roberts': -13.239999999999998, 'Charleston': -16.490000000000002, 'Drake': -22.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -11.46, 'Louisiana': -20.51, 'Iona': -39.66}
+{'Kennesaw St.': -11.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -16.29, 'UC Santa Barbara': -26.34, 'Colgate': -32.28, 'Texas A&M Corpus Chris': -40.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 11.880000000000003, 'Creighton': 8.669999999999998, 'Memphis': 8.139999999999997, 'Arizona St.': 8.070000000000004, 'Arkansas': 7.489999999999995, 'Utah St.': 5.019999999999996, 'Kentucky': 0.48999999999999844, 'Penn St.': 0.46999999999999886, 'Maryland': -19.169999999999995, 'Northwestern': -20.8, 'Iowa': -28.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 53.230000000000004, 'Memphis': 17.2, 'Miami FL': 1.0899999999999963, 'San Diego St.': -3.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 85.38}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Boise St.': 6.299999999999999, 'Utah St.': 5.959999999999999, 'USC': -5.079999999999998}
+{'Pittsburgh': 11.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -4.339999999999996, 'Providence': -12.07}
+{'VCU': 3.25, 'Oral Roberts': -14.239999999999998, 'Charleston': -19.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -12.46, 'Louisiana': -20.51, 'Iona': -39.66}
+{'Kennesaw St.': -10.05, 'Vermont': -14.409999999999998, 'Princeton': -15.29, 'Grand Canyon': -25.32, 'UC Santa Barbara': -29.34, 'Colgate': -31.28, 'UNC Asheville': -42.12, 'Texas A&M Corpus Chris': -43.769999999999996, 'Northern Kentucky': -57.3}
+
+
+
+Second Round Priority Upsets
+{'Memphis': 12.139999999999997, 'Michigan St.': 11.880000000000003, 'Creighton': 11.669999999999998, 'Kentucky': 7.489999999999998, 'Missouri': 6.060000000000002, 'Arizona St.': 1.0700000000000038, 'Penn St.': -8.530000000000001, 'Illinois': -10.659999999999997, 'Maryland': -18.169999999999995, 'Boise St.': -19.500000000000004, 'Iowa': -31.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 56.230000000000004, 'Michigan St.': 9.91, 'Memphis': 4.199999999999999, 'Miami FL': -1.9100000000000037, 'San Diego St.': -11.29}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 83.22000000000001}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 15.759999999999998, 'Boise St.': 9.299999999999995, 'Utah St.': 7.959999999999999, 'USC': -3.0799999999999983}
+{'Arizona St.': 11.320000000000004, 'Pittsburgh': 8.940000000000001, 'N.C. State': -10.339999999999996, 'Providence': -16.07}
+{'VCU': -0.75, 'Oral Roberts': -16.24, 'Charleston': -19.490000000000002, 'Drake': -24.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -9.46, 'Louisiana': -17.51, 'Iona': -37.66}
+{'Kennesaw St.': -12.05, 'Vermont': -13.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -22.319999999999997, 'Colgate': -32.28, 'Montana St.': -33.56, 'Howard': -40.35, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -57.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 18.880000000000003, 'Florida Atlantic': 10.680000000000003, 'Creighton': 8.669999999999998, 'Arizona St.': 4.070000000000004, 'Missouri': 4.060000000000002, 'Kentucky': 2.4899999999999984, 'Penn St.': -0.5300000000000011, 'Illinois': -12.66, 'Maryland': -15.169999999999995, 'Boise St.': -18.500000000000004, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 64.23, 'Florida Atlantic': 12.740000000000006, 'San Diego St.': -7.289999999999999, 'Indiana': -10.46}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 89.91999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Boise St.': 6.299999999999999, 'Utah St.': 5.959999999999999, 'USC': -5.079999999999998}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 9.320000000000004, 'Providence': -10.07, 'N.C. State': -11.339999999999996}
+{'VCU': 3.25, 'Oral Roberts': -16.24, 'Charleston': -16.490000000000002, 'Drake': -19.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -10.46, 'Louisiana': -16.51, 'Iona': -38.66}
+{'Kennesaw St.': -13.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -23.319999999999997, 'UC Santa Barbara': -28.34, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -44.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 16.669999999999998, 'Michigan St.': 10.880000000000003, 'Arkansas': 10.489999999999995, 'Missouri': 8.060000000000002, 'Kentucky': 4.489999999999998, 'Arizona St.': 3.070000000000004, 'Penn St.': -1.5300000000000011, 'Boise St.': -20.5, 'Maryland': -21.169999999999995, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Duke': 26.939999999999994, 'Missouri': 19.270000000000003, 'Arkansas': 8.259999999999994, 'San Diego St.': -6.289999999999999, 'Indiana': -15.46}
+
+
+
+Elite 8 Priority Upsets
+{'Missouri': 70.38}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 9.959999999999996, 'Boise St.': 3.299999999999999, 'USC': -3.0799999999999983}
+{'Pittsburgh': 10.940000000000001, 'Providence': -5.069999999999997, 'N.C. State': -7.339999999999996}
+{'VCU': 1.25, 'Charleston': -16.490000000000002, 'Oral Roberts': -20.24, 'Drake': -22.400000000000002}
+{'Furman': -3.9800000000000004, 'Kent St.': -6.460000000000001, 'Louisiana': -22.51, 'Iona': -38.66}
+{'Kennesaw St.': -11.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -14.8, 'Princeton': -15.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -29.34, 'Colgate': -31.28, 'Montana St.': -34.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 17.880000000000003, 'Creighton': 10.669999999999998, 'Florida Atlantic': 9.680000000000003, 'Utah St.': 6.019999999999996, 'TCU': -2.2499999999999964, 'Penn St.': -7.530000000000001, 'Illinois': -10.659999999999997, 'Northwestern': -12.8, 'Providence': -13.579999999999995, 'West Virginia': -19.4, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 52.230000000000004, 'Florida Atlantic': 7.7400000000000055, 'Utah St.': 4.229999999999997, 'San Diego St.': -7.289999999999999, 'Indiana': -14.46}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 89.91999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Boise St.': 7.299999999999999, 'Utah St.': 3.959999999999999, 'USC': -3.0799999999999983}
+{'Pittsburgh': 15.939999999999998, 'Arizona St.': 8.320000000000004, 'N.C. State': -3.3399999999999963, 'Providence': -13.07}
+{'VCU': 2.25, 'Charleston': -15.490000000000002, 'Oral Roberts': -19.24, 'Drake': -22.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -7.460000000000001, 'Louisiana': -20.51, 'Iona': -36.66}
+{'Vermont': -14.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -16.29, 'Grand Canyon': -22.319999999999997, 'UC Santa Barbara': -31.34, 'Montana St.': -34.56, 'Howard': -41.35, 'UNC Asheville': -44.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 9.669999999999998, 'Kentucky': 9.489999999999998, 'Missouri': 9.060000000000002, 'Florida Atlantic': 8.680000000000003, 'Arizona St.': 5.070000000000004, 'Pittsburgh': 0.5799999999999947, 'Penn St.': -4.530000000000001, 'Illinois': -10.659999999999997, 'Boise St.': -16.500000000000004, 'Maryland': -19.169999999999995, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 37.230000000000004, 'Florida Atlantic': 15.520000000000003, 'Missouri': 5.270000000000003, 'Michigan St.': 3.91, 'San Diego St.': -10.29, 'Indiana': -16.46}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 98.42999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 14.759999999999998, 'Utah St.': 5.959999999999999, 'Boise St.': 3.299999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 14.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -13.07}
+{'VCU': -0.75, 'Oral Roberts': -8.239999999999998, 'Charleston': -17.490000000000002, 'Drake': -24.400000000000002}
+{'Furman': -3.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -15.510000000000002, 'Iona': -38.66}
+{'Kennesaw St.': -11.05, 'Vermont': -11.409999999999997, 'Princeton': -16.29, 'Grand Canyon': -25.32, 'Colgate': -32.28, 'Montana St.': -34.56, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -45.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 14.669999999999998, 'Michigan St.': 12.880000000000003, 'Arkansas': 10.489999999999995, 'Memphis': 10.139999999999997, 'Kentucky': 5.489999999999998, 'Arizona St.': 5.070000000000004, 'Utah St.': 2.019999999999996, 'Penn St.': -7.530000000000001, 'Northwestern': -18.8, 'West Virginia': -21.4, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 22.979999999999997, 'Arkansas': 19.259999999999994, 'San Diego St.': -1.2899999999999991, 'Indiana': -8.46}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 57.31999999999999, 'Memphis': 33.379999999999995}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 13.759999999999998, 'Utah St.': 8.959999999999996, 'Boise St.': 6.299999999999999, 'USC': -3.0799999999999983}
+{'Arizona St.': 10.320000000000004, 'Pittsburgh': 9.940000000000001, 'N.C. State': -6.339999999999996, 'Providence': -14.07}
+{'VCU': 4.25, 'Oral Roberts': -16.24, 'Drake': -18.400000000000002, 'Charleston': -19.490000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -9.46, 'Iona': -39.66}
+{'Kennesaw St.': -11.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -30.34, 'Montana St.': -33.56, 'Howard': -41.35, 'UNC Asheville': -43.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 17.669999999999998, 'Michigan St.': 11.880000000000003, 'Florida Atlantic': 10.680000000000003, 'Arkansas': 8.489999999999995, 'Arizona St.': 7.070000000000004, 'Utah St.': 7.019999999999996, 'Kentucky': -0.5100000000000016, 'Penn St.': -10.530000000000001, 'West Virginia': -15.399999999999999, 'Northwestern': -16.8, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Florida Atlantic': 20.520000000000003, 'Miami FL': 19.089999999999996, 'Arkansas': 16.259999999999994, 'San Diego St.': -5.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 89.91999999999999}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 6.959999999999999, 'Penn St.': 6.759999999999998, 'Boise St.': 5.299999999999999, 'USC': -2.0799999999999983}
+{'Pittsburgh': 9.940000000000001, 'Arizona St.': 8.320000000000004, 'N.C. State': -3.3399999999999963, 'Providence': -12.07}
+{'VCU': -1.75, 'Oral Roberts': -11.239999999999998, 'Drake': -20.400000000000002, 'Charleston': -20.490000000000002}
+{'Furman': 1.0199999999999996, 'Kent St.': -10.46, 'Louisiana': -21.51, 'Iona': -36.66}
+{'Kennesaw St.': -11.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -14.8, 'Princeton': -16.29, 'Grand Canyon': -24.319999999999997, 'Colgate': -30.28, 'UC Santa Barbara': -31.34, 'Montana St.': -34.56, 'Texas A&M Corpus Chris': -39.769999999999996, 'Howard': -41.35}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 16.880000000000003, 'Creighton': 16.669999999999998, 'Florida Atlantic': 10.680000000000003, 'Arizona St.': 6.070000000000004, 'Kentucky': 5.489999999999998, 'Utah St.': 3.019999999999996, 'Penn St.': -4.530000000000001, 'Maryland': -15.169999999999995, 'Northwestern': -20.8, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 55.230000000000004, 'Miami FL': 13.089999999999996, 'Florida Atlantic': 6.7400000000000055, 'San Diego St.': -2.289999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 5.959999999999999, 'Boise St.': 4.299999999999999, 'USC': -3.0799999999999983}
+{'Arizona St.': 11.320000000000004, 'Pittsburgh': 9.940000000000001, 'N.C. State': -7.339999999999996, 'Providence': -15.07}
+{'Oral Roberts': -10.239999999999998, 'Charleston': -19.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -9.46, 'Louisiana': -18.51, 'Iona': -37.66}
+{'Kennesaw St.': -7.050000000000001, 'Vermont': -9.409999999999997, 'Fairleigh Dickinson': -15.8, 'Princeton': -16.29, 'Grand Canyon': -25.32, 'Colgate': -32.28, 'Montana St.': -32.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -42.769999999999996, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Kentucky': 12.489999999999998, 'Michigan St.': 10.880000000000003, 'Arkansas': 10.489999999999995, 'Creighton': 9.669999999999998, 'Arizona St.': 9.070000000000004, 'Utah St.': 0.019999999999999574, 'Penn St.': -10.530000000000001, 'Northwestern': -16.8, 'Maryland': -19.169999999999995, 'Iowa': -27.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Tennessee': 33.16, 'Michigan St.': 12.91, 'Arkansas': 12.259999999999994, 'San Diego St.': -0.28999999999999915, 'Miami FL': -9.910000000000004}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 90.0}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 7.959999999999999, 'Boise St.': 7.299999999999999, 'Penn St.': 6.759999999999998, 'USC': -2.0799999999999983}
+{'Pittsburgh': 11.939999999999998, 'Arizona St.': 11.320000000000004, 'N.C. State': -8.339999999999996, 'Providence': -13.07}
+{'VCU': 0.25, 'Oral Roberts': -16.24, 'Charleston': -19.490000000000002, 'Drake': -22.400000000000002}
+{'Furman': 1.0199999999999996, 'Kent St.': -5.460000000000001, 'Louisiana': -19.51, 'Iona': -39.66}
+{'Kennesaw St.': -12.05, 'Vermont': -14.409999999999998, 'Princeton': -15.29, 'Grand Canyon': -26.32, 'UC Santa Barbara': -30.34, 'Colgate': -32.28, 'Montana St.': -33.56, 'Howard': -39.35, 'Texas A&M Corpus Chris': -42.769999999999996, 'Northern Kentucky': -57.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 16.880000000000003, 'Florida Atlantic': 10.680000000000003, 'Creighton': 9.669999999999998, 'Kentucky': 8.489999999999998, 'Utah St.': 6.019999999999996, 'Arkansas': 5.489999999999995, 'Arizona St.': 4.070000000000004, 'Texas A&M': -7.289999999999999, 'Boise St.': -17.500000000000004, 'West Virginia': -20.4, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 51.230000000000004, 'Michigan St.': 12.91, 'Florida Atlantic': 12.740000000000006, 'Miami FL': -3.9100000000000037, 'San Diego St.': -11.29}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 83.22000000000001}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Boise St.': 5.299999999999999, 'Utah St.': 4.959999999999999, 'USC': 0.9200000000000017}
+{'Pittsburgh': 11.939999999999998, 'Arizona St.': 11.320000000000004, 'N.C. State': -9.339999999999996, 'Providence': -12.07}
+{'VCU': 0.25, 'Oral Roberts': -17.24, 'Charleston': -18.490000000000002, 'Drake': -20.400000000000002}
+{'Furman': 1.0199999999999996, 'Kent St.': -12.46, 'Louisiana': -18.51, 'Iona': -37.66}
+{'Kennesaw St.': -12.05, 'Vermont': -13.409999999999998, 'Princeton': -15.29, 'Grand Canyon': -25.32, 'Colgate': -31.28, 'UC Santa Barbara': -31.34, 'Montana St.': -33.56, 'Texas A&M Corpus Chris': -40.769999999999996, 'Howard': -41.35, 'UNC Asheville': -44.12}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 19.880000000000003, 'Memphis': 15.139999999999997, 'Arkansas': 7.489999999999995, 'Kentucky': 6.489999999999998, 'Creighton': 5.669999999999998, 'Missouri': 5.060000000000002, 'Arizona St.': -0.9299999999999962, 'Penn St.': -2.530000000000001, 'Maryland': -19.169999999999995, 'Boise St.': -21.5, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 13.259999999999994, 'Memphis': 12.2, 'Michigan St.': 9.91, 'Miami FL': -0.9100000000000037, 'San Diego St.': -6.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 70.89, 'Arkansas': 17.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 8.759999999999998, 'Boise St.': 8.299999999999995, 'Utah St.': 7.959999999999999, 'USC': -5.079999999999998}
+{'Pittsburgh': 13.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -13.07}
+{'VCU': 5.25, 'Oral Roberts': -17.24, 'Charleston': -19.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -22.51, 'Iona': -39.66}
+{'Kennesaw St.': -6.050000000000001, 'Princeton': -13.29, 'Vermont': -14.409999999999998, 'Fairleigh Dickinson': -14.8, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -31.28, 'Montana St.': -34.56, 'Texas A&M Corpus Chris': -43.769999999999996, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 13.669999999999998, 'Florida Atlantic': 10.680000000000003, 'Michigan St.': 8.880000000000003, 'Arizona St.': 4.070000000000004, 'Kentucky': 2.4899999999999984, 'Missouri': 2.0600000000000023, 'Penn St.': -2.530000000000001, 'Illinois': -12.66, 'Maryland': -18.169999999999995, 'Boise St.': -18.500000000000004, 'Iowa': -23.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 56.230000000000004, 'Florida Atlantic': 14.740000000000006, 'Miami FL': 9.089999999999996, 'San Diego St.': -7.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 89.91999999999999}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 8.959999999999996, 'Penn St.': 7.759999999999998, 'Boise St.': 4.299999999999999, 'USC': -2.0799999999999983}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 8.320000000000004, 'N.C. State': -4.339999999999996, 'Providence': -14.07}
+{'VCU': -1.75, 'Oral Roberts': -15.239999999999998, 'Charleston': -19.490000000000002, 'Drake': -22.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -14.510000000000002, 'Iona': -38.66}
+{'Vermont': -11.409999999999997, 'Kennesaw St.': -12.05, 'Fairleigh Dickinson': -13.8, 'Princeton': -17.29, 'Grand Canyon': -23.319999999999997, 'Colgate': -31.28, 'UC Santa Barbara': -31.34, 'Montana St.': -34.56, 'Howard': -40.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 10.669999999999998, 'Memphis': 9.139999999999997, 'Arkansas': 8.489999999999995, 'Kentucky': 7.489999999999998, 'Utah St.': 5.019999999999996, 'Arizona St.': 0.07000000000000384, 'Penn St.': -1.5300000000000011, 'Pittsburgh': -3.4200000000000017, 'Northwestern': -11.8, 'Maryland': -21.169999999999995, 'Auburn': -30.369999999999997}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 12.259999999999994, 'Memphis': 11.2, 'Michigan St.': 8.91, 'San Diego St.': -1.2899999999999991, 'Indiana': -16.46}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 65.89, 'Arkansas': 22.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 9.959999999999996, 'Boise St.': 4.299999999999999, 'USC': -5.079999999999998}
+{'Arizona St.': 10.320000000000004, 'Pittsburgh': 7.940000000000001, 'N.C. State': -6.339999999999996, 'Providence': -14.07}
+{'VCU': -0.75, 'Oral Roberts': -14.239999999999998, 'Charleston': -15.490000000000002, 'Drake': -24.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -10.46, 'Louisiana': -17.51, 'Iona': -36.66}
+{'Kennesaw St.': -12.05, 'Vermont': -14.409999999999998, 'Fairleigh Dickinson': -14.8, 'Princeton': -17.29, 'Grand Canyon': -25.32, 'UC Santa Barbara': -30.34, 'Colgate': -31.28, 'Montana St.': -34.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -41.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -57.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 17.669999999999998, 'Michigan St.': 16.880000000000003, 'Memphis': 10.139999999999997, 'Arkansas': 9.489999999999995, 'Kentucky': 5.489999999999998, 'Utah St.': 3.019999999999996, 'Arizona St.': 0.07000000000000384, 'Penn St.': -6.530000000000001, 'Northwestern': -18.8, 'Maryland': -19.169999999999995, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 17.2, 'Arkansas': 16.259999999999994, 'San Diego St.': 0.7100000000000009, 'Indiana': -8.46}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 61.379999999999995, 'Arkansas': 18.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Boise St.': 9.299999999999995, 'Utah St.': 8.959999999999996, 'Penn St.': 7.759999999999998, 'USC': -5.079999999999998}
+{'Arizona St.': 12.320000000000004, 'Pittsburgh': 9.940000000000001, 'N.C. State': -7.339999999999996, 'Providence': -12.07}
+{'VCU': 2.25, 'Oral Roberts': -14.239999999999998, 'Drake': -19.400000000000002, 'Charleston': -20.490000000000002}
+{'Furman': -3.9800000000000004, 'Kent St.': -9.46, 'Louisiana': -18.51, 'Iona': -39.66}
+{'Kennesaw St.': -10.05, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -23.319999999999997, 'Colgate': -29.28, 'Montana St.': -33.56, 'Howard': -41.35, 'UNC Asheville': -45.12, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 17.880000000000003, 'Creighton': 13.669999999999998, 'Florida Atlantic': 9.680000000000003, 'Utah St.': 7.019999999999996, 'Kentucky': 5.489999999999998, 'Arizona St.': 2.070000000000004, 'Texas A&M': -6.289999999999999, 'Illinois': -11.66, 'West Virginia': -19.4, 'Boise St.': -20.5, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 46.230000000000004, 'Florida Atlantic': 17.740000000000006, 'Utah St.': 4.229999999999997, 'Miami FL': -3.9100000000000037, 'San Diego St.': -8.29}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 89.91999999999999}
+
+
+
+First Round Priority Upsets
+{'Boise St.': 9.299999999999995, 'Utah St.': 7.959999999999999, 'Penn St.': 7.759999999999998, 'USC': -1.0799999999999983}
+{'Pittsburgh': 16.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -5.339999999999996, 'Providence': -13.07}
+{'VCU': -0.75, 'Oral Roberts': -15.239999999999998, 'Drake': -21.400000000000002, 'Charleston': -21.490000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -12.46, 'Louisiana': -20.51, 'Iona': -36.66}
+{'Kennesaw St.': -13.05, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -23.319999999999997, 'UC Santa Barbara': -29.34, 'Colgate': -32.28, 'Montana St.': -33.56, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 18.880000000000003, 'Florida Atlantic': 11.680000000000003, 'Arkansas': 11.489999999999995, 'Creighton': 9.669999999999998, 'Utah St.': 3.019999999999996, 'Kentucky': 2.4899999999999984, 'Arizona St.': 2.070000000000004, 'Texas A&M': -6.289999999999999, 'Maryland': -17.169999999999995, 'Boise St.': -24.5, 'Iowa': -27.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 16.259999999999994, 'Florida Atlantic': 15.740000000000006, 'San Diego St.': 3.710000000000001, 'Indiana': -5.460000000000001}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 58.92, 'Arkansas': 25.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 13.759999999999998, 'Utah St.': 8.959999999999996, 'Boise St.': 2.299999999999999, 'USC': -3.0799999999999983}
+{'Pittsburgh': 10.940000000000001, 'Arizona St.': 6.320000000000004, 'N.C. State': -8.339999999999996, 'Providence': -13.07}
+{'VCU': 5.25, 'Oral Roberts': -13.239999999999998, 'Charleston': -17.490000000000002, 'Drake': -18.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -21.51, 'Iona': -37.66}
+{'Kennesaw St.': -11.05, 'Vermont': -13.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -29.34, 'Montana St.': -33.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 14.669999999999998, 'Michigan St.': 13.880000000000003, 'Memphis': 13.139999999999997, 'Arkansas': 11.489999999999995, 'Kentucky': 7.489999999999998, 'Utah St.': 3.019999999999996, 'Arizona St.': 1.0700000000000038, 'Penn St.': -7.530000000000001, 'Maryland': -20.169999999999995, 'Northwestern': -23.8, 'Auburn': -30.369999999999997}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 20.2, 'Miami FL': 9.089999999999996, 'Arkansas': 8.259999999999994, 'San Diego St.': 1.7100000000000009}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 85.38}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 9.759999999999998, 'Utah St.': 8.959999999999996, 'Boise St.': 3.299999999999999, 'USC': -5.079999999999998}
+{'Arizona St.': 10.320000000000004, 'Pittsburgh': 8.940000000000001, 'N.C. State': -6.339999999999996, 'Providence': -13.07}
+{'VCU': 4.25, 'Charleston': -16.490000000000002, 'Oral Roberts': -19.24, 'Drake': -22.400000000000002}
+{'Furman': -3.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -18.51, 'Iona': -36.66}
+{'Kennesaw St.': -12.05, 'Vermont': -12.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -18.319999999999997, 'Montana St.': -33.56, 'Howard': -38.35, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 14.669999999999998, 'Michigan St.': 11.880000000000003, 'Florida Atlantic': 10.680000000000003, 'Arkansas': 8.489999999999995, 'Utah St.': 6.019999999999996, 'Arizona St.': 3.070000000000004, 'Kentucky': 0.48999999999999844, 'Penn St.': -7.530000000000001, 'Northwestern': -13.8, 'Maryland': -22.169999999999998, 'Iowa': -25.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 23.259999999999994, 'Florida Atlantic': 14.740000000000006, 'Miami FL': 9.089999999999996, 'San Diego St.': -3.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 68.92, 'Arkansas': 15.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 8.759999999999998, 'Boise St.': 6.299999999999999, 'Utah St.': 4.959999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 15.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -11.07}
+{'VCU': 0.25, 'Oral Roberts': -15.239999999999998, 'Charleston': -18.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -19.51, 'Iona': -38.66}
+{'Kennesaw St.': -9.05, 'Vermont': -12.409999999999998, 'Princeton': -15.29, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -31.28, 'Montana St.': -34.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12}
+
+
+
+Second Round Priority Upsets
+{'Arkansas': 15.489999999999995, 'Memphis': 11.139999999999997, 'Michigan St.': 10.880000000000003, 'Creighton': 7.669999999999998, 'Arizona St.': 2.070000000000004, 'Missouri': 2.0600000000000023, 'Kentucky': 1.4899999999999984, 'Penn St.': -7.530000000000001, 'Maryland': -14.169999999999995, 'Boise St.': -23.5, 'Iowa': -26.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 21.979999999999997, 'Arkansas': 21.259999999999994, 'Miami FL': 5.089999999999996, 'San Diego St.': -2.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 67.38, 'Arkansas': 12.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Boise St.': 6.299999999999999, 'Utah St.': 4.959999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 10.940000000000001, 'Arizona St.': 9.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -13.07}
+{'VCU': 0.25, 'Oral Roberts': -11.239999999999998, 'Charleston': -19.490000000000002, 'Drake': -24.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -8.46, 'Louisiana': -19.51, 'Iona': -36.66}
+{'Vermont': -12.409999999999998, 'Kennesaw St.': -13.05, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -23.319999999999997, 'Colgate': -29.28, 'UC Santa Barbara': -30.34, 'Montana St.': -34.56, 'Howard': -39.35, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Florida Atlantic': 10.680000000000003, 'Missouri': 10.060000000000002, 'Creighton': 7.669999999999998, 'Kentucky': 5.489999999999998, 'Arizona St.': 5.070000000000004, 'Pittsburgh': 1.5799999999999947, 'Penn St.': -5.530000000000001, 'Boise St.': -16.500000000000004, 'West Virginia': -21.4, 'Iowa': -29.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 41.230000000000004, 'Missouri': 11.270000000000003, 'Florida Atlantic': 4.7400000000000055, 'Michigan St.': -0.08999999999999986, 'San Diego St.': -10.29, 'Indiana': -18.46}
+
+
+
+Elite 8 Priority Upsets
+{'Missouri': 70.38}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 8.759999999999998, 'Utah St.': 5.959999999999999, 'Boise St.': 4.299999999999999, 'USC': -1.0799999999999983}
+{'Pittsburgh': 10.940000000000001, 'Arizona St.': 7.320000000000004, 'N.C. State': -8.339999999999996, 'Providence': -13.07}
+{'VCU': 0.25, 'Oral Roberts': -15.239999999999998, 'Charleston': -17.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': 4.02, 'Kent St.': -8.46, 'Louisiana': -20.51, 'Iona': -37.66}
+{'Kennesaw St.': -12.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -27.34, 'Colgate': -32.28, 'Montana St.': -32.56, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -43.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 15.669999999999998, 'Michigan St.': 14.880000000000003, 'Florida Atlantic': 8.680000000000003, 'Arkansas': 7.489999999999995, 'Kentucky': 5.489999999999998, 'Utah St.': 5.019999999999996, 'Arizona St.': 3.070000000000004, 'Penn St.': -4.530000000000001, 'Northwestern': -15.8, 'West Virginia': -19.4, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 18.259999999999994, 'Miami FL': 16.089999999999996, 'Florida Atlantic': 12.740000000000006, 'San Diego St.': -3.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 105.32}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 10.959999999999996, 'Boise St.': 7.299999999999999, 'USC': -7.079999999999998}
+{'Pittsburgh': 14.939999999999998, 'Arizona St.': 8.320000000000004, 'N.C. State': -6.339999999999996, 'Providence': -16.07}
+{'VCU': -1.75, 'Oral Roberts': -14.239999999999998, 'Charleston': -19.490000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -6.460000000000001, 'Louisiana': -19.51, 'Iona': -36.66}
+{'Kennesaw St.': -11.05, 'Fairleigh Dickinson': -13.8, 'Vermont': -14.409999999999998, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -32.28, 'Texas A&M Corpus Chris': -38.769999999999996, 'Howard': -41.35, 'UNC Asheville': -44.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 15.669999999999998, 'Michigan St.': 11.880000000000003, 'Arizona St.': 10.070000000000004, 'Arkansas': 9.489999999999995, 'Florida Atlantic': 8.680000000000003, 'Kentucky': 0.48999999999999844, 'Utah St.': -1.9800000000000004, 'Penn St.': -5.530000000000001, 'Northwestern': -14.8, 'Maryland': -18.169999999999995, 'Auburn': -28.369999999999997}
+
+
+
+Sweet 16 Priority Upsets
+{'Duke': 27.939999999999994, 'Arkansas': 24.259999999999994, 'Indiana': 6.539999999999999, 'San Diego St.': -6.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 95.0}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 5.959999999999999, 'Penn St.': 5.759999999999998, 'Boise St.': 5.299999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 11.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -5.339999999999996, 'Providence': -9.07}
+{'VCU': 3.25, 'Charleston': -16.490000000000002, 'Oral Roberts': -20.24, 'Drake': -21.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -7.460000000000001, 'Louisiana': -20.51, 'Iona': -37.66}
+{'Kennesaw St.': -9.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -14.8, 'Princeton': -15.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -31.28, 'Montana St.': -33.56, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 16.669999999999998, 'Michigan St.': 13.880000000000003, 'Arkansas': 10.489999999999995, 'Memphis': 7.139999999999997, 'Utah St.': 5.019999999999996, 'Penn St.': 1.4699999999999989, 'Arizona St.': 1.0700000000000038, 'Kentucky': -3.5100000000000016, 'Northwestern': -15.8, 'Maryland': -20.169999999999995, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 19.979999999999997, 'Miami FL': 15.089999999999996, 'Arkansas': 10.259999999999994, 'San Diego St.': 0.7100000000000009}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 85.38}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 8.959999999999996, 'Boise St.': 5.299999999999999, 'USC': -5.079999999999998}
+{'Pittsburgh': 9.940000000000001, 'Arizona St.': 8.320000000000004, 'N.C. State': -2.3399999999999963, 'Providence': -9.07}
+{'VCU': 0.25, 'Charleston': -11.490000000000002, 'Oral Roberts': -16.24, 'Drake': -23.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -12.46, 'Louisiana': -19.51, 'Iona': -36.66}
+{'Kennesaw St.': -13.05, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -23.319999999999997, 'Colgate': -30.28, 'UC Santa Barbara': -31.34, 'Montana St.': -34.56, 'UNC Asheville': -43.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 15.669999999999998, 'Florida Atlantic': 12.680000000000003, 'Michigan St.': 10.880000000000003, 'Kentucky': 6.489999999999998, 'Arkansas': 6.489999999999995, 'Utah St.': 5.019999999999996, 'Arizona St.': 1.0700000000000038, 'Penn St.': -0.5300000000000011, 'Maryland': -14.169999999999995, 'Northwestern': -20.8, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 55.230000000000004, 'Florida Atlantic': 14.740000000000006, 'Michigan St.': 10.91, 'San Diego St.': -8.29, 'Indiana': -24.46}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 98.42999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 5.959999999999999, 'Boise St.': 2.299999999999999, 'USC': -1.0799999999999983}
+{'Pittsburgh': 11.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -5.339999999999996, 'Providence': -12.07}
+{'VCU': -0.75, 'Oral Roberts': -15.239999999999998, 'Charleston': -16.490000000000002, 'Drake': -22.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -21.51, 'Iona': -38.66}
+{'Kennesaw St.': -6.050000000000001, 'Vermont': -14.409999999999998, 'Fairleigh Dickinson': -14.8, 'Princeton': -17.29, 'Grand Canyon': -26.32, 'UC Santa Barbara': -29.34, 'Montana St.': -30.56, 'Colgate': -32.28, 'UNC Asheville': -45.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 15.669999999999998, 'Michigan St.': 10.880000000000003, 'Kentucky': 7.489999999999998, 'Arizona St.': 7.070000000000004, 'Memphis': 6.139999999999997, 'Utah St.': 2.019999999999996, 'Penn St.': -3.530000000000001, 'Illinois': -10.659999999999997, 'Northwestern': -16.8, 'Maryland': -21.169999999999995, 'Auburn': -31.369999999999997}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 45.230000000000004, 'Duke': 24.939999999999994, 'Miami FL': 11.089999999999996, 'Michigan St.': 9.91, 'San Diego St.': -7.289999999999999}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 9.959999999999996, 'Penn St.': 8.759999999999998, 'Boise St.': 5.299999999999999, 'USC': -5.079999999999998}
+{'Arizona St.': 13.320000000000004, 'Pittsburgh': 10.940000000000001, 'N.C. State': -9.339999999999996, 'Providence': -14.07}
+{'VCU': 1.25, 'Oral Roberts': -12.239999999999998, 'Charleston': -14.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -12.46, 'Louisiana': -18.51, 'Iona': -36.66}
+{'Kennesaw St.': -11.05, 'Fairleigh Dickinson': -13.8, 'Vermont': -14.409999999999998, 'Princeton': -17.29, 'Grand Canyon': -24.319999999999997, 'Colgate': -31.28, 'Howard': -41.35, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 13.880000000000003, 'Memphis': 8.139999999999997, 'Arizona St.': 7.070000000000004, 'Utah St.': 7.019999999999996, 'Creighton': 5.669999999999998, 'Kentucky': 3.4899999999999984, 'Penn St.': -3.530000000000001, 'Illinois': -9.659999999999997, 'Northwestern': -13.8, 'Maryland': -18.169999999999995, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 51.230000000000004, 'Memphis': 17.2, 'Miami FL': 4.089999999999996, 'San Diego St.': -4.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 85.38}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Boise St.': 6.299999999999999, 'Utah St.': 5.959999999999999, 'USC': -6.079999999999998}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 11.320000000000004, 'N.C. State': -8.339999999999996, 'Providence': -14.07}
+{'VCU': 3.25, 'Charleston': -14.490000000000002, 'Oral Roberts': -20.24, 'Drake': -21.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -6.460000000000001, 'Louisiana': -20.51, 'Iona': -39.66}
+{'Kennesaw St.': -9.05, 'Vermont': -12.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -25.32, 'Colgate': -31.28, 'UC Santa Barbara': -31.34, 'Montana St.': -34.56, 'Howard': -41.35, 'UNC Asheville': -43.12, 'Texas A&M Corpus Chris': -43.769999999999996, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 16.669999999999998, 'Michigan St.': 12.880000000000003, 'Arkansas': 10.489999999999995, 'Florida Atlantic': 8.680000000000003, 'Kentucky': 8.489999999999998, 'Missouri': 3.0600000000000023, 'Arizona St.': 0.07000000000000384, 'Penn St.': -3.530000000000001, 'Maryland': -18.169999999999995, 'Boise St.': -19.500000000000004, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Florida Atlantic': 28.520000000000003, 'Arkansas': 14.259999999999994, 'Indiana': -2.460000000000001, 'San Diego St.': -3.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 62.92, 'Arkansas': 21.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Boise St.': 9.299999999999995, 'Penn St.': 6.759999999999998, 'Utah St.': 5.959999999999999, 'USC': -4.079999999999998}
+{'Arizona St.': 13.320000000000004, 'Pittsburgh': 7.940000000000001, 'N.C. State': -5.339999999999996, 'Providence': -10.07}
+{'VCU': 0.25, 'Charleston': -14.490000000000002, 'Oral Roberts': -18.24, 'Drake': -23.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -6.460000000000001, 'Louisiana': -21.51, 'Iona': -38.66}
+{'Kennesaw St.': -11.05, 'Princeton': -13.29, 'Fairleigh Dickinson': -13.8, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -28.34, 'Colgate': -32.28, 'Montana St.': -34.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 16.880000000000003, 'Creighton': 16.669999999999998, 'Florida Atlantic': 11.680000000000003, 'Arkansas': 8.489999999999995, 'Kentucky': 3.4899999999999984, 'Arizona St.': 2.070000000000004, 'Missouri': 2.0600000000000023, 'Penn St.': -2.530000000000001, 'Maryland': -19.169999999999995, 'Boise St.': -21.5, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 22.259999999999994, 'Florida Atlantic': 13.740000000000006, 'Miami FL': 10.089999999999996, 'San Diego St.': -2.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 52.92, 'Arkansas': 32.0}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 7.959999999999999, 'Boise St.': 5.299999999999999, 'USC': -2.0799999999999983}
+{'Arizona St.': 13.320000000000004, 'Pittsburgh': 11.939999999999998, 'N.C. State': -9.339999999999996, 'Providence': -12.07}
+{'VCU': -0.75, 'Oral Roberts': -16.24, 'Drake': -19.400000000000002, 'Charleston': -20.490000000000002}
+{'Furman': 1.0199999999999996, 'Kent St.': -11.46, 'Louisiana': -20.51, 'Iona': -38.66}
+{'Kennesaw St.': -10.05, 'Vermont': -10.409999999999997, 'Fairleigh Dickinson': -13.8, 'Princeton': -16.29, 'Grand Canyon': -26.32, 'UC Santa Barbara': -29.34, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 14.669999999999998, 'Arkansas': 12.489999999999995, 'Michigan St.': 9.880000000000003, 'Kentucky': 7.489999999999998, 'Utah St.': 3.019999999999996, 'Arizona St.': 0.07000000000000384, 'Penn St.': -5.530000000000001, 'Northwestern': -18.8, 'Maryland': -21.169999999999995, 'Iowa': -23.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Duke': 24.939999999999994, 'Arkansas': 14.259999999999994, 'Michigan St.': 9.91, 'Miami FL': 5.089999999999996, 'San Diego St.': 0.7100000000000009}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 95.0}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 10.959999999999996, 'Penn St.': 8.759999999999998, 'Boise St.': 3.299999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 10.940000000000001, 'Arizona St.': 6.320000000000004, 'N.C. State': -9.339999999999996, 'Providence': -12.07}
+{'VCU': 1.25, 'Oral Roberts': -15.239999999999998, 'Charleston': -15.490000000000002, 'Drake': -20.400000000000002}
+{'Furman': 2.0199999999999996, 'Kent St.': -10.46, 'Louisiana': -21.51, 'Iona': -38.66}
+{'Kennesaw St.': -11.05, 'Fairleigh Dickinson': -15.8, 'Princeton': -16.29, 'UC Santa Barbara': -25.34, 'Grand Canyon': -26.32, 'Colgate': -30.28, 'Montana St.': -32.56, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 12.880000000000003, 'Arkansas': 9.489999999999995, 'Arizona St.': 9.070000000000004, 'Kentucky': 6.489999999999998, 'Memphis': 6.139999999999997, 'Creighton': 4.669999999999998, 'Penn St.': 1.4699999999999989, 'Utah St.': -0.9800000000000004, 'Northwestern': -18.8, 'Maryland': -19.169999999999995, 'Iowa': -29.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Tennessee': 27.16, 'Arkansas': 9.259999999999994, 'Michigan St.': 8.91, 'San Diego St.': 0.7100000000000009, 'Indiana': -11.46}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 95.0}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 14.759999999999998, 'Utah St.': 8.959999999999996, 'Boise St.': 2.299999999999999, 'USC': -5.079999999999998}
+{'Pittsburgh': 14.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -15.07}
+{'VCU': 5.25, 'Oral Roberts': -17.24, 'Charleston': -17.490000000000002, 'Drake': -24.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -6.460000000000001, 'Louisiana': -21.51, 'Iona': -39.66}
+{'Kennesaw St.': -12.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -16.29, 'Grand Canyon': -25.32, 'Colgate': -29.28, 'UC Santa Barbara': -31.34, 'Montana St.': -32.56, 'Howard': -40.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 12.669999999999998, 'Michigan St.': 10.880000000000003, 'Kentucky': 7.489999999999998, 'Memphis': 5.139999999999997, 'Arizona St.': 5.070000000000004, 'Utah St.': 4.019999999999996, 'Illinois': -6.659999999999997, 'Penn St.': -9.530000000000001, 'Maryland': -14.169999999999995, 'Northwestern': -16.8, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 43.230000000000004, 'Memphis': 15.2, 'Michigan St.': 9.91, 'Miami FL': -1.9100000000000037, 'San Diego St.': -9.29}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 93.89}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 10.959999999999996, 'Boise St.': 7.299999999999999, 'Penn St.': 4.759999999999998, 'USC': -2.0799999999999983}
+{'Pittsburgh': 13.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -9.339999999999996, 'Providence': -10.07}
+{'VCU': -0.75, 'Oral Roberts': -19.24, 'Charleston': -20.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -7.460000000000001, 'Louisiana': -18.51, 'Iona': -37.66}
+{'Kennesaw St.': -11.05, 'Vermont': -13.409999999999998, 'Princeton': -14.29, 'Grand Canyon': -22.319999999999997, 'UC Santa Barbara': -28.34, 'Colgate': -29.28, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 14.669999999999998, 'Florida Atlantic': 13.680000000000003, 'Michigan St.': 7.880000000000003, 'Kentucky': 7.489999999999998, 'Arizona St.': 6.070000000000004, 'Utah St.': 3.019999999999996, 'Illinois': -7.659999999999997, 'Texas A&M': -8.29, 'Maryland': -14.169999999999995, 'Boise St.': -19.500000000000004, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 42.230000000000004, 'Michigan St.': 10.91, 'Florida Atlantic': 9.740000000000006, 'Miami FL': 4.089999999999996, 'San Diego St.': -5.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 83.22000000000001}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 12.759999999999998, 'Utah St.': 7.959999999999999, 'Boise St.': 7.299999999999999, 'USC': -2.0799999999999983}
+{'Pittsburgh': 9.940000000000001, 'Arizona St.': 8.320000000000004, 'N.C. State': -3.3399999999999963, 'Providence': -11.07}
+{'VCU': 1.25, 'Oral Roberts': -14.239999999999998, 'Charleston': -18.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -12.46, 'Louisiana': -20.51, 'Iona': -39.66}
+{'Kennesaw St.': -11.05, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -23.319999999999997, 'Colgate': -30.28, 'UC Santa Barbara': -30.34, 'Montana St.': -33.56, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 11.669999999999998, 'Michigan St.': 10.880000000000003, 'Memphis': 8.139999999999997, 'Arizona St.': 4.070000000000004, 'Kentucky': 2.4899999999999984, 'Utah St.': 2.019999999999996, 'Penn St.': -5.530000000000001, 'Northwestern': -8.8, 'Illinois': -9.659999999999997, 'West Virginia': -17.4, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 45.230000000000004, 'Memphis': 16.2, 'Miami FL': 8.089999999999996, 'San Diego St.': -1.2899999999999991}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 85.38}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 8.959999999999996, 'Penn St.': 7.759999999999998, 'Boise St.': 6.299999999999999, 'USC': -5.079999999999998}
+{'Pittsburgh': 10.940000000000001, 'Arizona St.': 8.320000000000004, 'N.C. State': -10.339999999999996, 'Providence': -12.07}
+{'VCU': 0.25, 'Oral Roberts': -12.239999999999998, 'Charleston': -15.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': -0.9800000000000004, 'Louisiana': -19.51, 'Iona': -36.66}
+{'Kennesaw St.': -11.05, 'Fairleigh Dickinson': -12.8, 'Grand Canyon': -25.32, 'UC Santa Barbara': -29.34, 'Colgate': -32.28, 'Montana St.': -32.56, 'Texas A&M Corpus Chris': -40.769999999999996, 'UNC Asheville': -41.12, 'Howard': -41.35}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 15.669999999999998, 'Michigan St.': 11.880000000000003, 'Kentucky': 11.489999999999998, 'Florida Atlantic': 8.680000000000003, 'Arkansas': 7.489999999999995, 'Utah St.': 2.019999999999996, 'Arizona St.': 1.0700000000000038, 'Penn St.': -1.5300000000000011, 'Northwestern': -13.8, 'West Virginia': -22.4, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 46.230000000000004, 'Michigan St.': 17.91, 'Florida Atlantic': 3.7400000000000055, 'Miami FL': 1.0899999999999963, 'San Diego St.': -7.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 83.22000000000001}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 13.759999999999998, 'Utah St.': 7.959999999999999, 'Boise St.': 1.299999999999999, 'USC': -5.079999999999998}
+{'Pittsburgh': 10.940000000000001, 'Arizona St.': 6.320000000000004, 'N.C. State': -4.339999999999996, 'Providence': -11.07}
+{'VCU': 1.25, 'Oral Roberts': -13.239999999999998, 'Drake': -17.400000000000002, 'Charleston': -19.490000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -9.46, 'Louisiana': -19.51, 'Iona': -37.66}
+{'Kennesaw St.': -13.05, 'Vermont': -14.409999999999998, 'Fairleigh Dickinson': -14.8, 'Princeton': -15.29, 'UC Santa Barbara': -29.34, 'Colgate': -30.28, 'Montana St.': -34.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 11.880000000000003, 'Arkansas': 11.489999999999995, 'Memphis': 10.139999999999997, 'Arizona St.': 9.070000000000004, 'Creighton': 6.669999999999998, 'Utah St.': 3.019999999999996, 'Kentucky': 1.4899999999999984, 'Penn St.': -3.530000000000001, 'Northwestern': -11.8, 'Maryland': -20.169999999999995, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 28.979999999999997, 'Arkansas': 18.259999999999994, 'San Diego St.': -2.289999999999999, 'Indiana': -12.46}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 63.379999999999995, 'Arkansas': 16.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Utah St.': 9.959999999999996, 'Boise St.': 4.299999999999999, 'USC': -3.0799999999999983}
+{'Arizona St.': 10.320000000000004, 'Pittsburgh': 9.940000000000001, 'N.C. State': -4.339999999999996, 'Providence': -12.07}
+{'VCU': -0.75, 'Oral Roberts': -18.24, 'Charleston': -18.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -17.51, 'Iona': -35.66}
+{'Kennesaw St.': -12.05, 'Fairleigh Dickinson': -13.8, 'Vermont': -14.409999999999998, 'Princeton': -17.29, 'Grand Canyon': -25.32, 'UC Santa Barbara': -28.34, 'Colgate': -31.28, 'Howard': -38.35, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 15.669999999999998, 'Michigan St.': 12.880000000000003, 'Kentucky': 11.489999999999998, 'Florida Atlantic': 8.680000000000003, 'Arkansas': 5.489999999999995, 'Penn St.': 0.46999999999999886, 'Arizona St.': 0.07000000000000384, 'Utah St.': 0.019999999999999574, 'Maryland': -16.169999999999995, 'Northwestern': -18.8, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 46.230000000000004, 'Florida Atlantic': 10.740000000000006, 'Michigan St.': 8.91, 'Miami FL': 5.089999999999996, 'San Diego St.': -9.29}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 98.42999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Utah St.': 9.959999999999996, 'Boise St.': 3.299999999999999, 'USC': -7.079999999999998}
+{'Pittsburgh': 13.939999999999998, 'Arizona St.': 7.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -8.07}
+{'VCU': 0.25, 'Oral Roberts': -17.24, 'Charleston': -17.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -5.460000000000001, 'Louisiana': -18.51, 'Iona': -37.66}
+{'Fairleigh Dickinson': -13.8, 'Vermont': -14.409999999999998, 'Princeton': -17.29, 'Grand Canyon': -23.319999999999997, 'Colgate': -30.28, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Arkansas': 14.489999999999995, 'Creighton': 13.669999999999998, 'Michigan St.': 10.880000000000003, 'Arizona St.': 4.070000000000004, 'Utah St.': 2.019999999999996, 'Kentucky': 1.4899999999999984, 'Pittsburgh': -3.4200000000000017, 'Penn St.': -5.530000000000001, 'Northwestern': -13.8, 'West Virginia': -22.4, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 19.2, 'Arkansas': 15.259999999999994, 'Miami FL': 6.089999999999996, 'San Diego St.': -1.2899999999999991}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 64.38, 'Arkansas': 15.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 8.959999999999996, 'Boise St.': 8.299999999999995, 'Penn St.': 6.759999999999998, 'USC': -5.079999999999998}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 7.320000000000004, 'N.C. State': -4.339999999999996, 'Providence': -15.07}
+{'VCU': -0.75, 'Oral Roberts': -14.239999999999998, 'Charleston': -16.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': -2.9800000000000004, 'Louisiana': -20.51, 'Iona': -36.66}
+{'Vermont': -9.409999999999997, 'Kennesaw St.': -13.05, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -24.319999999999997, 'Colgate': -29.28, 'UC Santa Barbara': -30.34, 'Montana St.': -33.56, 'Howard': -39.35, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -43.12, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 16.669999999999998, 'Memphis': 11.139999999999997, 'Arkansas': 9.489999999999995, 'Arizona St.': 4.070000000000004, 'Kentucky': 3.4899999999999984, 'Utah St.': 2.019999999999996, 'Pittsburgh': -0.42000000000000526, 'Texas A&M': -6.289999999999999, 'Boise St.': -20.5, 'West Virginia': -22.4, 'Auburn': -29.369999999999997}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 15.2, 'Miami FL': 15.089999999999996, 'Arkansas': 12.259999999999994, 'San Diego St.': -3.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 85.38}
+
+
+
+First Round Priority Upsets
+{'Boise St.': 11.299999999999995, 'Penn St.': 10.759999999999998, 'Utah St.': 8.959999999999996, 'USC': -1.0799999999999983}
+{'Pittsburgh': 9.940000000000001, 'Arizona St.': 6.320000000000004, 'N.C. State': -8.339999999999996, 'Providence': -14.07}
+{'VCU': -0.75, 'Oral Roberts': -11.239999999999998, 'Charleston': -15.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -8.46, 'Louisiana': -20.51, 'Iona': -37.66}
+{'Kennesaw St.': -11.05, 'Vermont': -14.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -31.28, 'Montana St.': -32.56, 'Howard': -41.35, 'UNC Asheville': -45.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 11.669999999999998, 'Florida Atlantic': 10.680000000000003, 'Michigan St.': 9.880000000000003, 'Missouri': 6.060000000000002, 'Kentucky': 5.489999999999998, 'Arizona St.': 2.070000000000004, 'Penn St.': 1.4699999999999989, 'Illinois': -10.659999999999997, 'Boise St.': -15.500000000000004, 'West Virginia': -22.4, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 47.230000000000004, 'Missouri': 12.270000000000003, 'Florida Atlantic': 3.7400000000000055, 'Miami FL': -4.910000000000004, 'San Diego St.': -5.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Missouri': 70.38}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Boise St.': 10.299999999999995, 'Utah St.': 3.959999999999999, 'USC': -0.0799999999999983}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 12.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -11.07}
+{'VCU': -0.75, 'Oral Roberts': -16.24, 'Charleston': -16.490000000000002, 'Drake': -24.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -8.46, 'Louisiana': -22.51, 'Iona': -36.66}
+{'Kennesaw St.': -13.05, 'Vermont': -13.409999999999998, 'Princeton': -17.29, 'Grand Canyon': -23.319999999999997, 'UC Santa Barbara': -31.34, 'Colgate': -32.28, 'Howard': -40.35, 'UNC Asheville': -45.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 16.669999999999998, 'Michigan St.': 15.880000000000003, 'Florida Atlantic': 9.680000000000003, 'Kentucky': 6.489999999999998, 'Arizona St.': 6.070000000000004, 'Penn St.': 3.469999999999999, 'Missouri': -1.9399999999999977, 'Illinois': -9.659999999999997, 'Maryland': -21.169999999999995, 'Boise St.': -23.5, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 37.230000000000004, 'Florida Atlantic': 15.740000000000006, 'Michigan St.': 8.91, 'San Diego St.': -5.289999999999999, 'Indiana': -8.46}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 98.42999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 14.759999999999998, 'Boise St.': 9.299999999999995, 'USC': -2.0799999999999983}
+{'Pittsburgh': 11.939999999999998, 'Arizona St.': 8.320000000000004, 'N.C. State': -3.3399999999999963, 'Providence': -13.07}
+{'VCU': 1.25, 'Charleston': -15.490000000000002, 'Oral Roberts': -16.24, 'Drake': -22.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -6.460000000000001, 'Louisiana': -20.51, 'Iona': -38.66}
+{'Kennesaw St.': -12.05, 'Vermont': -14.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -31.34, 'Colgate': -32.28, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Florida Atlantic': 13.680000000000003, 'Michigan St.': 8.880000000000003, 'Creighton': 8.669999999999998, 'Arizona St.': 8.070000000000004, 'Arkansas': 7.489999999999995, 'Missouri': 7.060000000000002, 'Kentucky': 2.4899999999999984, 'Penn St.': -4.530000000000001, 'Boise St.': -15.500000000000004, 'West Virginia': -21.4, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 56.230000000000004, 'Florida Atlantic': 17.740000000000006, 'Miami FL': 4.089999999999996, 'San Diego St.': -5.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 89.91999999999999}
+
+
+
+First Round Priority Upsets
+{'Boise St.': 12.299999999999995, 'Penn St.': 9.759999999999998, 'USC': -6.079999999999998}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -6.339999999999996, 'Providence': -13.07}
+{'VCU': -0.75, 'Oral Roberts': -17.24, 'Charleston': -19.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -8.46, 'Louisiana': -16.51, 'Iona': -39.66}
+{'Kennesaw St.': -10.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -14.8, 'Grand Canyon': -25.32, 'UC Santa Barbara': -26.34, 'Colgate': -31.28, 'Montana St.': -34.56, 'Howard': -41.35, 'UNC Asheville': -43.12, 'Texas A&M Corpus Chris': -43.769999999999996, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 14.669999999999998, 'Florida Atlantic': 12.680000000000003, 'Michigan St.': 11.880000000000003, 'Kentucky': 11.489999999999998, 'Arkansas': 8.489999999999995, 'Missouri': 6.060000000000002, 'Arizona St.': 0.07000000000000384, 'Penn St.': -4.530000000000001, 'Maryland': -18.169999999999995, 'Boise St.': -21.5}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 50.230000000000004, 'Florida Atlantic': 11.740000000000006, 'Michigan St.': 6.91, 'San Diego St.': -4.289999999999999, 'Indiana': -16.46}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 98.42999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 8.759999999999998, 'Utah St.': 5.959999999999999, 'Boise St.': 3.299999999999999, 'USC': -4.079999999999998}
+{'Arizona St.': 13.320000000000004, 'Pittsburgh': 10.940000000000001, 'N.C. State': -5.339999999999996, 'Providence': -11.07}
+{'VCU': 3.25, 'Oral Roberts': -17.24, 'Charleston': -17.490000000000002, 'Drake': -21.400000000000002}
+{'Kent St.': -9.46, 'Louisiana': -19.51, 'Iona': -35.66}
+{'Vermont': -11.409999999999997, 'Princeton': -14.29, 'Fairleigh Dickinson': -14.8, 'Grand Canyon': -24.319999999999997, 'Colgate': -30.28, 'UC Santa Barbara': -31.34, 'Montana St.': -34.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Memphis': 12.139999999999997, 'Arkansas': 10.489999999999995, 'Creighton': 8.669999999999998, 'Kentucky': 8.489999999999998, 'Utah St.': 3.019999999999996, 'Pittsburgh': 2.5799999999999947, 'Arizona St.': 1.0700000000000038, 'Penn St.': -0.5300000000000011, 'Northwestern': -18.8, 'West Virginia': -21.4, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Michigan St.': 14.91, 'Arkansas': 8.259999999999994, 'Memphis': 2.1999999999999993, 'Miami FL': 0.0899999999999963, 'Virginia': -7.130000000000003}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 60.22000000000001, 'Arkansas': 17.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 12.759999999999998, 'Utah St.': 6.959999999999999, 'Boise St.': 2.299999999999999, 'USC': -0.0799999999999983}
+{'Pittsburgh': 9.940000000000001, 'Arizona St.': 7.320000000000004, 'N.C. State': -6.339999999999996, 'Providence': -12.07}
+{'VCU': 0.25, 'Charleston': -13.490000000000002, 'Oral Roberts': -16.24, 'Drake': -22.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -11.46, 'Louisiana': -22.51}
+{'Kennesaw St.': -7.050000000000001, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -13.8, 'Princeton': -16.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -29.34, 'Colgate': -30.28, 'Montana St.': -33.56, 'UNC Asheville': -43.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 25.880000000000003, 'Creighton': 13.669999999999998, 'Kentucky': 11.489999999999998, 'Utah St.': 2.019999999999996, 'Arizona St.': -0.9299999999999962, 'Penn St.': -6.530000000000001, 'Illinois': -12.66, 'Northwestern': -14.8, 'West Virginia': -23.4, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 40.230000000000004, 'Tennessee': 29.159999999999997, 'Michigan St.': 3.91, 'Utah St.': 1.2299999999999969, 'Miami FL': -3.9100000000000037, 'San Diego St.': -10.29}
+
+
+
+First Round Priority Upsets
+{'Boise St.': 9.299999999999995, 'Utah St.': 8.959999999999996, 'Penn St.': 6.759999999999998, 'USC': -6.079999999999998}
+{'Pittsburgh': 13.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -10.339999999999996, 'Providence': -14.07}
+{'VCU': -0.75, 'Oral Roberts': -16.24, 'Charleston': -17.490000000000002, 'Drake': -18.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -20.51, 'Iona': -39.66}
+{'Kennesaw St.': -13.05, 'Vermont': -13.409999999999998, 'Princeton': -14.29, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -25.32, 'UC Santa Barbara': -27.34, 'Colgate': -28.28, 'Montana St.': -33.56, 'Howard': -41.35, 'UNC Asheville': -44.12, 'Northern Kentucky': -57.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 14.669999999999998, 'Michigan St.': 10.880000000000003, 'Kentucky': 9.489999999999998, 'Florida Atlantic': 8.680000000000003, 'Arkansas': 8.489999999999995, 'Arizona St.': 5.070000000000004, 'Utah St.': 0.019999999999999574, 'Texas A&M': -1.2899999999999991, 'Boise St.': -17.500000000000004, 'West Virginia': -22.4, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 56.230000000000004, 'Florida Atlantic': 17.520000000000003, 'Michigan St.': 7.91, 'San Diego St.': -11.29, 'Indiana': -15.46}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 98.42999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Boise St.': 8.299999999999995, 'Utah St.': 6.959999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 14.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -6.339999999999996, 'Providence': -15.07}
+{'VCU': -0.75, 'Oral Roberts': -14.239999999999998, 'Drake': -18.400000000000002, 'Charleston': -19.490000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -8.46, 'Louisiana': -20.51, 'Iona': -38.66}
+{'Kennesaw St.': -11.05, 'Vermont': -14.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -22.319999999999997, 'UC Santa Barbara': -31.34, 'Colgate': -32.28, 'Montana St.': -34.56, 'Howard': -40.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 17.669999999999998, 'Michigan St.': 10.880000000000003, 'Arkansas': 9.489999999999995, 'Memphis': 9.139999999999997, 'Kentucky': 3.4899999999999984, 'Arizona St.': 2.070000000000004, 'Missouri': 2.0600000000000023, 'Penn St.': -9.530000000000001, 'Maryland': -19.169999999999995, 'Boise St.': -22.5, 'Iowa': -24.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 22.2, 'Arkansas': 11.259999999999994, 'Indiana': -1.4600000000000009, 'San Diego St.': -6.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 62.31999999999999, 'Memphis': 28.379999999999995}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 5.959999999999999, 'Penn St.': 5.759999999999998, 'Boise St.': 3.299999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 12.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -13.07}
+{'VCU': 1.25, 'Charleston': -14.490000000000002, 'Oral Roberts': -17.24, 'Drake': -23.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -6.460000000000001, 'Louisiana': -19.51, 'Iona': -38.66}
+{'Kennesaw St.': -10.05, 'Vermont': -14.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -24.319999999999997, 'Colgate': -29.28, 'UC Santa Barbara': -29.34, 'Montana St.': -33.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Kentucky': 16.49, 'Creighton': 13.669999999999998, 'Michigan St.': 10.880000000000003, 'Florida Atlantic': 10.680000000000003, 'Arkansas': 7.489999999999995, 'Utah St.': -0.9800000000000004, 'Arizona St.': -1.9299999999999962, 'Penn St.': -4.530000000000001, 'Northwestern': -13.8, 'Maryland': -18.169999999999995, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 45.230000000000004, 'Florida Atlantic': 18.740000000000006, 'Michigan St.': 9.91, 'Miami FL': -5.910000000000004, 'San Diego St.': -6.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 98.42999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 10.959999999999996, 'Boise St.': 9.299999999999995, 'USC': -5.079999999999998}
+{'Pittsburgh': 16.939999999999998, 'Arizona St.': 8.320000000000004, 'N.C. State': -9.339999999999996, 'Providence': -13.07}
+{'VCU': 2.25, 'Charleston': -14.490000000000002, 'Oral Roberts': -18.24, 'Drake': -23.400000000000002}
+{'Furman': -0.9800000000000004, 'Louisiana': -20.51, 'Iona': -38.66}
+{'Kennesaw St.': -11.05, 'Fairleigh Dickinson': -13.8, 'Vermont': -14.409999999999998, 'Princeton': -17.29, 'Grand Canyon': -25.32, 'UC Santa Barbara': -31.34, 'Montana St.': -31.56, 'Howard': -41.35, 'UNC Asheville': -45.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 16.669999999999998, 'Michigan St.': 11.880000000000003, 'Florida Atlantic': 9.680000000000003, 'Utah St.': 5.019999999999996, 'Kentucky': 1.4899999999999984, 'Arizona St.': 1.0700000000000038, 'Penn St.': -2.530000000000001, 'Illinois': -7.659999999999997, 'Northwestern': -18.8, 'West Virginia': -19.4, 'Iowa': -30.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 49.230000000000004, 'Florida Atlantic': 17.520000000000003, 'Miami FL': 2.0899999999999963, 'Utah St.': -1.7700000000000031, 'San Diego St.': -4.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 89.91999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 9.759999999999998, 'Boise St.': 8.299999999999995, 'Utah St.': 4.959999999999999, 'USC': -3.0799999999999983}
+{'Arizona St.': 13.320000000000004, 'Pittsburgh': 10.940000000000001, 'N.C. State': -7.339999999999996, 'Providence': -15.07}
+{'VCU': 4.25, 'Charleston': -13.490000000000002, 'Oral Roberts': -17.24, 'Drake': -22.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -7.460000000000001, 'Iona': -34.66}
+{'Kennesaw St.': -12.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -14.8, 'Princeton': -16.29, 'Grand Canyon': -23.319999999999997, 'UC Santa Barbara': -31.34, 'UNC Asheville': -44.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 13.880000000000003, 'Creighton': 11.669999999999998, 'Missouri': 11.060000000000002, 'Kentucky': 10.489999999999998, 'Florida Atlantic': 8.680000000000003, 'Arkansas': 6.489999999999995, 'Arizona St.': 1.0700000000000038, 'Penn St.': -4.530000000000001, 'Maryland': -19.169999999999995, 'Boise St.': -22.5, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 49.230000000000004, 'Duke': 20.939999999999994, 'Missouri': 3.270000000000003, 'Michigan St.': 2.91, 'Miami FL': -4.910000000000004, 'San Diego St.': -7.289999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 7.959999999999999, 'Boise St.': 6.299999999999999, 'USC': -2.0799999999999983}
+{'Arizona St.': 10.320000000000004, 'Pittsburgh': 9.940000000000001, 'N.C. State': -6.339999999999996, 'Providence': -11.07}
+{'VCU': 1.25, 'Oral Roberts': -16.24, 'Charleston': -20.490000000000002, 'Drake': -22.400000000000002}
+{'Furman': -4.98, 'Kent St.': -9.46, 'Louisiana': -18.51, 'Iona': -34.66}
+{'Kennesaw St.': -13.05, 'Vermont': -14.409999999999998, 'Grand Canyon': -25.32, 'UC Santa Barbara': -30.34, 'Colgate': -31.28, 'Montana St.': -32.56, 'Howard': -40.35, 'UNC Asheville': -43.12, 'Texas A&M Corpus Chris': -43.769999999999996, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 16.880000000000003, 'Creighton': 10.669999999999998, 'Memphis': 10.139999999999997, 'Arkansas': 8.489999999999995, 'Arizona St.': 4.070000000000004, 'Utah St.': 4.019999999999996, 'Penn St.': 1.4699999999999989, 'Kentucky': -0.5100000000000016, 'Maryland': -18.169999999999995, 'Northwestern': -19.8, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 23.979999999999997, 'Arkansas': 14.259999999999994, 'Miami FL': 14.089999999999996, 'San Diego St.': -6.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 46.31999999999999, 'Memphis': 44.379999999999995}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 13.759999999999998, 'Boise St.': 11.299999999999995, 'Utah St.': 6.959999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 15.939999999999998, 'Arizona St.': 12.320000000000004, 'N.C. State': -6.339999999999996, 'Providence': -13.07}
+{'VCU': -0.75, 'Oral Roberts': -18.24, 'Charleston': -18.490000000000002, 'Drake': -22.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -12.46, 'Louisiana': -18.51, 'Iona': -39.66}
+{'Vermont': -11.409999999999997, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -23.319999999999997, 'UC Santa Barbara': -31.34, 'Montana St.': -32.56, 'Howard': -41.35, 'UNC Asheville': -44.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 21.670000000000005, 'Arkansas': 14.489999999999995, 'Kentucky': 4.489999999999998, 'Missouri': 2.0600000000000023, 'Arizona St.': -0.9299999999999962, 'Pittsburgh': -4.420000000000002, 'Penn St.': -8.530000000000001, 'Maryland': -17.169999999999995, 'Boise St.': -17.500000000000004, 'Iowa': -28.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Duke': 23.939999999999994, 'Missouri': 14.270000000000003, 'Michigan St.': 8.91, 'Arkansas': 3.2599999999999945, 'Miami FL': -6.910000000000004, 'San Diego St.': -8.29}
+
+
+
+Elite 8 Priority Upsets
+{'Missouri': 70.38}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 9.959999999999996, 'Boise St.': 6.299999999999999, 'Penn St.': 5.759999999999998, 'USC': -5.079999999999998}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 8.320000000000004, 'N.C. State': -3.3399999999999963, 'Providence': -12.07}
+{'VCU': 4.25, 'Oral Roberts': -15.239999999999998, 'Charleston': -17.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -8.46, 'Louisiana': -17.51, 'Iona': -39.66}
+{'Kennesaw St.': -12.05, 'Vermont': -14.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -16.29, 'Grand Canyon': -24.319999999999997, 'Colgate': -30.28, 'Montana St.': -34.56, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -44.12}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 15.880000000000003, 'Creighton': 12.669999999999998, 'Arkansas': 9.489999999999995, 'Florida Atlantic': 8.680000000000003, 'Kentucky': 4.489999999999998, 'Utah St.': 4.019999999999996, 'Arizona St.': 3.070000000000004, 'Texas A&M': -8.29, 'West Virginia': -18.4, 'Boise St.': -19.500000000000004, 'Iowa': -30.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Florida Atlantic': 25.520000000000003, 'Arkansas': 16.259999999999994, 'San Diego St.': 5.710000000000001, 'Miami FL': 3.0899999999999963}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 63.31999999999999, 'Florida Atlantic': 31.92}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 10.959999999999996, 'Penn St.': 9.759999999999998, 'Boise St.': 3.299999999999999, 'USC': -6.079999999999998}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -6.339999999999996, 'Providence': -16.07}
+{'VCU': 2.25, 'Oral Roberts': -13.239999999999998, 'Charleston': -17.490000000000002, 'Drake': -20.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -12.46, 'Louisiana': -20.51, 'Iona': -38.66}
+{'Vermont': -14.409999999999998, 'Grand Canyon': -23.319999999999997, 'Colgate': -28.28, 'UC Santa Barbara': -28.34, 'Montana St.': -30.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -41.769999999999996, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Arkansas': 14.489999999999995, 'Florida Atlantic': 10.680000000000003, 'Creighton': 9.669999999999998, 'Utah St.': 9.019999999999996, 'Arizona St.': 2.070000000000004, 'Kentucky': 0.48999999999999844, 'Pittsburgh': -3.4200000000000017, 'Penn St.': -7.530000000000001, 'Northwestern': -10.8, 'West Virginia': -24.4, 'Iowa': -26.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Florida Atlantic': 10.740000000000006, 'Utah St.': 9.229999999999997, 'Miami FL': 8.089999999999996, 'Arkansas': 5.2599999999999945, 'San Diego St.': -6.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 32.92, 'Utah St.': 30.339999999999996}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 7.959999999999999, 'Penn St.': 7.759999999999998, 'Boise St.': 5.299999999999999, 'USC': -2.0799999999999983}
+{'Pittsburgh': 13.939999999999998, 'Arizona St.': 11.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -11.07}
+{'VCU': 0.25, 'Oral Roberts': -18.24, 'Charleston': -19.490000000000002, 'Drake': -20.400000000000002}
+{'Furman': 1.0199999999999996, 'Louisiana': -20.51, 'Iona': -36.66}
+{'Kennesaw St.': -12.05, 'Vermont': -14.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -23.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -32.28, 'Montana St.': -32.56, 'Howard': -39.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 13.669999999999998, 'Michigan St.': 9.880000000000003, 'Florida Atlantic': 9.680000000000003, 'Arkansas': 7.489999999999995, 'Kentucky': 6.489999999999998, 'Arizona St.': 1.0700000000000038, 'Utah St.': 0.019999999999999574, 'Penn St.': -4.530000000000001, 'Northwestern': -13.8, 'Maryland': -17.169999999999995, 'Iowa': -26.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Florida Atlantic': 28.74000000000001, 'Arkansas': 15.259999999999994, 'San Diego St.': -3.289999999999999, 'Indiana': -10.46}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 60.92, 'Arkansas': 23.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 9.759999999999998, 'Boise St.': 9.299999999999995, 'Utah St.': 5.959999999999999, 'USC': 0.9200000000000017}
+{'Pittsburgh': 8.940000000000001, 'Arizona St.': 7.320000000000004, 'N.C. State': -3.3399999999999963, 'Providence': -15.07}
+{'Oral Roberts': -14.239999999999998, 'Charleston': -15.490000000000002, 'Drake': -20.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -9.46, 'Louisiana': -19.51, 'Iona': -38.66}
+{'Kennesaw St.': -12.05, 'Vermont': -13.409999999999998, 'Princeton': -15.29, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -22.319999999999997, 'Howard': -38.35, 'UNC Asheville': -43.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Memphis': 13.139999999999997, 'Michigan St.': 12.880000000000003, 'Creighton': 9.669999999999998, 'Kentucky': 6.489999999999998, 'Arizona St.': 3.070000000000004, 'Missouri': 1.0600000000000023, 'Penn St.': -2.530000000000001, 'Illinois': -11.66, 'Boise St.': -15.500000000000004, 'Maryland': -20.169999999999995, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 40.230000000000004, 'Michigan St.': 22.91, 'Memphis': 11.979999999999997, 'Miami FL': -2.9100000000000037, 'San Diego St.': -8.29}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 90.0}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 9.759999999999998, 'Boise St.': 5.299999999999999, 'Utah St.': 4.959999999999999, 'USC': -2.0799999999999983}
+{'Arizona St.': 11.320000000000004, 'Pittsburgh': 8.940000000000001, 'N.C. State': -6.339999999999996, 'Providence': -13.07}
+{'VCU': 4.25, 'Charleston': -18.490000000000002, 'Oral Roberts': -19.24, 'Drake': -20.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -10.46, 'Louisiana': -16.51, 'Iona': -36.66}
+{'Kennesaw St.': -13.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -13.8, 'Princeton': -16.29, 'Grand Canyon': -23.319999999999997, 'UC Santa Barbara': -31.34, 'Colgate': -32.28, 'Montana St.': -33.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 19.880000000000003, 'Creighton': 12.669999999999998, 'Arkansas': 9.489999999999995, 'Florida Atlantic': 8.680000000000003, 'Kentucky': 7.489999999999998, 'Missouri': 5.060000000000002, 'Arizona St.': 0.07000000000000384, 'Penn St.': -2.530000000000001, 'Boise St.': -19.500000000000004, 'Maryland': -22.169999999999998, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Florida Atlantic': 17.740000000000006, 'Miami FL': 15.089999999999996, 'Arkansas': 14.259999999999994, 'San Diego St.': -3.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 89.91999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 13.759999999999998, 'Boise St.': 12.299999999999995, 'Utah St.': 8.959999999999996, 'USC': -5.079999999999998}
+{'Pittsburgh': 16.939999999999998, 'Arizona St.': 7.320000000000004, 'N.C. State': -8.339999999999996, 'Providence': -12.07}
+{'VCU': 1.25, 'Oral Roberts': -14.239999999999998, 'Drake': -21.400000000000002, 'Charleston': -21.490000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -12.46, 'Iona': -39.66}
+{'Kennesaw St.': -13.05, 'Vermont': -14.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -27.34, 'Colgate': -30.28, 'Montana St.': -33.56, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 16.669999999999998, 'Michigan St.': 12.880000000000003, 'Florida Atlantic': 11.680000000000003, 'Arkansas': 6.489999999999995, 'Missouri': 2.0600000000000023, 'Kentucky': 0.48999999999999844, 'Arizona St.': 0.07000000000000384, 'Penn St.': -6.530000000000001, 'Boise St.': -16.500000000000004, 'Maryland': -19.169999999999995, 'Iowa': -24.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Florida Atlantic': 27.74000000000001, 'Arkansas': 11.259999999999994, 'Miami FL': 11.089999999999996, 'San Diego St.': -6.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 62.92, 'Arkansas': 21.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Boise St.': 7.299999999999999, 'Utah St.': 5.959999999999999, 'Penn St.': 4.759999999999998, 'USC': -3.0799999999999983}
+{'Pittsburgh': 10.940000000000001, 'Arizona St.': 7.320000000000004, 'N.C. State': -4.339999999999996, 'Providence': -9.07}
+{'VCU': 2.25, 'Oral Roberts': -12.239999999999998, 'Charleston': -18.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': -3.9800000000000004, 'Kent St.': -11.46, 'Louisiana': -20.51, 'Iona': -39.66}
+{'Kennesaw St.': -10.05, 'Vermont': -10.409999999999997, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -22.319999999999997, 'UC Santa Barbara': -29.34, 'Colgate': -32.28, 'Montana St.': -34.56, 'Howard': -41.35, 'UNC Asheville': -43.12, 'Texas A&M Corpus Chris': -43.769999999999996, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Arkansas': 15.489999999999995, 'Michigan St.': 13.880000000000003, 'Creighton': 13.669999999999998, 'Utah St.': 8.019999999999996, 'Kentucky': 6.489999999999998, 'Memphis': 6.139999999999997, 'Arizona St.': 1.0700000000000038, 'Texas A&M': -11.29, 'Maryland': -17.169999999999995, 'Boise St.': -20.5, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Duke': 27.939999999999994, 'Arkansas': 11.259999999999994, 'Miami FL': 9.089999999999996, 'Utah St.': 5.229999999999997, 'San Diego St.': -4.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 95.0}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 9.959999999999996, 'Penn St.': 8.759999999999998, 'Boise St.': 8.299999999999995, 'USC': 0.9200000000000017}
+{'Arizona St.': 10.320000000000004, 'Pittsburgh': 8.940000000000001, 'N.C. State': -5.339999999999996, 'Providence': -15.07}
+{'VCU': 3.25, 'Oral Roberts': -17.24, 'Drake': -20.400000000000002, 'Charleston': -21.490000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -11.46, 'Louisiana': -21.51, 'Iona': -38.66}
+{'Kennesaw St.': -12.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -13.8, 'Princeton': -16.29, 'Grand Canyon': -24.319999999999997, 'Colgate': -29.28, 'UC Santa Barbara': -31.34, 'Montana St.': -34.56, 'UNC Asheville': -43.12, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 16.880000000000003, 'Creighton': 12.669999999999998, 'Florida Atlantic': 11.680000000000003, 'Arkansas': 11.489999999999995, 'Kentucky': 8.489999999999998, 'Arizona St.': 5.070000000000004, 'Utah St.': -1.9800000000000004, 'Penn St.': -6.530000000000001, 'Northwestern': -17.8, 'Maryland': -20.169999999999995, 'Iowa': -33.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 21.259999999999994, 'Florida Atlantic': 8.740000000000006, 'San Diego St.': 0.7100000000000009, 'Indiana': -0.46000000000000085}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 60.31999999999999, 'Florida Atlantic': 34.92}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Boise St.': 7.299999999999999, 'Utah St.': 5.959999999999999}
+{'Arizona St.': 12.320000000000004, 'Pittsburgh': 11.939999999999998, 'N.C. State': -8.339999999999996, 'Providence': -16.07}
+{'VCU': 5.25, 'Oral Roberts': -17.24, 'Charleston': -17.490000000000002, 'Drake': -19.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -8.46, 'Louisiana': -20.51, 'Iona': -39.66}
+{'Vermont': -10.409999999999997, 'Kennesaw St.': -12.05, 'Fairleigh Dickinson': -15.8, 'Princeton': -16.29, 'Grand Canyon': -26.32, 'Colgate': -31.28, 'UC Santa Barbara': -31.34, 'Montana St.': -33.56, 'UNC Asheville': -41.12, 'Texas A&M Corpus Chris': -42.769999999999996, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 10.669999999999998, 'Kentucky': 9.489999999999998, 'Memphis': 9.139999999999997, 'Missouri': 5.060000000000002, 'Pittsburgh': 3.5799999999999947, 'Penn St.': 1.4699999999999989, 'Arizona St.': -0.9299999999999962, 'Illinois': -12.66, 'Maryland': -20.169999999999995, 'Boise St.': -20.5, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 34.230000000000004, 'Michigan St.': 10.91, 'Memphis': 8.2, 'Missouri': 7.270000000000003, 'San Diego St.': -10.29, 'Miami FL': -12.910000000000004}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 83.22000000000001}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 7.959999999999999, 'Penn St.': 7.759999999999998, 'Boise St.': 6.299999999999999, 'USC': -4.079999999999998}
+{'Arizona St.': 11.320000000000004, 'Pittsburgh': 9.940000000000001, 'N.C. State': -7.339999999999996, 'Providence': -11.07}
+{'VCU': 3.25, 'Charleston': -18.490000000000002, 'Oral Roberts': -21.24, 'Drake': -23.400000000000002}
+{'Furman': 3.0199999999999996, 'Kent St.': -5.460000000000001, 'Louisiana': -19.51, 'Iona': -36.66}
+{'Vermont': -14.409999999999998, 'Princeton': -15.29, 'Grand Canyon': -25.32, 'UC Santa Barbara': -29.34, 'Colgate': -31.28, 'Montana St.': -34.56, 'UNC Asheville': -42.12, 'Texas A&M Corpus Chris': -42.769999999999996, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 12.669999999999998, 'Memphis': 10.139999999999997, 'Utah St.': 5.019999999999996, 'Arizona St.': 3.070000000000004, 'Pittsburgh': 1.5799999999999947, 'Kentucky': 0.48999999999999844, 'Penn St.': -2.530000000000001, 'Illinois': -11.66, 'Northwestern': -13.8, 'Maryland': -15.169999999999995, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 49.230000000000004, 'Memphis': 6.199999999999999, 'Miami FL': -0.9100000000000037, 'San Diego St.': -1.2899999999999991, 'Utah St.': -1.7700000000000031}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 85.38}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 8.759999999999998, 'Utah St.': 6.959999999999999, 'Boise St.': 4.299999999999999, 'USC': -1.0799999999999983}
+{'Pittsburgh': 13.939999999999998, 'Arizona St.': 13.320000000000004, 'Providence': -3.0699999999999967, 'N.C. State': -9.339999999999996}
+{'VCU': -1.75, 'Oral Roberts': -15.239999999999998, 'Drake': -20.400000000000002, 'Charleston': -20.490000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -9.46, 'Louisiana': -18.51}
+{'Kennesaw St.': -12.05, 'Vermont': -14.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -26.32, 'Colgate': -30.28, 'Montana St.': -34.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -45.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 17.669999999999998, 'Michigan St.': 9.880000000000003, 'Arkansas': 9.489999999999995, 'Memphis': 7.139999999999997, 'Kentucky': 5.489999999999998, 'Arizona St.': 4.070000000000004, 'Utah St.': 4.019999999999996, 'Penn St.': -3.530000000000001, 'Maryland': -18.169999999999995, 'Northwestern': -20.8, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 26.200000000000003, 'Arkansas': 10.259999999999994, 'Miami FL': 10.089999999999996, 'San Diego St.': -7.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 53.31999999999999, 'Memphis': 37.379999999999995}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 9.759999999999998, 'Boise St.': 7.299999999999999, 'Utah St.': 5.959999999999999, 'USC': -4.079999999999998}
+{'Arizona St.': 12.320000000000004, 'Pittsburgh': 6.940000000000001, 'N.C. State': -10.339999999999996, 'Providence': -13.07}
+{'VCU': 1.25, 'Oral Roberts': -13.239999999999998, 'Charleston': -19.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -9.46, 'Louisiana': -20.51, 'Iona': -35.66}
+{'Kennesaw St.': -9.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -22.319999999999997, 'Colgate': -31.28, 'UC Santa Barbara': -31.34, 'Montana St.': -33.56, 'Howard': -41.35, 'UNC Asheville': -43.12, 'Texas A&M Corpus Chris': -43.769999999999996, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 14.669999999999998, 'Florida Atlantic': 13.680000000000003, 'Michigan St.': 12.880000000000003, 'Kentucky': 7.489999999999998, 'Missouri': 7.060000000000002, 'Arizona St.': 6.070000000000004, 'Penn St.': -5.530000000000001, 'Illinois': -9.659999999999997, 'West Virginia': -23.4, 'Boise St.': -23.5, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 48.230000000000004, 'Michigan St.': 9.91, 'Florida Atlantic': 4.7400000000000055, 'Miami FL': 2.0899999999999963, 'San Diego St.': -3.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 83.22000000000001}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Boise St.': 9.299999999999995, 'Utah St.': 6.959999999999999, 'USC': -5.079999999999998}
+{'Pittsburgh': 8.940000000000001, 'Arizona St.': 8.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -14.07}
+{'VCU': -1.75, 'Oral Roberts': -10.239999999999998, 'Charleston': -19.490000000000002, 'Drake': -20.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -8.46, 'Louisiana': -21.51, 'Iona': -37.66}
+{'Kennesaw St.': -10.05, 'Vermont': -12.409999999999998, 'Princeton': -13.29, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -25.32, 'Colgate': -31.28, 'UC Santa Barbara': -31.34, 'Montana St.': -34.56, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 12.880000000000003, 'Missouri': 12.060000000000002, 'Creighton': 10.669999999999998, 'Arkansas': 9.489999999999995, 'Memphis': 6.139999999999997, 'Arizona St.': 2.070000000000004, 'Kentucky': -0.5100000000000016, 'Penn St.': -5.530000000000001, 'Boise St.': -17.500000000000004, 'Maryland': -20.169999999999995, 'Iowa': -30.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Missouri': 24.270000000000003, 'Duke': 20.939999999999994, 'Arkansas': 5.2599999999999945, 'Miami FL': 5.089999999999996, 'San Diego St.': -9.29}
+
+
+
+Elite 8 Priority Upsets
+{'Missouri': 70.38}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Utah St.': 7.959999999999999, 'Boise St.': 3.299999999999999, 'USC': -6.079999999999998}
+{'Pittsburgh': 14.939999999999998, 'Arizona St.': 11.320000000000004, 'N.C. State': -3.3399999999999963, 'Providence': -12.07}
+{'VCU': 0.25, 'Oral Roberts': -17.24, 'Charleston': -17.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -20.51, 'Iona': -34.66}
+{'Kennesaw St.': -12.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -14.8, 'Princeton': -16.29, 'Grand Canyon': -23.319999999999997, 'UC Santa Barbara': -31.34, 'Montana St.': -32.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 16.669999999999998, 'Michigan St.': 11.880000000000003, 'Florida Atlantic': 9.680000000000003, 'Arkansas': 8.489999999999995, 'Arizona St.': 5.070000000000004, 'Utah St.': 2.019999999999996, 'Kentucky': 1.4899999999999984, 'Penn St.': -5.530000000000001, 'Northwestern': -19.8, 'Iowa': -22.22, 'West Virginia': -23.4}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 26.25999999999999, 'Florida Atlantic': 18.740000000000006, 'San Diego St.': -3.289999999999999, 'Indiana': -11.46}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 68.92, 'Arkansas': 15.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 11.959999999999996, 'Boise St.': 8.299999999999995, 'Penn St.': 7.759999999999998, 'USC': -4.079999999999998}
+{'Arizona St.': 8.320000000000004, 'Pittsburgh': 6.940000000000001, 'N.C. State': -6.339999999999996, 'Providence': -12.07}
+{'VCU': 1.25, 'Drake': -15.400000000000002, 'Charleston': -18.490000000000002, 'Oral Roberts': -19.24}
+{'Furman': -0.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -22.51, 'Iona': -36.66}
+{'Kennesaw St.': -12.05, 'Vermont': -13.409999999999998, 'Princeton': -14.29, 'Fairleigh Dickinson': -14.8, 'Grand Canyon': -22.319999999999997, 'UC Santa Barbara': -31.34, 'Colgate': -32.28, 'Montana St.': -33.56, 'UNC Asheville': -43.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 16.880000000000003, 'Creighton': 15.669999999999998, 'Arkansas': 8.489999999999995, 'Memphis': 7.139999999999997, 'Utah St.': 6.019999999999996, 'Kentucky': 3.4899999999999984, 'Arizona St.': 2.070000000000004, 'Texas A&M': -9.29, 'Boise St.': -20.5, 'Maryland': -22.169999999999998, 'Iowa': -28.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 23.259999999999994, 'Memphis': 9.2, 'Miami FL': 8.089999999999996, 'San Diego St.': -1.2899999999999991}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 66.38, 'Arkansas': 13.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 9.959999999999996, 'Penn St.': 7.759999999999998, 'Boise St.': 4.299999999999999, 'USC': -6.079999999999998}
+{'Arizona St.': 15.320000000000004, 'Pittsburgh': 13.939999999999998, 'N.C. State': -8.339999999999996, 'Providence': -14.07}
+{'VCU': -0.75, 'Oral Roberts': -17.24, 'Charleston': -18.490000000000002, 'Drake': -19.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -7.460000000000001, 'Louisiana': -16.51, 'Iona': -37.66}
+{'Kennesaw St.': -13.05, 'Fairleigh Dickinson': -13.8, 'Princeton': -16.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -31.34, 'Colgate': -32.28, 'Montana St.': -33.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 16.880000000000003, 'Arkansas': 11.489999999999995, 'Creighton': 8.669999999999998, 'Memphis': 8.139999999999997, 'Kentucky': 6.489999999999998, 'Utah St.': 0.019999999999999574, 'Penn St.': -0.5300000000000011, 'Arizona St.': -0.9299999999999962, 'Northwestern': -13.8, 'Maryland': -17.169999999999995}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 20.259999999999994, 'Miami FL': 15.089999999999996, 'Memphis': 9.2, 'San Diego St.': -5.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 95.0}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 8.759999999999998, 'Utah St.': 5.959999999999999, 'Boise St.': 3.299999999999999, 'USC': -0.0799999999999983}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 11.320000000000004, 'N.C. State': -4.339999999999996, 'Providence': -16.07}
+{'VCU': 2.25, 'Oral Roberts': -16.24, 'Charleston': -18.490000000000002, 'Drake': -22.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -20.51, 'Iona': -39.66}
+{'Vermont': -11.409999999999997, 'Kennesaw St.': -12.05, 'Princeton': -15.29, 'Grand Canyon': -21.319999999999997, 'UC Santa Barbara': -29.34, 'Colgate': -31.28, 'Montana St.': -34.56, 'Howard': -41.35, 'UNC Asheville': -43.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 14.669999999999998, 'Memphis': 8.139999999999997, 'Kentucky': 6.489999999999998, 'Arkansas': 6.489999999999995, 'Utah St.': 6.019999999999996, 'Arizona St.': 4.070000000000004, 'Pittsburgh': 0.5799999999999947, 'Penn St.': -3.530000000000001, 'Northwestern': -16.8, 'West Virginia': -20.4, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 15.259999999999994, 'Michigan St.': 11.91, 'Memphis': 9.2, 'San Diego St.': -5.289999999999999, 'Indiana': -16.46}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 59.22000000000001, 'Arkansas': 18.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 16.759999999999998, 'Boise St.': 6.299999999999999, 'Utah St.': 4.959999999999999, 'USC': -6.079999999999998}
+{'Arizona St.': 13.320000000000004, 'Pittsburgh': 11.939999999999998, 'N.C. State': -8.339999999999996, 'Providence': -9.07}
+{'VCU': 1.25, 'Charleston': -14.490000000000002, 'Oral Roberts': -19.24, 'Drake': -23.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -12.46, 'Louisiana': -18.51, 'Iona': -38.66}
+{'Kennesaw St.': -11.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -23.319999999999997, 'UC Santa Barbara': -29.34, 'Colgate': -32.28, 'Montana St.': -32.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996}
+
+
+
+Second Round Priority Upsets
+{'Missouri': 13.060000000000002, 'Kentucky': 11.489999999999998, 'Florida Atlantic': 10.680000000000003, 'Michigan St.': 9.880000000000003, 'Creighton': 9.669999999999998, 'Arkansas': 9.489999999999995, 'Penn St.': 3.469999999999999, 'Arizona St.': -0.9299999999999962, 'West Virginia': -23.4, 'Boise St.': -24.5}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 46.230000000000004, 'Florida Atlantic': 21.520000000000003, 'Michigan St.': 9.91, 'San Diego St.': -3.289999999999999, 'Indiana': -19.46}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 98.42999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 12.759999999999998, 'Boise St.': 6.299999999999999, 'Utah St.': 5.959999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -4.339999999999996, 'Providence': -9.07}
+{'VCU': 4.25, 'Oral Roberts': -20.24, 'Charleston': -20.490000000000002, 'Drake': -24.400000000000002}
+{'Furman': -3.9800000000000004, 'Kent St.': -9.46, 'Louisiana': -18.51, 'Iona': -37.66}
+{'Kennesaw St.': -8.05, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -23.319999999999997, 'Montana St.': -34.56, 'Texas A&M Corpus Chris': -39.769999999999996, 'Howard': -41.35, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 12.880000000000003, 'Florida Atlantic': 11.680000000000003, 'Kentucky': 10.489999999999998, 'Missouri': 6.060000000000002, 'Creighton': 5.669999999999998, 'Arkansas': 5.489999999999995, 'Arizona St.': 4.070000000000004, 'Penn St.': -4.530000000000001, 'Boise St.': -15.500000000000004, 'Maryland': -16.169999999999995, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 49.230000000000004, 'Michigan St.': 11.91, 'Florida Atlantic': 10.740000000000006, 'Miami FL': -0.9100000000000037, 'San Diego St.': -9.29}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 83.22000000000001}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Boise St.': 6.299999999999999, 'Utah St.': 4.959999999999999, 'USC': -4.079999999999998}
+{'Arizona St.': 10.320000000000004, 'Pittsburgh': 9.940000000000001, 'N.C. State': -6.339999999999996, 'Providence': -13.07}
+{'VCU': 0.25, 'Oral Roberts': -16.24, 'Charleston': -18.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -17.51, 'Iona': -37.66}
+{'Kennesaw St.': -10.05, 'Vermont': -12.409999999999998, 'Princeton': -15.29, 'Grand Canyon': -21.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -32.28, 'Montana St.': -34.56, 'Howard': -40.35, 'Texas A&M Corpus Chris': -41.769999999999996, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 10.880000000000003, 'Creighton': 10.669999999999998, 'Memphis': 9.139999999999997, 'Missouri': 9.060000000000002, 'Kentucky': 6.489999999999998, 'Arizona St.': 3.070000000000004, 'Penn St.': -5.530000000000001, 'Maryland': -14.169999999999995, 'Boise St.': -20.5, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 46.230000000000004, 'Memphis': 15.2, 'Missouri': 3.270000000000003, 'San Diego St.': -7.289999999999999, 'Miami FL': -8.910000000000004}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 85.38}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 8.759999999999998, 'Utah St.': 7.959999999999999, 'Boise St.': 6.299999999999999, 'USC': -3.0799999999999983}
+{'Pittsburgh': 16.939999999999998, 'Arizona St.': 6.320000000000004, 'N.C. State': -10.339999999999996, 'Providence': -14.07}
+{'VCU': 2.25, 'Oral Roberts': -12.239999999999998, 'Charleston': -18.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -8.46, 'Louisiana': -19.51, 'Iona': -39.66}
+{'Kennesaw St.': -10.05, 'Fairleigh Dickinson': -12.8, 'Vermont': -14.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -26.32, 'Colgate': -29.28, 'UC Santa Barbara': -30.34, 'Montana St.': -34.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 16.669999999999998, 'Michigan St.': 10.880000000000003, 'Kentucky': 10.489999999999998, 'Memphis': 9.139999999999997, 'Arizona St.': 0.07000000000000384, 'Utah St.': 0.019999999999999574, 'Penn St.': -8.530000000000001, 'Illinois': -10.659999999999997, 'Northwestern': -14.8, 'West Virginia': -20.4, 'Iowa': -30.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 51.230000000000004, 'Memphis': 11.2, 'Michigan St.': 6.91, 'Miami FL': -3.9100000000000037, 'San Diego St.': -8.29}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 93.89}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Utah St.': 9.959999999999996, 'Boise St.': 3.299999999999999, 'USC': -3.0799999999999983}
+{'Arizona St.': 12.320000000000004, 'Pittsburgh': 11.939999999999998, 'N.C. State': -10.339999999999996, 'Providence': -11.07}
+{'VCU': 5.25, 'Oral Roberts': -20.24, 'Charleston': -20.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -5.460000000000001, 'Louisiana': -18.51, 'Iona': -37.66}
+{'Kennesaw St.': -11.05, 'Vermont': -14.409999999999998, 'Princeton': -15.29, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -24.319999999999997, 'Colgate': -32.28, 'UNC Asheville': -43.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 13.880000000000003, 'Arkansas': 13.489999999999995, 'Memphis': 13.139999999999997, 'Creighton': 8.669999999999998, 'Kentucky': 6.489999999999998, 'Arizona St.': 5.070000000000004, 'Utah St.': -0.9800000000000004, 'Penn St.': -8.530000000000001, 'Northwestern': -14.8, 'West Virginia': -22.4, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 22.979999999999997, 'Arkansas': 14.259999999999994, 'Miami FL': 5.089999999999996, 'San Diego St.': 3.710000000000001}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 49.379999999999995, 'Arkansas': 41.31999999999999}
+
+
+
+First Round Priority Upsets
+{'Boise St.': 9.299999999999995, 'Utah St.': 8.959999999999996, 'Penn St.': 7.759999999999998, 'USC': -1.0799999999999983}
+{'Pittsburgh': 11.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -9.339999999999996, 'Providence': -14.07}
+{'VCU': 1.25, 'Oral Roberts': -14.239999999999998, 'Charleston': -19.490000000000002, 'Drake': -20.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -11.46, 'Louisiana': -19.51, 'Iona': -36.66}
+{'Kennesaw St.': -11.05, 'Vermont': -13.409999999999998, 'Princeton': -15.29, 'Grand Canyon': -26.32, 'UC Santa Barbara': -28.34, 'Colgate': -32.28, 'Montana St.': -33.56, 'Howard': -40.35, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 16.880000000000003, 'Creighton': 14.669999999999998, 'Arkansas': 10.489999999999995, 'Memphis': 7.139999999999997, 'Kentucky': 5.489999999999998, 'Arizona St.': 2.070000000000004, 'Utah St.': 1.019999999999996, 'Texas A&M': -6.289999999999999, 'Maryland': -17.169999999999995, 'Boise St.': -19.500000000000004, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 31.979999999999997, 'Arkansas': 11.259999999999994, 'Miami FL': 3.0899999999999963, 'San Diego St.': -0.28999999999999915}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 65.38, 'Arkansas': 14.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 6.759999999999998, 'Utah St.': 5.959999999999999, 'Boise St.': 4.299999999999999, 'USC': 1.9200000000000017}
+{'Arizona St.': 12.320000000000004, 'Pittsburgh': 8.940000000000001, 'N.C. State': -8.339999999999996, 'Providence': -12.07}
+{'VCU': 3.25, 'Oral Roberts': -14.239999999999998, 'Charleston': -17.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -19.51, 'Iona': -37.66}
+{'Kennesaw St.': -11.05, 'Fairleigh Dickinson': -11.8, 'Princeton': -15.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -32.28, 'Montana St.': -34.56, 'Howard': -40.35, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 12.669999999999998, 'Florida Atlantic': 11.680000000000003, 'Michigan St.': 10.880000000000003, 'Arizona St.': 9.070000000000004, 'Utah St.': 9.019999999999996, 'Kentucky': 0.48999999999999844, 'Penn St.': -6.530000000000001, 'Illinois': -10.659999999999997, 'Maryland': -13.169999999999995, 'Northwestern': -19.8, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 58.230000000000004, 'Florida Atlantic': 23.520000000000003, 'Miami FL': 4.089999999999996, 'San Diego St.': -6.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 89.91999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 8.959999999999996, 'Boise St.': 6.299999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -9.339999999999996, 'Providence': -14.07}
+{'VCU': 4.25, 'Oral Roberts': -17.24, 'Drake': -19.400000000000002, 'Charleston': -21.490000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -8.46, 'Louisiana': -19.51, 'Iona': -37.66}
+{'Kennesaw St.': -10.05, 'Vermont': -13.409999999999998, 'Princeton': -15.29, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -26.32, 'Colgate': -31.28, 'Montana St.': -34.56, 'Howard': -40.35, 'UNC Asheville': -44.12, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 20.880000000000003, 'Creighton': 14.669999999999998, 'Memphis': 11.139999999999997, 'Utah St.': 2.019999999999996, 'Arizona St.': 0.07000000000000384, 'Kentucky': -0.5100000000000016, 'Penn St.': -0.5300000000000011, 'Illinois': -11.66, 'Maryland': -15.169999999999995, 'Northwestern': -19.8, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 55.230000000000004, 'Memphis': 13.979999999999997, 'Utah St.': 0.22999999999999687, 'Miami FL': -2.9100000000000037, 'San Diego St.': -8.29}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 85.38}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 14.759999999999998, 'Utah St.': 4.959999999999999, 'Boise St.': 3.299999999999999, 'USC': -2.0799999999999983}
+{'Arizona St.': 10.320000000000004, 'Pittsburgh': 8.940000000000001, 'N.C. State': -4.339999999999996, 'Providence': -13.07}
+{'VCU': 0.25, 'Oral Roberts': -16.24, 'Charleston': -20.490000000000002, 'Drake': -22.400000000000002}
+{'Furman': 5.02, 'Kent St.': -10.46, 'Louisiana': -20.51, 'Iona': -39.66}
+{'Kennesaw St.': -10.05, 'Vermont': -14.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -25.32, 'UC Santa Barbara': -30.34, 'Montana St.': -33.56, 'Howard': -40.35, 'Texas A&M Corpus Chris': -40.769999999999996, 'UNC Asheville': -43.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 13.880000000000003, 'Arkansas': 13.489999999999995, 'Creighton': 12.669999999999998, 'Florida Atlantic': 10.680000000000003, 'Kentucky': 5.489999999999998, 'Utah St.': 4.019999999999996, 'Arizona St.': -2.929999999999996, 'Penn St.': -3.530000000000001, 'Northwestern': -16.8, 'Maryland': -19.169999999999995, 'Iowa': -31.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 23.259999999999994, 'Florida Atlantic': 15.740000000000006, 'Miami FL': 8.089999999999996, 'San Diego St.': -3.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 53.31999999999999, 'Florida Atlantic': 41.92}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 9.759999999999998, 'Boise St.': 6.299999999999999, 'Utah St.': 5.959999999999999, 'USC': -3.0799999999999983}
+{'Pittsburgh': 10.940000000000001, 'Arizona St.': 9.320000000000004, 'N.C. State': -4.339999999999996, 'Providence': -8.07}
+{'VCU': 4.25, 'Oral Roberts': -17.24, 'Charleston': -19.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -21.51, 'Iona': -39.66}
+{'Kennesaw St.': -9.05, 'Vermont': -13.409999999999998, 'Princeton': -14.29, 'Grand Canyon': -25.32, 'UC Santa Barbara': -30.34, 'Colgate': -31.28, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 16.880000000000003, 'Creighton': 10.669999999999998, 'Kentucky': 8.489999999999998, 'Missouri': 8.060000000000002, 'Arizona St.': 0.07000000000000384, 'Penn St.': -5.530000000000001, 'Illinois': -12.66, 'Maryland': -14.169999999999995, 'Boise St.': -16.500000000000004, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 47.230000000000004, 'Duke': 25.939999999999994, 'Missouri': 11.270000000000003, 'Michigan St.': 4.91, 'Miami FL': -11.910000000000004, 'San Diego St.': -13.29}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 8.759999999999998, 'Utah St.': 6.959999999999999, 'Boise St.': 2.299999999999999, 'USC': -3.0799999999999983}
+{'Pittsburgh': 13.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -3.3399999999999963, 'Providence': -16.07}
+{'VCU': 3.25, 'Oral Roberts': -17.24, 'Drake': -18.400000000000002, 'Charleston': -18.490000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -9.46, 'Louisiana': -22.51, 'Iona': -38.66}
+{'Kennesaw St.': -10.05, 'Vermont': -11.409999999999997, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -23.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -32.28, 'Montana St.': -32.56, 'Howard': -41.35, 'UNC Asheville': -45.12, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Memphis': 14.139999999999997, 'Michigan St.': 9.880000000000003, 'Creighton': 9.669999999999998, 'Kentucky': 8.489999999999998, 'Utah St.': 5.019999999999996, 'Arizona St.': 2.070000000000004, 'Penn St.': -4.530000000000001, 'Illinois': -9.659999999999997, 'Northwestern': -18.8, 'Maryland': -20.169999999999995, 'Iowa': -31.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 50.230000000000004, 'Michigan St.': 13.91, 'Memphis': 5.199999999999999, 'Miami FL': -5.910000000000004, 'San Diego St.': -6.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 83.22000000000001}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 7.959999999999999, 'Penn St.': 6.759999999999998, 'Boise St.': 1.299999999999999, 'USC': -2.0799999999999983}
+{'Pittsburgh': 13.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -10.339999999999996, 'Providence': -12.07}
+{'VCU': 1.25, 'Oral Roberts': -15.239999999999998, 'Charleston': -16.490000000000002, 'Drake': -23.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -8.46, 'Louisiana': -21.51, 'Iona': -36.66}
+{'Kennesaw St.': -10.05, 'Vermont': -12.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -21.319999999999997, 'UC Santa Barbara': -28.34, 'Colgate': -32.28, 'Montana St.': -32.56, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 13.880000000000003, 'Arkansas': 10.489999999999995, 'Creighton': 9.669999999999998, 'Memphis': 9.139999999999997, 'Kentucky': 5.489999999999998, 'Utah St.': 5.019999999999996, 'Arizona St.': 2.070000000000004, 'Penn St.': -11.530000000000001, 'Maryland': -15.169999999999995, 'Northwestern': -15.8, 'Iowa': -31.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 19.2, 'Arkansas': 11.259999999999994, 'Miami FL': 9.089999999999996, 'San Diego St.': -0.28999999999999915}
+
+
+
+Elite 8 Priority Upsets
+{'Arkansas': 50.31999999999999, 'Memphis': 40.379999999999995}
+
+
+
+First Round Priority Upsets
+{'Boise St.': 6.299999999999999, 'Utah St.': 4.959999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 17.939999999999998, 'Arizona St.': 8.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -15.07}
+{'VCU': 4.25, 'Oral Roberts': -14.239999999999998, 'Charleston': -19.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': 2.0199999999999996, 'Kent St.': -7.460000000000001, 'Louisiana': -21.51, 'Iona': -38.66}
+{'Kennesaw St.': -12.05, 'Vermont': -13.409999999999998, 'Fairleigh Dickinson': -14.8, 'Grand Canyon': -21.319999999999997, 'Colgate': -32.28, 'Montana St.': -33.56, 'Howard': -37.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 12.669999999999998, 'Arkansas': 11.489999999999995, 'Memphis': 10.139999999999997, 'Michigan St.': 9.880000000000003, 'Kentucky': 6.489999999999998, 'Arizona St.': 4.070000000000004, 'Utah St.': 0.019999999999999574, 'Texas A&M': -1.2899999999999991, 'Maryland': -17.169999999999995, 'Boise St.': -19.500000000000004}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 20.259999999999994, 'Memphis': 15.2, 'Miami FL': 9.089999999999996, 'San Diego St.': -5.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 60.379999999999995, 'Arkansas': 19.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 6.759999999999998, 'Utah St.': 5.959999999999999, 'Boise St.': 4.299999999999999, 'USC': -2.0799999999999983}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 9.320000000000004, 'N.C. State': -3.3399999999999963, 'Providence': -10.07}
+{'VCU': 0.25, 'Oral Roberts': -14.239999999999998, 'Charleston': -18.490000000000002, 'Drake': -20.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -12.46, 'Iona': -36.66}
+{'Kennesaw St.': -9.05, 'Vermont': -10.409999999999997, 'Fairleigh Dickinson': -14.8, 'Princeton': -15.29, 'Grand Canyon': -25.32, 'Colgate': -32.28, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 15.880000000000003, 'Arkansas': 10.489999999999995, 'Memphis': 10.139999999999997, 'Creighton': 8.669999999999998, 'Kentucky': 8.489999999999998, 'Arizona St.': 5.070000000000004, 'Utah St.': 4.019999999999996, 'Penn St.': -4.530000000000001, 'Northwestern': -17.8, 'Maryland': -21.169999999999995}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 24.259999999999994, 'Memphis': 15.2, 'San Diego St.': 0.7100000000000009, 'Indiana': -14.46}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 65.38, 'Arkansas': 14.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Utah St.': 7.959999999999999, 'Boise St.': 5.299999999999999, 'USC': -1.0799999999999983}
+{'Pittsburgh': 11.939999999999998, 'Arizona St.': 8.320000000000004, 'N.C. State': -11.339999999999996, 'Providence': -12.07}
+{'Oral Roberts': -16.24, 'Drake': -18.400000000000002, 'Charleston': -18.490000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -5.460000000000001, 'Louisiana': -18.51, 'Iona': -36.66}
+{'Kennesaw St.': -8.05, 'Princeton': -15.29, 'Grand Canyon': -22.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -31.28, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 14.669999999999998, 'Memphis': 10.139999999999997, 'Michigan St.': 9.880000000000003, 'Kentucky': 8.489999999999998, 'Arkansas': 8.489999999999995, 'Arizona St.': 1.0700000000000038, 'Utah St.': 1.019999999999996, 'Penn St.': -6.530000000000001, 'Northwestern': -15.8, 'West Virginia': -21.4, 'Iowa': -30.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 12.979999999999997, 'Michigan St.': 10.91, 'San Diego St.': 3.710000000000001, "Saint Mary's": 1.759999999999998, 'Indiana': -9.46}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 11.759999999999998, 'Utah St.': 10.959999999999996, 'Boise St.': 6.299999999999999, 'USC': -6.079999999999998}
+{'Arizona St.': 11.320000000000004, 'Pittsburgh': 9.940000000000001, 'N.C. State': -5.339999999999996, 'Providence': -14.07}
+{'VCU': 0.25, 'Oral Roberts': -17.24, 'Drake': -21.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -5.460000000000001, 'Louisiana': -17.51, 'Iona': -39.66}
+{'Vermont': -11.409999999999997, 'Kennesaw St.': -12.05, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -25.32, 'UC Santa Barbara': -29.34, 'Colgate': -32.28, 'Howard': -41.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 16.669999999999998, 'Arkansas': 9.489999999999995, 'Kentucky': 6.489999999999998, 'Utah St.': 6.019999999999996, 'Memphis': 5.139999999999997, 'Arizona St.': 4.070000000000004, 'Pittsburgh': 1.5799999999999947, 'Penn St.': -2.530000000000001, 'Northwestern': -17.8, 'West Virginia': -24.4, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Tennessee': 24.16, 'Michigan St.': 16.91, 'Miami FL': 1.0899999999999963, 'Arkansas': -1.7400000000000055, 'Utah St.': -1.7700000000000031, 'San Diego St.': -7.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 90.0}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 12.759999999999998, 'Utah St.': 8.959999999999996, 'Boise St.': 6.299999999999999, 'USC': -0.0799999999999983}
+{'Pittsburgh': 16.939999999999998, 'Arizona St.': 7.320000000000004, 'N.C. State': -4.339999999999996, 'Providence': -16.07}
+{'VCU': 0.25, 'Oral Roberts': -15.239999999999998, 'Charleston': -18.490000000000002, 'Drake': -22.400000000000002}
+{'Furman': -3.9800000000000004, 'Louisiana': -20.51, 'Iona': -37.66}
+{'Kennesaw St.': -11.05, 'Vermont': -12.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -25.32, 'Colgate': -31.28, 'UC Santa Barbara': -31.34, 'Montana St.': -33.56, 'Howard': -39.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -44.12}
+
+
+
+Second Round Priority Upsets
+{'Arkansas': 14.489999999999995, 'Creighton': 13.669999999999998, 'Florida Atlantic': 12.680000000000003, 'Michigan St.': 9.880000000000003, 'Utah St.': 6.019999999999996, 'Kentucky': 3.4899999999999984, 'Arizona St.': 1.0700000000000038, 'Penn St.': -9.530000000000001, 'Maryland': -14.169999999999995, 'Northwestern': -15.8, 'Auburn': -34.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Florida Atlantic': 23.520000000000003, 'Miami FL': 20.089999999999996, 'Arkansas': 14.259999999999994, 'San Diego St.': -7.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 89.91999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Boise St.': 10.299999999999995, 'Utah St.': 4.959999999999999, 'USC': -6.079999999999998}
+{'Pittsburgh': 11.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -9.339999999999996, 'Providence': -13.07}
+{'VCU': 1.25, 'Oral Roberts': -19.24, 'Charleston': -20.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -12.46, 'Louisiana': -19.51, 'Iona': -36.66}
+{'Kennesaw St.': -12.05, 'Princeton': -14.29, 'Vermont': -14.409999999999998, 'Fairleigh Dickinson': -14.8, 'Grand Canyon': -23.319999999999997, 'UC Santa Barbara': -28.34, 'Colgate': -31.28, 'Montana St.': -34.56, 'Howard': -39.35, 'Texas A&M Corpus Chris': -40.769999999999996, 'UNC Asheville': -45.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 16.880000000000003, 'Creighton': 13.669999999999998, 'Arkansas': 13.489999999999995, 'Memphis': 8.139999999999997, 'Missouri': 7.060000000000002, 'Kentucky': 2.4899999999999984, 'Arizona St.': 0.07000000000000384, 'Penn St.': -8.530000000000001, 'Boise St.': -18.500000000000004, 'Maryland': -19.169999999999995, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 26.25999999999999, 'Memphis': 17.979999999999997, 'Miami FL': 3.0899999999999963, 'San Diego St.': -1.2899999999999991}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 59.379999999999995, 'Arkansas': 20.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 8.759999999999998, 'Utah St.': 7.959999999999999, 'Boise St.': 1.299999999999999, 'USC': -0.0799999999999983}
+{'Pittsburgh': 13.939999999999998, 'Arizona St.': 6.320000000000004, 'N.C. State': -4.339999999999996, 'Providence': -9.07}
+{'VCU': 1.25, 'Charleston': -14.490000000000002, 'Oral Roberts': -17.24, 'Drake': -20.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -11.46, 'Louisiana': -21.51, 'Iona': -39.66}
+{'Kennesaw St.': -11.05, 'Vermont': -12.409999999999998, 'Grand Canyon': -24.319999999999997, 'Colgate': -30.28, 'UC Santa Barbara': -30.34, 'Montana St.': -33.56, 'Howard': -40.35, 'UNC Asheville': -43.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 19.669999999999998, 'Michigan St.': 17.880000000000003, 'Florida Atlantic': 12.680000000000003, 'Kentucky': 8.489999999999998, 'Utah St.': 4.019999999999996, 'Arizona St.': -1.9299999999999962, 'Penn St.': -10.530000000000001, 'Illinois': -11.66, 'Northwestern': -19.8, 'West Virginia': -21.4, 'Iowa': -30.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 47.230000000000004, 'Michigan St.': 15.91, 'Florida Atlantic': 6.7400000000000055, 'San Diego St.': -3.289999999999999, 'Indiana': -18.46}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 83.22000000000001}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 13.759999999999998, 'Utah St.': 6.959999999999999, 'Boise St.': 4.299999999999999, 'USC': -2.0799999999999983}
+{'Pittsburgh': 13.939999999999998, 'Arizona St.': 13.320000000000004, 'N.C. State': -6.339999999999996, 'Providence': -13.07}
+{'VCU': -0.75, 'Oral Roberts': -16.24, 'Drake': -19.400000000000002, 'Charleston': -21.490000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -21.51, 'Iona': -37.66}
+{'Kennesaw St.': -6.050000000000001, 'Fairleigh Dickinson': -15.8, 'Princeton': -16.29, 'Grand Canyon': -25.32, 'UC Santa Barbara': -30.34, 'UNC Asheville': -43.12, 'Texas A&M Corpus Chris': -43.769999999999996, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Kentucky': 18.49, 'Creighton': 17.669999999999998, 'Michigan St.': 14.880000000000003, 'Arkansas': 9.489999999999995, 'Florida Atlantic': 8.680000000000003, 'Utah St.': 2.019999999999996, 'Arizona St.': -1.9299999999999962, 'Penn St.': -5.530000000000001, 'Northwestern': -21.8, 'West Virginia': -24.4, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Tennessee': 38.16000000000001, 'Michigan St.': 17.91, 'Arkansas': 9.259999999999994, 'San Diego St.': -11.29, 'Indiana': -19.46}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 90.0}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 8.959999999999996, 'Penn St.': 8.759999999999998, 'Boise St.': 5.299999999999999, 'USC': -5.079999999999998}
+{'Pittsburgh': 9.940000000000001, 'Arizona St.': 7.320000000000004, 'N.C. State': -3.3399999999999963, 'Providence': -6.069999999999997}
+{'VCU': 0.25, 'Oral Roberts': -15.239999999999998, 'Charleston': -17.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -9.46, 'Louisiana': -22.51, 'Iona': -39.66}
+{'Kennesaw St.': -9.05, 'Princeton': -14.29, 'Vermont': -14.409999999999998, 'Grand Canyon': -25.32, 'Colgate': -31.28, 'Howard': -39.35, 'UNC Asheville': -44.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Kentucky': 15.489999999999998, 'Michigan St.': 12.880000000000003, 'Creighton': 10.669999999999998, 'Florida Atlantic': 8.680000000000003, 'Utah St.': 1.019999999999996, 'Arizona St.': 0.07000000000000384, 'Penn St.': -0.5300000000000011, 'Illinois': -11.66, 'Maryland': -15.169999999999995, 'Northwestern': -17.8, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 48.230000000000004, 'Florida Atlantic': 10.740000000000006, 'Michigan St.': 6.91, 'Miami FL': 2.0899999999999963, 'San Diego St.': -6.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 98.42999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 9.759999999999998, 'Boise St.': 7.299999999999999, 'Utah St.': 5.959999999999999, 'USC': -6.079999999999998}
+{'Pittsburgh': 10.940000000000001, 'Arizona St.': 8.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -15.07}
+{'VCU': 3.25, 'Oral Roberts': -12.239999999999998, 'Charleston': -16.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -11.46, 'Iona': -38.66}
+{'Kennesaw St.': -11.05, 'Vermont': -12.409999999999998, 'Princeton': -15.29, 'Grand Canyon': -23.319999999999997, 'Colgate': -27.28, 'UC Santa Barbara': -29.34, 'Montana St.': -32.56, 'Howard': -40.35, 'UNC Asheville': -44.12, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 13.880000000000003, 'Creighton': 11.669999999999998, 'Florida Atlantic': 8.680000000000003, 'Kentucky': 8.489999999999998, 'Missouri': 5.060000000000002, 'Arizona St.': 0.07000000000000384, 'Penn St.': -2.530000000000001, 'Illinois': -11.66, 'Maryland': -13.169999999999995, 'Boise St.': -19.500000000000004, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 52.230000000000004, 'Florida Atlantic': 13.520000000000003, 'Michigan St.': 11.91, 'Miami FL': -1.9100000000000037, 'San Diego St.': -7.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 98.42999999999999}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 10.959999999999996, 'Penn St.': 8.759999999999998, 'Boise St.': 7.299999999999999, 'USC': -5.079999999999998}
+{'Pittsburgh': 15.939999999999998, 'Arizona St.': 10.320000000000004, 'N.C. State': -4.339999999999996, 'Providence': -15.07}
+{'VCU': 1.25, 'Charleston': -17.490000000000002, 'Oral Roberts': -18.24, 'Drake': -24.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -9.46, 'Louisiana': -20.51, 'Iona': -38.66}
+{'Kennesaw St.': -11.05, 'Vermont': -12.409999999999998, 'Princeton': -15.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -31.28, 'Montana St.': -34.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -45.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 13.669999999999998, 'Michigan St.': 11.880000000000003, 'Florida Atlantic': 8.680000000000003, 'Arkansas': 6.489999999999995, 'Utah St.': 5.019999999999996, 'Arizona St.': 4.070000000000004, 'Kentucky': 1.4899999999999984, 'Penn St.': -2.530000000000001, 'Northwestern': -9.8, 'Maryland': -19.169999999999995, 'Auburn': -32.37}
+
+
+
+Sweet 16 Priority Upsets
+{'Florida Atlantic': 20.740000000000006, 'Arkansas': 17.259999999999994, 'Miami FL': 9.089999999999996, 'San Diego St.': -3.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 59.92, 'Arkansas': 24.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Boise St.': 8.299999999999995, 'Penn St.': 7.759999999999998, 'Utah St.': 3.959999999999999, 'USC': -4.079999999999998}
+{'Pittsburgh': 15.939999999999998, 'Arizona St.': 13.320000000000004, 'N.C. State': -7.339999999999996, 'Providence': -15.07}
+{'VCU': 2.25, 'Oral Roberts': -16.24, 'Charleston': -19.490000000000002, 'Drake': -24.400000000000002}
+{'Furman': -2.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -20.51, 'Iona': -36.66}
+{'Kennesaw St.': -10.05, 'Vermont': -12.409999999999998, 'Fairleigh Dickinson': -13.8, 'Princeton': -15.29, 'Grand Canyon': -23.319999999999997, 'Colgate': -29.28, 'UC Santa Barbara': -30.34, 'UNC Asheville': -42.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 11.669999999999998, 'Michigan St.': 10.880000000000003, 'Arkansas': 8.489999999999995, 'Kentucky': 7.489999999999998, 'Memphis': 5.139999999999997, 'Arizona St.': 5.070000000000004, 'Missouri': 4.060000000000002, 'Penn St.': -5.530000000000001, 'Maryland': -17.169999999999995, 'Boise St.': -18.500000000000004, 'Auburn': -31.369999999999997}
+
+
+
+Sweet 16 Priority Upsets
+{'Duke': 31.939999999999998, 'Miami FL': 11.089999999999996, 'Arkansas': 9.259999999999994, 'Michigan St.': 5.91, 'San Diego St.': -3.289999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Utah St.': 8.959999999999996, 'Boise St.': 6.299999999999999, 'USC': -4.079999999999998}
+{'Arizona St.': 13.320000000000004, 'Pittsburgh': 7.940000000000001, 'N.C. State': -8.339999999999996, 'Providence': -11.07}
+{'VCU': 2.25, 'Oral Roberts': -17.24, 'Charleston': -18.490000000000002, 'Drake': -21.400000000000002}
+{'Furman': -1.9800000000000004, 'Kent St.': -10.46, 'Louisiana': -19.51, 'Iona': -36.66}
+{'Kennesaw St.': -11.05, 'Vermont': -12.409999999999998, 'Princeton': -16.29, 'Grand Canyon': -26.32, 'UC Santa Barbara': -29.34, 'Colgate': -32.28, 'Montana St.': -33.56, 'Texas A&M Corpus Chris': -42.769999999999996, 'UNC Asheville': -44.12, 'Northern Kentucky': -59.3}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 13.880000000000003, 'Memphis': 10.139999999999997, 'Arkansas': 8.489999999999995, 'Creighton': 7.669999999999998, 'Kentucky': 5.489999999999998, 'Utah St.': 3.019999999999996, 'Arizona St.': -1.9299999999999962, 'Penn St.': -4.530000000000001, 'Northwestern': -14.8, 'Maryland': -16.169999999999995, 'Iowa': -29.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Memphis': 22.2, 'Arkansas': 16.259999999999994, 'San Diego St.': -5.289999999999999, 'Indiana': -7.460000000000001}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 64.38, 'Arkansas': 15.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 12.759999999999998, 'Utah St.': 8.959999999999996, 'Boise St.': 4.299999999999999, 'USC': 0.9200000000000017}
+{'Pittsburgh': 12.939999999999998, 'Arizona St.': 12.320000000000004, 'N.C. State': -10.339999999999996, 'Providence': -13.07}
+{'VCU': 1.25, 'Oral Roberts': -14.239999999999998, 'Charleston': -15.490000000000002, 'Drake': -24.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -11.46, 'Louisiana': -22.51, 'Iona': -39.66}
+{'Kennesaw St.': -12.05, 'Fairleigh Dickinson': -13.8, 'Vermont': -14.409999999999998, 'Princeton': -17.29, 'Colgate': -30.28, 'UC Santa Barbara': -30.34, 'Montana St.': -33.56, 'Howard': -38.35, 'Texas A&M Corpus Chris': -43.769999999999996, 'UNC Asheville': -45.12}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 12.669999999999998, 'Michigan St.': 11.880000000000003, 'Memphis': 11.139999999999997, 'Arkansas': 7.489999999999995, 'Kentucky': 6.489999999999998, 'Utah St.': 6.019999999999996, 'Arizona St.': 1.0700000000000038, 'Penn St.': -1.5300000000000011, 'Northwestern': -15.8, 'West Virginia': -23.4, 'Auburn': -35.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Arkansas': 21.259999999999994, 'Memphis': 19.2, 'Miami FL': 4.089999999999996, 'San Diego St.': -5.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Memphis': 60.379999999999995, 'Arkansas': 19.999999999999996}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 13.759999999999998, 'Utah St.': 5.959999999999999, 'Boise St.': 4.299999999999999, 'USC': -6.079999999999998}
+{'Arizona St.': 12.320000000000004, 'Pittsburgh': 11.939999999999998, 'N.C. State': -4.339999999999996, 'Providence': -16.07}
+{'VCU': 1.25, 'Oral Roberts': -17.24, 'Charleston': -18.490000000000002, 'Drake': -22.400000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -7.460000000000001, 'Louisiana': -18.51, 'Iona': -34.66}
+{'Kennesaw St.': -12.05, 'Vermont': -14.409999999999998, 'Fairleigh Dickinson': -15.8, 'Princeton': -17.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -28.34, 'Montana St.': -31.56, 'Howard': -41.35, 'Northern Kentucky': -60.3}
+
+
+
+Second Round Priority Upsets
+{'Creighton': 15.669999999999998, 'Florida Atlantic': 11.680000000000003, 'Michigan St.': 7.880000000000003, 'Kentucky': 7.489999999999998, 'Arkansas': 7.489999999999995, 'Utah St.': 3.019999999999996, 'Arizona St.': 2.070000000000004, 'Penn St.': 0.46999999999999886, 'Northwestern': -15.8, 'Maryland': -21.169999999999995, 'Iowa': -32.22}
+
+
+
+Sweet 16 Priority Upsets
+{'Connecticut': 50.230000000000004, 'Florida Atlantic': 9.740000000000006, 'Michigan St.': 6.91, 'Miami FL': 1.0899999999999963, 'San Diego St.': -6.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Florida Atlantic': 98.42999999999999}
+
+
+
+First Round Priority Upsets
+{'Penn St.': 10.759999999999998, 'Boise St.': 5.299999999999999, 'Utah St.': 4.959999999999999, 'USC': -4.079999999999998}
+{'Arizona St.': 10.320000000000004, 'Pittsburgh': 8.940000000000001, 'N.C. State': -4.339999999999996, 'Providence': -10.07}
+{'VCU': 0.25, 'Oral Roberts': -17.24, 'Charleston': -18.490000000000002, 'Drake': -20.400000000000002}
+{'Furman': 0.019999999999999574, 'Kent St.': -10.46, 'Louisiana': -18.51}
+{'Kennesaw St.': -7.050000000000001, 'Vermont': -12.409999999999998, 'Princeton': -15.29, 'Fairleigh Dickinson': -15.8, 'Grand Canyon': -24.319999999999997, 'Colgate': -31.28, 'Howard': -41.35, 'UNC Asheville': -44.12, 'Northern Kentucky': -58.3}
+
+
+
+Second Round Priority Upsets
+{'Arkansas': 11.489999999999995, 'Michigan St.': 10.880000000000003, 'Creighton': 9.669999999999998, 'Missouri': 9.060000000000002, 'Florida Atlantic': 8.680000000000003, 'Kentucky': 4.489999999999998, 'Arizona St.': 4.070000000000004, 'Penn St.': 0.46999999999999886, 'Boise St.': -18.500000000000004, 'West Virginia': -21.4}
+
+
+
+Sweet 16 Priority Upsets
+{'Missouri': 28.270000000000003, 'Duke': 24.939999999999994, 'Arkansas': 1.2599999999999945, 'San Diego St.': -8.29, 'Indiana': -13.46}
+
+
+
+Elite 8 Priority Upsets
+{'Missouri': 70.38}
+
+
+
+First Round Priority Upsets
+{'Utah St.': 9.959999999999996, 'Penn St.': 7.759999999999998, 'Boise St.': 6.299999999999999, 'USC': -3.0799999999999983}
+{'Pittsburgh': 14.939999999999998, 'Arizona St.': 7.320000000000004, 'N.C. State': -8.339999999999996}
+{'VCU': 4.25, 'Drake': -15.400000000000002, 'Charleston': -17.490000000000002}
+{'Furman': -0.9800000000000004, 'Kent St.': -8.46, 'Louisiana': -19.51, 'Iona': -36.66}
+{'Kennesaw St.': -11.05, 'Vermont': -11.409999999999997, 'Princeton': -17.29, 'Grand Canyon': -24.319999999999997, 'UC Santa Barbara': -30.34, 'Colgate': -31.28, 'Montana St.': -33.56, 'Howard': -41.35, 'Texas A&M Corpus Chris': -41.769999999999996}
+
+
+
+Second Round Priority Upsets
+{'Michigan St.': 15.880000000000003, 'Creighton': 12.669999999999998, 'Arkansas': 12.489999999999995, 'Kentucky': 11.489999999999998, 'Florida Atlantic': 9.680000000000003, 'Arizona St.': 0.07000000000000384, 'Utah St.': 0.019999999999999574, 'Penn St.': -7.530000000000001, 'Northwestern': -14.8, 'West Virginia': -21.4, 'Auburn': -33.370000000000005}
+
+
+
+Sweet 16 Priority Upsets
+{'Duke': 22.939999999999994, 'Michigan St.': 15.91, 'Arkansas': 10.259999999999994, 'Miami FL': 8.089999999999996, 'San Diego St.': -2.289999999999999}
+
+
+
+Elite 8 Priority Upsets
+{'Michigan St.': 83.22000000000001}
+
+
 First Round Results
-{'Alabama': 1000,
- 'Baylor': 1000,
- 'Duke': 1000,
- 'Kentucky': 1000,
- 'Kansas St.': 1000,
- 'Michigan St.': 1000,
- 'Houston': 1000,
- 'Miami FL': 1000,
- 'Kansas': 1000,
- 'Connecticut': 1000,
- 'UCLA': 1000,
- 'Purdue': 999,
- 'Indiana': 999,
- 'Pittsburgh': 999,
- 'Texas': 995,
- 'Penn St.': 981,
- 'Gonzaga': 980,
- 'San Diego St.': 977,
- 'VCU': 977,
- 'Arizona': 942,
- 'N.C. State': 859,
- 'TCU': 858,
- 'Tennessee': 822,
- 'Furman': 821,
- 'Xavier': 732,
- 'Arkansas': 716,
- 'West Virginia': 701,
- 'Memphis': 699,
- 'Auburn': 682,
- 'Vermont': 648,
- 'Boise St.': 565,
- 'Missouri': 546,
- 'Utah St.': 454,
- 'Northwestern': 435,
- 'Marquette': 352,
- 'Iowa': 318,
- 'Florida Atlantic': 301,
- 'Maryland': 299,
- 'Illinois': 284,
- 'Kennesaw St.': 268,
- 'Virginia': 179,
- 'Louisiana': 178,
- 'Arizona St.': 142,
- 'Creighton': 141,
- 'Princeton': 58,
- 'Charleston': 23,
- "Saint Mary's": 23,
- 'Grand Canyon': 20,
- 'Texas A&M': 19,
- 'Colgate': 5,
- 'Kent St.': 1,
+{'Alabama': 100,
+ 'San Diego St.': 100,
+ 'Creighton': 100,
+ 'Baylor': 100,
+ 'Arizona': 100,
+ 'Tennessee': 100,
+ 'Kansas St.': 100,
+ 'Michigan St.': 100,
+ 'Houston': 100,
+ 'Miami FL': 100,
+ 'Pittsburgh': 100,
+ 'Texas': 100,
+ 'Kansas': 100,
+ 'Connecticut': 100,
+ 'Gonzaga': 100,
+ 'UCLA': 100,
+ 'Furman': 99,
+ 'Purdue': 99,
+ 'Kentucky': 99,
+ 'Indiana': 99,
+ 'Arizona St.': 99,
+ 'Duke': 97,
+ 'VCU': 97,
+ 'Marquette': 89,
+ 'Penn St.': 89,
+ 'Kennesaw St.': 88,
+ 'Auburn': 71,
+ 'Arkansas': 70,
+ 'Utah St.': 69,
+ 'Maryland': 67,
+ 'Northwestern': 58,
+ 'Florida Atlantic': 56,
+ 'Memphis': 44,
+ 'Boise St.': 42,
+ 'West Virginia': 33,
+ 'Missouri': 31,
+ 'Illinois': 30,
+ 'Iowa': 29,
+ 'Xavier': 12,
+ 'Vermont': 11,
+ 'Texas A&M': 11,
+ 'Oral Roberts': 3,
+ "Saint Mary's": 3,
+ 'Providence': 1,
+ 'TCU': 1,
  'Fairleigh Dickinson': 1,
- 'Iowa St.': 1}
+ 'Virginia': 1,
+ 'Kent St.': 1}
 
 Second Round Results
-{'Alabama': 1000,
- 'Kentucky': 1000,
- 'Michigan St.': 1000,
- 'Houston': 1000,
- 'UCLA': 1000,
- 'Pittsburgh': 996,
- 'Connecticut': 995,
- 'San Diego St.': 934,
- 'Arizona': 913,
- 'Gonzaga': 839,
- 'Baylor': 761,
- 'Indiana': 671,
- 'Texas': 658,
- 'Arkansas': 638,
- 'Duke': 608,
- 'Memphis': 533,
- 'Purdue': 464,
- 'Tennessee': 392,
- 'Kansas': 361,
- 'Penn St.': 337,
- 'Miami FL': 329,
- 'N.C. State': 237,
- 'TCU': 124,
- 'Missouri': 53,
- 'Virginia': 47,
- 'Arizona St.': 37,
- 'Utah St.': 34,
- 'Charleston': 19,
- 'Texas A&M': 5,
- "Saint Mary's": 5,
- 'Xavier': 4,
- 'Florida Atlantic': 3,
- 'Creighton': 2,
- 'Illinois': 1}
+{'Alabama': 100,
+ 'Michigan St.': 100,
+ 'Houston': 100,
+ 'Texas': 100,
+ 'UCLA': 100,
+ 'San Diego St.': 99,
+ 'Connecticut': 99,
+ 'Creighton': 94,
+ 'Pittsburgh': 88,
+ 'Gonzaga': 85,
+ 'Arizona': 77,
+ 'Duke': 74,
+ 'Miami FL': 69,
+ 'Kansas St.': 58,
+ 'Arkansas': 55,
+ 'Florida Atlantic': 45,
+ 'Kansas': 45,
+ 'Kentucky': 42,
+ 'Memphis': 38,
+ 'Indiana': 31,
+ 'Tennessee': 26,
+ 'Purdue': 17,
+ 'Arizona St.': 15,
+ 'Missouri': 13,
+ 'Xavier': 12,
+ 'Utah St.': 10,
+ 'Baylor': 6,
+ 'Virginia': 1,
+ "Saint Mary's": 1}
 
 Sweet 16 Results
-{'Alabama': 996,
- 'Kentucky': 983,
- 'Houston': 918,
- 'UCLA': 736,
- 'Texas': 658,
- 'Arizona': 625,
- 'Arkansas': 589,
- 'Duke': 419,
- 'Connecticut': 410,
- 'Memphis': 397,
- 'Baylor': 374,
- 'Gonzaga': 264,
- 'Penn St.': 229,
- 'Tennessee': 162,
- 'Pittsburgh': 109,
- 'Indiana': 62,
- 'Purdue': 22,
- 'Miami FL': 20,
- 'Michigan St.': 17,
- 'San Diego St.': 4,
- 'Texas A&M': 3,
+{'Alabama': 100,
+ 'Texas': 93,
+ 'Houston': 90,
+ 'Arizona': 75,
+ 'UCLA': 75,
+ 'Connecticut': 60,
+ 'Kansas St.': 58,
+ 'Arkansas': 39,
+ 'Florida Atlantic': 34,
+ 'Memphis': 31,
+ 'Duke': 29,
+ 'Gonzaga': 25,
+ 'Kentucky': 24,
+ 'Michigan St.': 18,
+ 'Creighton': 13,
+ 'Miami FL': 10,
+ 'Xavier': 7,
+ 'Missouri': 6,
+ 'Tennessee': 6,
+ 'Baylor': 5,
  'Utah St.': 1,
- 'Xavier': 1,
  'Kansas': 1}
 
 Elite 8 Results
-{'Alabama': 989,
- 'Houston': 918,
- 'UCLA': 589,
- 'Memphis': 397,
- 'Duke': 286,
- 'Connecticut': 219,
- 'Kentucky': 208,
- 'Gonzaga': 180,
- 'Tennessee': 90,
- 'Texas': 72,
- 'Purdue': 19,
- 'Arkansas': 12,
- 'Indiana': 10,
- 'Baylor': 10,
- 'Arizona': 1}
+{'Alabama': 94,
+ 'Houston': 90,
+ 'Connecticut': 60,
+ 'Florida Atlantic': 31,
+ 'Memphis': 26,
+ 'UCLA': 24,
+ 'Michigan St.': 17,
+ 'Kansas St.': 17,
+ 'Arkansas': 15,
+ 'Texas': 9,
+ 'Duke': 7,
+ 'Missouri': 6,
+ 'Tennessee': 2,
+ 'Miami FL': 1,
+ 'Kansas': 1}
 
 Final Four Results
-{'Alabama': 977,
- 'Houston': 918,
- 'UCLA': 44,
- 'Connecticut': 22,
- 'Texas': 13,
- 'Baylor': 8,
- 'Duke': 7,
- 'Kentucky': 5,
- 'Purdue': 2,
- 'Arkansas': 1,
- 'Arizona': 1,
- 'Gonzaga': 1,
- 'Indiana': 1}
+{'Alabama': 94,
+ 'Houston': 90,
+ 'Connecticut': 8,
+ 'Kansas St.': 4,
+ 'Duke': 2,
+ 'Arkansas': 2}
 
  Champions
-{'Houston': 918,
- 'Alabama': 76,
- 'UCLA': 3,
- 'Duke': 1,
- 'Gonzaga': 1,
- 'Kentucky': 1}
+{'Houston': 90, 'Connecticut': 8, 'Alabama': 2}
