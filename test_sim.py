@@ -154,18 +154,43 @@ def init_gamefeed_simulator(data, one, two):
     count1 = update_count(winner, team1.name, count1, 1)
     count2 = update_count(winner, team2.name, count2, 1)
         
-    # 538_sim -- 1
-    winner = matchup_simulator(team1.name, team2.name, team1.prob, team2.prob)
+    # defense -- 1
+    if float(team1.AdjD) < float(team2.AdjD):
+        winner = team1.name
+    elif float(team1.AdjD) > float(team2.AdjD):
+        winner = team2.name
+    else:
+        winner = matchup_simulator(team1.name, team2.name, float(team1.AdjD), float(team2.AdjD))
     count1 = update_count(winner, team1.name, count1, 1)
     count2 = update_count(winner, team2.name, count2, 1)
 
-    # kenpom->2
+    # offense -- 1
+    if float(team1.AdjO) > float(team2.AdjO):
+        winner = team1.name
+    elif float(team1.AdjO) < float(team2.AdjO):
+        winner = team2.name
+    else:
+        winner = matchup_simulator(team1.name, team2.name, float(team1.AdjO), float(team2.AdjO))
+    count1 = update_count(winner, team1.name, count1, 1)
+    count2 = update_count(winner, team2.name, count2, 1)
+
+    # kenpom->1
     if team1.kenpom > team2.kenpom:
         winner = team1.name
     elif team2.kenpom > team1.kenpom:
         winner = team2.name
     else:
         winner = matchup_simulator(team1.name, team2.name, team1.kenpom, team2.kenpom)
+    count1 = update_count(winner, team1.name, count1, 1)
+    count2 = update_count(winner, team2.name, count2, 1)
+
+    # total
+    if team1.kenpom+team1.score > team2.kenpom+team2.score:
+        winner = team1.name
+    elif team2.kenpom+team2.score > team1.kenpom+team1.score:
+        winner = team2.name
+    else:
+        winner = matchup_simulator(team1.name, team2.name, team1.kenpom+team1.score, team2.kenpom+team2.score)
     count1 = update_count(winner, team1.name, count1, 2)
     count2 = update_count(winner, team2.name, count2, 2)
 
@@ -242,20 +267,50 @@ def round_of_64(data, region_list):
     weights_list = [0]*len(upsetList)
     for i in range(len(upsetList)):
         upset = Team(upsetList[i], data)
+        fav = Team(possible_upsets[upset.name], data)
+        
         if upset.seed == '10':
             weights_list[i] = _10_over_7
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
         elif upset.seed == '11':
             weights_list[i] = _11_over_6
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
         elif upset.seed == '12':
             weights_list[i] = _12_over_5
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
         elif upset.seed == '13':
             weights_list[i] = _13_over_4
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
         elif upset.seed == '14':
             weights_list[i] = _14_over_3
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
         elif upset.seed == '15':
             weights_list[i] = _15_over_2
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
         elif upset.seed == '16':
             weights_list[i] = _16_over_1
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
 
     freq = simulate_upsets(upsetList, weights_list)
     for team, score in freq.items():
@@ -263,7 +318,7 @@ def round_of_64(data, region_list):
         for upset, fav in possible_upsets.items():
             id2 = Team(fav, data)
             if upset == id1.name:
-                freq[team]=score+id1.score+id1.kenpom-id2.score-id2.kenpom
+                freq[team]=score+id1.score+id1.kenpom+id1.shooting_score-id2.score-id2.kenpom-id2.shooting_score
     priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
     #print (priority_add)
     
@@ -285,13 +340,13 @@ def round_of_64(data, region_list):
             u13over4.update({team: prob})
         else:
             u_cinderella.update({team: prob})
-    #print('\n')
-    #print(u10over7)
-    #print(u11over6)
-    #print(u12over5)
-    #print(u13over4)
-    #print(u_cinderella)
-    #print('\n')
+    print('\nFirst Round Priority Upsets')
+    print(u10over7)
+    print(u11over6)
+    print(u12over5)
+    print(u13over4)
+    print(u_cinderella)
+    print('\n')
 
     add_list = []
     add_list.append(list(u10over7.keys())[0])
@@ -367,20 +422,49 @@ def round_of_32(data, region_list):
     weights_list = [0]*len(upsetList)
     for i in range(len(upsetList)):
         upset = Team(upsetList[i], data)
+        fav = Team(possible_upsets[upset.name], data)
         if upset.seed == '6':
             weights_list[i] = _6_over_3
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=0.1
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=0.1
         elif upset.seed == '7':
             weights_list[i] = _7_over_2
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=0.1
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=0.1
         elif upset.seed == '10':
             weights_list[i] = _10_over_2
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=0.1
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=0.1
         elif upset.seed == '11':
             weights_list[i] = _11_over_3
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=0.1
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=0.1
         elif upset.seed == '8':
             weights_list[i] = _8_over_1
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=0.1
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=0.1
         elif upset.seed == '12':
             weights_list[i] = _12_over_4
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=0.1
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=0.1
         elif upset.seed == '9':
             weights_list[i] = _9_over_1
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=0.1
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=0.1
 
     freq = simulate_upsets(upsetList, weights_list)
     for team, score in freq.items():
@@ -388,19 +472,18 @@ def round_of_32(data, region_list):
         for upset, fav in possible_upsets.items():
             id2 = Team(fav, data)
             if upset == id1.name:
-                freq[team]=score+id1.score+id1.kenpom-id2.score-id2.kenpom
+                freq[team]=score+id1.score+id1.kenpom+id1.shooting_score-id2.score-id2.kenpom-id2.shooting_score
     priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
-    #print('\n')
-    #print(priority_add)
-    #print('\n')
 
-    for key in priority_add.keys():
+    '''for key in priority_add.keys():
         tm = Team(key, data)
         if int(tm.seed) >= 11:
             priority_add[key] += 500
             break
-    priority_add = dict(sorted(priority_add.items(), key=lambda x:x[1], reverse = True))
-    #print(priority_add)
+    priority_add = dict(sorted(priority_add.items(), key=lambda x:x[1], reverse = True))'''
+    print('\nSecond Round Priority Upsets')
+    print(priority_add)
+    print('\n')
 
     # generate target_upsets
     target_upsets = 4
@@ -411,6 +494,19 @@ def round_of_32(data, region_list):
     return regional_results
 
 def run_sweet_16(data, region_list):
+    prob1 = 68.2
+    prob2 = 45.3
+    prob3 = 25.0
+    prob4 = 14.9
+    prob5 = 6.8
+    prob6 = 10.1
+    prob7 = 6.8
+    prob8 = 6.1
+    prob9 = 2.7
+    prob10 = 6.1
+    prob11 = 6.1
+    prob12 = 1.4
+    prob15 = 0.7
     possible_upsets = {}
     regional_results=[]
     for sweet_16 in region_list:
@@ -428,6 +524,7 @@ def run_sweet_16(data, region_list):
             elif int(bottom.seed) > int(top.seed) and top.seed != '3' and bottom.seed != '2':
                 possible_upsets.update({bottom.name: top.name})
 
+        # Sweet 16 CHALK
         elite_8 = []
         for key, val in reg_sweet_16.items():
             team1 = Team(key, data)
@@ -445,7 +542,7 @@ def run_sweet_16(data, region_list):
                 if advantage == team2.name:
                     elite_8.append(matchup_simulator(team1.name, advantage, 1, 1.5))
             else:
-                elite_8.append(team1.name) 
+                elite_8.append(team1.name)
         #print(elite_8)
         regional_results.append(elite_8)
     
@@ -453,21 +550,87 @@ def run_sweet_16(data, region_list):
     upsetList = []
     for upset in possible_upsets.keys():
         upsetList.append(upset)
-    
-    weights_list = [1]*len(upsetList)
+
+    weights_list = [0]*len(upsetList)
+    for i in range(len(upsetList)):
+        upset = Team(upsetList[i], data)
+        fav = Team(possible_upsets[upset.name], data)
+        if upset.seed == '4':
+            weights_list[i] = prob4
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
+        elif upset.seed == '5':
+            weights_list[i] = prob5
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
+        elif upset.seed == '6':
+            weights_list[i] = prob6
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
+        elif upset.seed == '7':
+            weights_list[i] = prob7
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
+        elif upset.seed == '8':
+            weights_list[i] = prob8
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
+        elif upset.seed == '9':
+            weights_list[i] = prob9
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
+        elif upset.seed == '10':
+            weights_list[i] = prob10
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
+        elif upset.seed == '11':
+            weights_list[i] = prob11
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
+        elif upset.seed == '12':
+            weights_list[i] = prob12
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
+        elif upset.seed == '15':
+            weights_list[i] = prob15
+            if upset.AdjD < fav.AdjD:
+                weights_list[i]+=10
+            if upset.AdjO > fav.AdjO:
+                weights_list[i]+=10
+
+    #weights_list = [1]*len(upsetList)
     freq = simulate_upsets(upsetList, weights_list)
     for team, score in freq.items():
         id1 = Team(team, data)
         for upset, fav in possible_upsets.items():
             id2 = Team(fav, data)
             if upset == id1.name:
-                freq[team]=score+id1.score+id1.kenpom-id2.score-id2.kenpom
+                freq[team]=score+id1.score+id1.kenpom+id1.shooting_score-id2.score-id2.kenpom-id2.shooting_score
     priority_add = dict(sorted(freq.items(), key=lambda x:x[1], reverse = True))
+
     #print('\n')
     #print(possible_upsets)
-    #print('\n')
-    #print(priority_add)
-    #print('\n')
+    print('\nSweet 16 Priority Upsets')
+    print(priority_add)
+    print('\n')
 
     regional_results = add_upsets(regional_results, possible_upsets, priority_add, '16', 2)
     #for i in regional_results:
@@ -564,7 +727,7 @@ def flatten(nestedlist):
     return flatlist
 
 def run_SIMUL(data):
-    n=1000
+    n=100
     regional_list = ['South', 'East', 'Midwest', 'West']
     final_second_round = {}
     final_sweet_16 = {}

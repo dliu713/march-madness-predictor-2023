@@ -189,32 +189,31 @@ if __name__ == '__main__':
         stats.update({'kenpom_score': 0})
     
     for team, stats in team_dict.items():
-        stats['kenpom_score'] += float(stats['AdjEM']) 
-        if team == 'Providence':
-            cinderella_boost = 10
-            stats['score']+=cinderella_boost
-        elif stats['ffour'] == 1:
+        stats['kenpom_score'] += float(stats['AdjEM'])
+        if stats['ffour'] == 1:
             playin_boost = 5
             stats['score']+=playin_boost
         for player, attributes in stats['roster'].items():
-            if (player in savage_list and float(attributes['3p%']) >= 33.5):
-                stats['score']+=5
-            if attributes['height'] == '7-0' or attributes['height'] == '7-1' or attributes['height'] == '7-2' or attributes['height'] == '7-3' or attributes['height'] == '7-4' or attributes['height'] == '7-5' or int(attributes['Athleticism'])>=8:
-                stats['score']+=2
-            if attributes['height'] == '6-8' or attributes['height'] == '6-9' or attributes['height'] == '6-10' or attributes['height'] == '6-11':
+            if attributes['prospect'] == 1:
                 stats['score'] += 1
-            if float(attributes['3p%']) >= 40.0 or int(attributes['Jump Shot'])>=7:
-                stats['shooting_score'] += 2
-                stats['score'] += 2
-            if float(attributes['3p%']) >= 33.5 or player in snipers:
-                stats['shooting_score'] += 1
-                stats['score'] += 1
-            if attributes['prospect'] == 1 or player in savage:
-                stats['score'] += 2
             if attributes['Wooden'] == 'yes':
                 stats['score'] += 5
+            if player in savage_list:
+                stats['score']+=5
             if player in primary_guard_list:
                 stats['score']+=5
+            if player in dogs:
+                stats['score'] += 2
+            if player in SAVloc:
+                stats['score'] += 5
+            if attributes['height'] == '7-0' or attributes['height'] == '7-1' or attributes['height'] == '7-2' or attributes['height'] == '7-3' or attributes['height'] == '7-4' or attributes['height'] == '7-5' or int(attributes['Athleticism'])>=8:
+                stats['score']+=2
+            if attributes['height'] == '6-10' or attributes['height'] == '6-11':
+                stats['score'] += 1
+            if float(attributes['3p%']) >= 33.5:
+                stats['shooting_score'] += 1
+            if player in snipers or int(attributes['Jump Shot'])>=7:
+                stats['shooting_score'] += 1
 
     # data dump for simulation
     JSON_obj = json.dumps(team_dict, indent = 4)

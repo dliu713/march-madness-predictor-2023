@@ -27,122 +27,177 @@ update_dict = {
     'prospect': 0
 }
 
-# BIAS STRUCTURES - manual work knowledge
+# BIAS STRUCTURES - manual work knowledge, all wooden lists +5, comment out obsolete bigs
 wooden = [
-    'Zach Edey',
-    'Trayce Jackson-Davis',
+    'Marcus Carr',
+    'Kendric Davis',
+    'Gradey Dick',
+    #'Zach Edey',
+    #'Kyle Filipowski',
+    'Adam Flagler',
+    'Keyonte George',
+    #'Trayce Jackson-Davis',
     'Jaime Jaquez Jr.',
     'Keyontae Johnson',
     'Mike Miles Jr.',
     'Brandon Miller',
     'Kris Murray',
+    'Adama Sanogo',
+    'Markquis Nowell',
     'Jalen Pickett',
     'Marcus Sasser',
-    'Drew Timme',
-    'Oscar Tshiebwe',
-    'Azuolas Tubelis',
+    'Terquavion Smith',
+    #'Drew Timme',
+    #'Oscar Tshiebwe',
+    #'Azuolas Tubelis',
     'Jalen Wilson',
     'Isaiah Wong'   
 ]
 
-# https://www.sbnation.com/college-basketball/2023/3/14/23629013/march-madness-best-players-ranked-ncaa-tournament-2023-men
 # eye test --neural network/ai/manual? go to espn, film, and images to identify biometrics, killers, reasonable jumper 33.5+, role sniper 39.5%+, ppg >= 8-9.5, min >= 12.5
     # for shooters, check attempts if 50% or more and makes
-# good teams with good guards eye test:
-primary_guard_list = [
-    'Marcus Sasser',
-    'Jalen Pickett',
-    'Keyonte George',
+
+# Eye test on nba_prospects not in wooden +5 - Neural Network eventually?
+savage_list = [
+    'Nick Smith Jr.',
+    'Jarace Walker',
+    'Noah Clowney',
+    'Jordan Hawkins',
+    'Cason Wallace',
+    'Julian Strawther',
+    'Ricky Council IV',
+    'Andre Jackson Jr.',
+    'Jalen Hood-Schifino',
     'Terrence Shannon Jr.',
-    'Isaiah Wong',
+    'Arthur Kaluma',
+    'Mark Mitchell',
+    'Amari Bailey',
+    'Reece Beekman',
+    'Julian Phillips',
+    'Trey Alexander',
+    #'Jaylen Clark',
+    'Tramon Mark',
+]
+
+# good teams with good guards eye test not nba prospects or wooden +5:
+# https://www.sbnation.com/college-basketball/2023/3/14/23629013/march-madness-best-players-ranked-ncaa-tournament-2023-men
+primary_guard_list = [
     'Colby Jones',
     'Max Abmas',
-    'Mike Miles Jr.',
-    'Marcus Carr',
-    'Kendric Davis',
-    'Markquis Nowell',
+    'Matt Bradley',
     'Wade Taylor IV',
-    'Nick Smith Jr.',
-    'Terquavion Smith',
-    'Reece Beekman',
     'Boo Buie',
     'Tyson Walker',
     'Grant Singleton',
-    'Jalen Hood-Schifino',
-    'Jordan Hawkins',
-    'Cason Wallace',
 ]
 
-# cinderella/underrated eye test based on teams and cinderellas and kenpom underseeds, ignore if in primary_guards, wooden, savage_list, or snipers, pick one 16 seed w/ the most savages to add
-savage = [
+# Possible best shooter in the tourney +1 to shotscore
+snipers = [
+    'Andrew Funk',
+    'Aidan Mahaney',
+    'Steven Ashworth',
+    'Tucker Richardson'
+]
+
+# +2 eye test, be lenient to underrated kenpom and lower seeded teams, ignore if in wooden, primary_guards, savage_list, or snipers, (pick one 16 seed w/ the most savages to add)
+dogs = [
     'Chase Audige',
+
     'Joey Hauser',
     'Jaden Akins',
+
     'Kobe Brown',
     "D'Moi Hodge",
     'DeAndre Gholston',
-    'Wade Taylor IV',
+
     'Max Rice',
     'Chibuzo Agbo',
+
     'Boogie Ellis',
+
     'Hakim Hart',
     'Jahmir Young',
+
     'Keonte Kennedy',
     'DeAndre Williams',
+
     'Davonte Davis',
+
     'Kedrian Johnson',
     'Joe Toussaint',
+
     'Allen Flanigan',
     'Wendell Green Jr.',
+
     'Johnell Davis',
     'Alijah Martin',
     'Michael Forrest',
+    'Nicholas Boyd',
+    'Bryan Greenlee',
+
     'Jarkel Joiner',
     'Casey Morsell',
+
     'Jamarius Burton',
     'Blake Hinson',
+
     'Bryce Hopkins',
     'Noah Locke',
+
     'Desmond Cambridge Jr.',
     'DJ Horne',
     'Frankie Collins',
     'Devan Cambridge',
+
     'Claudell Harris Jr.',
     'Tahlik Chavez',
     'Tyeree Bryan',
-    'Tucker DeVries',
+
     'Isaiah McBride',
+
     'Adrian Baldwin Jr.',
     'Jayden Nunn',
+
     'Greg Williams Jr.',
+
     'Walter Clayton Jr.',
     'Daniss Jenkins',
+
     'Mike Bothwell',
     'Jalen Slawson',
     'JP Pegues',
     'Marcus Foster',
+
     'Malique Jacobs',
+
     'Chris Youngblood',
     'Terrell Burden',
     'Brandon Stroud',
+
     'Tosan Evbuomwan',
     'Matt Allocco',
+
     'Miles Norris',
+
     'RaeQuan Battle',
+
     'Chance McMillian',
+
     'Taijon Jones',
+
     'Aaron Deloney',
+
     'Demetre Roberts',
-    'Grant Singleton',
     'Ansley Almonor',
     'Joe Munden Jr.',
     'Sean Moore',
+
     'Oliver Lynch-Daniels',
+
     'Seth Lundy',
 
     'Alex Karaban',
     'Tristen Newton',
-    'Adama Sanogo',
 
     'Jamal Shead',
 
@@ -155,13 +210,13 @@ savage = [
 
     'Josiah-Jordan James',
 
-    'Jaylen Clark',
     'Tyger Campbell',
     'Adem Bona',
 
     'LJ Cryer',
 
     "Sir'Jabarri Rice",
+    'Tyrese Hunter',
 
     'Kam Jones',
 
@@ -172,19 +227,17 @@ savage = [
 
     'Jeremy Roach',
 
-    'Colby Jones',
     'Adam Kunkel',
 
     "Nae'Qwan Tomlin",
+    'Desi Stills',
 
     'Rasir Bolton',
     'Malachi Smith',
-    'Julian Strawther',
 
     'Armaan Franklin',
 
     'Ryan Nembhard',
-    'Arthur Kaluma',
 
     'Xavier Johnson',
 
@@ -195,46 +248,32 @@ savage = [
 
     'Jordan Miller',
     'Nijel Pack',
+    'Norchad Omier',
     'Wooga Poplar',
 
     'Damion Baugh',
-    'Emanuel Miller'
-
+    'Emanuel Miller',
 ]
 
-
-# Possible best shooter in the tourney
-snipers = [
-    'Gradey Dick',
-    'Aidan Mahaney',
-    'Steven Ashworth',
-    'Tucker Richardson'
-]
-
-# Eye test of nba_prospects - Neural Network eventually?
-savage_list = [
-    'Brandon Miller',
-    'Nick Smith Jr.',
-    'Jarace Walker',
-    'Noah Clowney',
-    'Keyonte George',
-    'Terquavion Smith',
-    'Jordan Hawkins',
-    'Cason Wallace',
-    'Adam Flagler',
-    'Ricky Council IV',
-    'Jalen Hood-Schifino',
+# features
+SAVloc = [
+    'Marcus Carr',
     'Keyontae Johnson',
-    'Marcus Sasser',
-    'Terrence Shannon Jr.',
+    'Markquis Nowell',
+    'Terquavion Smith',
     'Isaiah Wong',
-    'Mark Mitchell',
-    'Jaime Jaquez Jr.',
-    'Amari Bailey',
-    'Reece Beekman',
     'Julian Phillips',
     'Trey Alexander',
+    'Marcus Sasser',
     'Tramon Mark',
-    'Tyrese Hunter',
-    'Chris Livingston',
+    'Hakim Hart',
+    'Michael Forrest',
+    'DJ Horne',
+    'Jayden Nunn',
+    'Brandon Stroud',
+    'Demetre Roberts',
+    'Tristen Newton',
+    "Sir'Jabarri Rice",
+    'Darrion Trammell',
+    'Allen Flanigan'
 ]
